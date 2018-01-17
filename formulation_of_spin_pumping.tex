@@ -1,0 +1,578 @@
+
+\chapter{磁化ダイナミクスによるスピン流生成の現象論的定式化}\label{formulation}
+
+
+スピンポンピングの標準模型及びLandau-Lifshitz-Gilbert方程式に基づき、強磁性/常磁性金属複合薄膜系において磁化ダイナミクスにより生成されるスピン流の現象論的模型を構築した。本現象論的模型はスピンポンピングによる逆スピンホール起電力の外部磁場角度依存性を定量的に再現した。本定式化により磁化ダイナミクスによるスピン流生成の基本定理としてスピン流の生成効率は磁化歳差運動が描く軌道面積によって決定されることを見出し、さらに磁化歳差軌道の楕円率に基づきスピン流の生成効率を整理した結果、磁化歳差運動の軌道が歪み、軌道楕円率$A=1/\sqrt{3}$のとき生成効率が最大化されることを明らかにした。この結果をNi$_{81}$Fe$_{19}$/Pt複合膜における逆スピンホール効果を用いて実証し、磁化ダイナミクスによるスピン流生成現象を理論・実験両面から体系化した。
+
+
+\section{強磁性薄膜における磁化ダイナミクス}
+\subsection{強磁性薄膜における磁化歳差運動}
+%スピンポンピングの標準模型に基づき強磁性薄膜において生成されるスピン流を定式化するため、
+強磁性薄膜における磁化ダイナミクスをLandau-Lifshitz-Gilbert (LLG)方程式
+\begin{equation}
+\frac{d\bm{M}(t)}{dt}=-\gamma\bm{M}(t)\times\bm{H}_\text{eff}+\frac{\alpha}{M_s}\bm{M}(t)\times\frac{d\bm{M}(t)}{dt}\label{LLGLLG}
+\end{equation}
+に基づき記述する（$\bm{M}(t)$：磁化、$\bm{H}_\text{eff}$：有効磁場、$\gamma$：ジャイロ定数、$\alpha$：Gilbert緩和定数、$M_s$：飽和磁化）。強磁性薄膜における磁化ダイナミクスには薄膜面法線方向に作用する反磁場の効果が顕著に表れる
+。強磁性薄膜における磁化歳差運動はほとんどの場合図~\ref{coordinate}(a)のような真円軌道を描かず、反磁場によって軌道が歪められた図~\ref{coordinate}(b)のような楕円軌道を描く。このような磁化歳差運動の軌道は外部磁場角度を変えることで反磁場を介して制御可能である。
+
+磁化ダイナミクスによるスピン流生成には磁化歳差運動の軌道が反映されることが予想される。そこで反磁場の効果を取り入れ、
+図~\ref{coordinate}(c)に示すように外部磁場$\bm{H}$を薄膜面法線方向から$\theta_H$の角度で印加した場合を考え、強磁性薄膜における磁化ダイナミクスによるスピン流生成の模型を現象論的に構築し、磁化歳差軌道とスピン流生成の関係を体系化する。
+
+以下ではNi$_{81}$Fe$_{19}$のような軟強磁性体を考え、結晶磁気異方性は十分小さいものとする。図\ref{coordinate}(c)に示すように$z$軸周りを磁化$\bm{M}(t)=\bm{M}+\bm{m}(t)$が歳差運動する座標系を設定する。$\bm{M}$は時間に依存しない磁化の成分、即ち磁化の平衡成分であり、歳差運動の軸方向を表す。$\bm{m}(t)$は歳差運動を表す磁化の振動成分である。
+薄膜面法線方向から測った磁化角度を$\theta_M$とする。
+外部磁場角度と磁化角度が揃わないのは、$-y'$方向に生じる反磁場のためである。
+はじめに磁場角度$\theta_H$と磁化角度$\theta_M$の関係を求め、さらに強磁性共鳴条件を用いることで、共鳴状態における磁化歳差運動を解析的に求める。
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=9cm,keepaspectratio,clip]{coordinate.eps}
+%\vskip -\lastskip \vskip -3pt
+\caption{(a) 磁化歳差運動の真円軌道。$m_x$, $m_y$は磁化歳差運動の振動成分を表す。(b) 磁化歳差運動の楕円軌道。(c) 強磁性薄膜における座標系。$\bm{H}$は外部磁場、$\bm{M}$, $\bm{m}(t)$は
+それぞれ磁化$\bm{M}(t)=\bm{M}+\bm{m}(t)$の平衡成分と振動成分。$\theta_H$, $\theta_M$はそれぞれ薄膜面法線方向と外部磁場$\bm{H}$、磁化歳差運動の軸方向$\bm{M}$とのなす角である。}
+\label{coordinate}
+\end{center}
+\end{figure}
+
+
+式(\ref{LLGLLG})の平衡状態を考えることで、外部磁場強度$H$、外部磁場角度$\theta_H$、及び磁化角度$\theta_M$の関係を求める。$\bm{M}(t)=\bm{M}=(0, 0, M_s)$とし、有効磁場として外部静磁場$\bm{H}$、磁化の平衡成分$\bm{M}$による反磁場$\bm{H}_{\bm{M}}$を考え、$\bm{H}_\text{eff}=\bm{H}+\bm{H}_{\bm{M}}$とする。ここで、図\ref{coordinate}(c)より
+\begin{equation}
+ \bm{H} = H\left( {\begin{array}{*{20}c}
+   0  \\
+   {\sin (  \theta_M -\theta_H )}  \\
+   {\cos (\theta_M -\theta_H )}  \\
+\end{array}} \right) \label{H1}
+\end{equation}
+\begin{equation}
+ \bm{H}_{\bm{M}}  =  - 4\pi M_s \cos \theta_M \left( {\begin{array}{*{20}c}
+   0  \\
+   {\sin \theta_M }  \\
+   {\cos  \theta_M }  \\
+\end{array}} \right) \label{H2}
+\end{equation}
+である。
+平衡状態では$\bm{M}\times\bm{H}_{\text{eff}}=\bm{0}$が成り立つ事を用いると、外部磁場強度$H$、外部磁場角度$\theta_H$と磁化角度$\theta_M$を関係づける平衡条件
+\begin{equation}
+2H\sin(\theta_H-\theta_M)+4\pi M_s\sin2\theta_M=0    \label{equiriblium}
+\end{equation}
+が得られる。式(\ref{equiriblium})を用いることで、外部磁場強度$H$、外部磁場角度$\theta_H$、及び飽和磁化$4\pi M_s$から磁化角度$\theta_M$が求められる。
+
+
+
+次に強磁性共鳴条件を求める。$z$軸周りの歳差運動を考え、$\bm{m}(t)=(m_x e^{i\omega t}, m_y e^{i\omega t}, 0)$とする。
+$\omega=2\pi f$であり、$f$はマイクロ波の振動数である。有効磁場$\bm{H}_\text{eff}$として、式(\ref{H1})の$\bm{H}$と式(\ref{H2})の$\bm{H}_{\bm{M}}$に加え、
+時間変動する磁化$\bm{m} (t)$による動的な反磁場$\bm{H}_{\bm{m}}(t)$を導入する。即ち有効磁場を
+\begin{equation}
+\bm{H}_\text{eff}(t)=\bm{H}+\bm{H}_{\bm{M}}+\bm{H}_{\bm{m}}(t)\label{resonanceH}
+\end{equation}
+とする。ここで図\ref{coordinate}(c)より
+\begin{equation}
+\bm{H}_{\bm{m}}(t)  =  - 4\pi m_y(t) \sin \theta_M\left( {\begin{array}{*{20}c}
+   0  \\
+   {\sin \theta_M }  \\
+   {\cos \theta_M  }  \\
+\end{array}} \right)
+\end{equation}
+である。式(\ref{LLGLLG})に$\bm{M}(t)=\bm{M}+\bm{m}(t)=(m_x e^{i\omega t}, m_y e^{i\omega t}, M_s)$及び式(\ref{resonanceH})を代入する。
+緩和項と$m_x, m_y$の2次以上の項を無視し、さらに式(\ref{equiriblium})を用いると、強磁性共鳴条件
+%\begin{equation}
+%\left(\frac{\omega}{\gamma}\right)^2=\left( H_\text{FMR}\cos(\theta_H-\theta_M)-4\pi M_s\cos 2\theta_M \right) \left( H_\text{FMR}\cos(\theta_H-\theta_M)-4\pi M_s \cos^2\theta_M \right) \label{resonance}
+%\end{equation}
+\begin{eqnarray}
+\left(\frac{\omega}{\gamma}\right)^2&=&\left( H_\text{FMR}\cos(\theta_H-\theta_M)-4\pi M_s\cos 2\theta_M \right) \nonumber \\
+&&\hspace{3em} \times \left( H_\text{FMR}\cos(\theta_H-\theta_M)-4\pi M_s \cos^2\theta_M \right) \label{resonance}
+\end{eqnarray}
+が得られる。ここで$H_\text{FMR}$は強磁性共鳴磁場であり、マイクロ波振動数$\omega$を固定し外部磁場$H$を掃印した場合、式(\ref{resonance})を満たす$H=H_\text{FMR}$で強磁性共鳴状態となる。
+
+
+薄膜面に対し垂直に磁場を加えた場合($\theta_H=0$)、式(\ref{equiriblium})より$\theta_M=0$であり、共鳴時において磁化は磁場方向を軸に歳差運動を行う。従って式(\ref{resonance})は
+\begin{equation}
+\left(\frac{\omega}{\gamma}\right)^2=\left(H_\text{FMR }^{\theta_H=\theta_M=0}-4\pi M_s \right)^2\label{0deg}
+\end{equation}
+となる。また薄膜面に対し平行に磁場を加えた場合($\theta_H=90^\circ$)も式(\ref{equiriblium})より$\theta_H=\theta_M=90^\circ$であり、磁化は磁場方向を軸に歳差運動を行い、
+\begin{equation}
+\left(\frac{\omega}{\gamma}\right)^2=\left(H_\text{FMR}^{\theta_H=\theta_M=90^\circ}+4\pi M_s \right)H_\text{FMR}^{\theta_H=\theta_M=90^\circ}\label{90deg}
+\end{equation}
+が得られる。$\gamma=g\mu_B / \hbar$であるため、外部磁場角度を$\theta_H=0$, $90^\circ$として測定した強磁性共鳴磁場$H_\text{FMR}$及び式(\ref{0deg})、(\ref{90deg})を用いることで、実験的に$g$因子及び飽和磁化$4\pi M_s$を求めることが可能である。
+
+
+
+以上の結果を用いて磁化振動成分$\bm{m}(t)$の解析的な表式を求める。
+マイクロ波磁場$\bm{h}(t)=(h e^{i\omega t}, 0, 0)$を考え、磁化の振動成分を$\bm{m}(t)=(m_x e^{i\omega t}, m_y e^{i\omega t}, 0)$とする。有効磁場を
+\begin{equation}
+\bm{H}_\text{eff}(t)=\bm{H}+\bm{H}_{\bm{M}}+\bm{H}_{\bm{m}}(t)+\bm{h}(t)
+\end{equation}
+とし、$\bm{M}(t)=\bm{M}+\bm{m}(t)=(m_x e^{i\omega t}, m_y e^{i\omega t}, M_s)$を式(\ref{LLGLLG})に代入する。$m_x$, $m_y$の2次以上の項を無視して式(\ref{equiriblium})を用いると、
+\begin{equation}
+\left(
+\begin{array}{cc}
+ -i \omega  & -\Omega+4 \pi M_s  \gamma  \cos 2\theta_M \\
+\Omega -4 \pi M_s   \gamma  \cos ^2\theta_M& -i \omega 
+\end{array}
+\right) 
+\left(
+\begin{array}{c}
+ m_x \\
+ m_y
+\end{array}
+\right) 
+=\left(
+\begin{array}{c}
+ 0 \\
+ h\gamma M_s
+\end{array}
+\right) 
+\end{equation}
+となる。ここで
+\begin{equation}
+\Omega=i \alpha  \omega +H \gamma  \cos (\theta_H -\theta_M)
+\end{equation}
+である。
+$\alpha$の2次以上を無視すると、
+\begin{equation}
+{\rm{ }}\left( {\begin{array}{*{20}c}
+   {m_x }  \\
+  {m_y }  \\
+\end{array}} \right) = \frac{{\dfrac{{M_s h }}{{ (4\pi M_s )^2 \cos ^2 (\theta_H  - \theta_M )}}\left( {\begin{array}{*{20}c}
+   {i \alpha (\omega/\gamma)  +  {H\cos (\theta_H  - \theta_M ) - 4\pi M_s \cos 2\theta_M } }  \\
+   { - i(\omega/\gamma) }  \\
+\end{array}} \right)}}{{R + i\dfrac{{\alpha \tilde \omega \left( {2\tilde H\cos (\theta_H  - \theta_M ) - \cos ^2 \theta_M  - \cos 2\theta_M } \right)}}{{\cos ^2 (\theta_H  - \theta_M )}}}}
+\end{equation}
+%=====================================
+%\begin{eqnarray}
+%{\rm{ }}\left( {\begin{array}{*{20}c}
+%   {m_x }  \\
+%   {m_y }  \\
+%\end{array}} \right) &= &\frac{{\dfrac{{M_s h }}{{ (4\pi M_s )^2 \cos ^2 (\theta_H  - \theta_M )}}}}{{R + i\dfrac{{\alpha \tilde \omega \left( {2\tilde H\cos (\theta_H  - \theta_M ) - \cos ^2 \theta_M  - \cos 2\theta_M } \right)}}{{\cos ^2 (\theta_H  - \theta_M )}}}}
+%\nonumber\\&& \hspace{2em}
+%\times\left( {\begin{array}{*{20}c}
+%   {i \alpha (\omega/\gamma)  +  {H\cos (\theta_H  - \theta_M ) - 4\pi M_s \cos 2\theta_M } }  \\
+%   { - i(\omega/\gamma) }  \\
+%\end{array}} \right)
+%\end{eqnarray}
+%=====================================
+が得られる。ここで
+\begin{equation}
+R=\tilde H^2  - \tilde H\left( {\dfrac{{\cos 2\theta_M  + \cos ^2 \theta_M }}{{\cos (\theta_H  - \theta_M )}}} \right) + \dfrac{{\cos 2\theta_M \cos ^2 \theta_M }}{{\cos ^2 (\theta_H  - \theta_M )}} - \dfrac{{\tilde \omega ^2 }}{{\cos ^2 (\theta_H  - \theta_M )}} 
+\end{equation}
+\begin{equation}
+\tilde H = \frac{H}{{4\pi M_s }},\quad \tilde \omega  = \frac{{\omega /\gamma }}{{4\pi M_s }}
+\end{equation}
+である。
+共鳴状態では$R=0$
+%\begin{equation}
+%\tilde H^2  - \tilde H\left( {\dfrac{{\cos 2\theta_M  + \cos ^2 \theta_M }}{{\cos (\theta_H  - \theta_M )}}} \right) + \dfrac{{\cos 2\theta_M \cos ^2 \theta_M }}{{\cos ^2 (\theta_H  - \theta_M )}} - \dfrac{{\tilde \omega ^2 }}{{\cos ^2 (\theta_H  - \theta_M )}} =0\label{asas}
+%\end{equation}
+であるため、この解を$H=H_\text{FMR}$とし、共鳴磁場付近$H\simeq H_\text{FMR}$を考えると、
+\begin{eqnarray}
+R&=&\tilde H^2 - \tilde H\left( {\dfrac{{\cos 2\theta_M  + \cos ^2 \theta_M }}{{\cos (\theta_H  - \theta_M )}}} \right) + \dfrac{{\cos 2\theta_M \cos ^2 \theta_M }}{{\cos ^2 (\theta_H  - \theta_M )}} - \dfrac{{\tilde \omega ^2 }}{{\cos ^2 (\theta_H  - \theta_M )}} \nonumber\\
+&\approx&  (\tilde H - \tilde H_{{\rm{FMR}}} )\left[ {2\tilde H  - {\frac{{\cos 2\theta_M  +\cos ^2 \theta_M }}{{\cos (\theta_H  - \theta_M )}}} } \right] \label{AAA}
+\end{eqnarray}
+が得られる\footnote{$x^2+ax+b=0$の解を$x=\alpha,\beta$とすると、$\alpha+\beta=-a$より$x^2+ax+b=(x-\alpha)(x-\beta)=(x-\alpha)(x+a+\alpha)=0$であることを用いた。}。ここで
+\begin{equation}
+\tilde H_{{\rm{FMR}}} =\frac{1}{2}\left(\frac{{\cos 2\theta_M  +\cos ^2 \theta_M }}{{\cos (\theta_H  - \theta_M )}} +\sqrt{\left(\frac{{\cos 2\theta_M  -\cos ^2 \theta_M }}{{\cos (\theta_H  - \theta_M )}}\right)^2+\frac{4{\tilde \omega ^2 }}{{\cos ^2 (\theta_H  - \theta_M )}}}\right)
+\end{equation}
+である。式(\ref{AAA})を用いることで歳差運動する磁化の振動成分$m_x(t)$, $m_y(t)$は
+%\begin{equation}
+%m_x (t) = \frac{{h \left( {i\tilde \omega \alpha  + {\tilde H\cos (\theta_H  - \theta_M ) - \cos 2\theta_M } } \right)}}{{4\pi \cos (\theta_H  - \theta_M )\left[ {2\tilde H\cos (\theta_H  - \theta_M ) - \left( {\cos^ 2\theta_M  + \cos 2 \theta_M } \right)} \right]}}\frac{{e^{i\omega t} }}{{{\rm{ }}(\tilde H - \tilde H_{{\rm{FMR}}} ) + i\dfrac{{\alpha \tilde \omega }}{{\cos (\theta_H  - \theta_M )}}}} \label{mmx}
+%\end{equation}
+%\begin{equation}
+%m_y (t)  = \frac{{ - i\tilde \omega h }}{{4\pi \cos (\theta_H  - \theta_M )\left[ {2\tilde H\cos (\theta_H  - \theta_M ) - \left( {\cos^ 2\theta_M  + \cos 2 \theta_M} \right)} \right]}}\frac{{e^{i\omega t} }}{{{\rm{ }}(\tilde H - \tilde H_{{\rm{FMR}}} ) + i\dfrac{{\alpha \tilde \omega }}{{\cos (\theta_H  - \theta_M )}}}} \label{mmy}
+%\end{equation}
+\begin{eqnarray}
+m_x (t) &=& \frac{{h \left( {i\tilde \omega \alpha  + {\tilde H\cos (\theta_H  - \theta_M ) - \cos 2\theta_M } } \right)}}{{4\pi \cos (\theta_H  - \theta_M )\left[ {2\tilde H\cos (\theta_H  - \theta_M ) - \left( {\cos^ 2\theta_M  + \cos 2 \theta_M } \right)} \right]}}\nonumber\\
+&&\hspace{12em} \times\frac{{e^{i\omega t} }}{{{\rm{ }}(\tilde H - \tilde H_{{\rm{FMR}}} ) + i\dfrac{{\alpha \tilde \omega }}{{\cos (\theta_H  - \theta_M )}}}} \label{mmx}
+\end{eqnarray}
+\begin{eqnarray}
+m_y (t)  &=& \frac{{ - i\tilde \omega h }}{{4\pi \cos (\theta_H  - \theta_M )\left[ {2\tilde H\cos (\theta_H  - \theta_M ) - \left( {\cos^ 2\theta_M  + \cos 2 \theta_M} \right)} \right]}}\nonumber\\
+&&\hspace{12em} \times\frac{{e^{i\omega t} }}{{{\rm{ }}(\tilde H - \tilde H_{{\rm{FMR}}} ) + i\dfrac{{\alpha \tilde \omega }}{{\cos (\theta_H  - \theta_M )}}}} \label{mmy}
+\end{eqnarray}
+となる\footnote{式(\ref{mmx})より磁化率$\chi_{xx}=m_x/(he^{i\omega t} )$は
+\begin{equation}
+\chi_{xx} = \frac{{ {i\tilde \omega \alpha  + {\tilde H\cos (\theta_H  - \theta_M ) - \cos 2\theta_M } } }}{{4\pi \cos (\theta_H  - \theta_M )\left[ {2\tilde H\cos (\theta_H  - \theta_M ) - \left( {\cos^ 2\theta_M  + \cos 2 \theta_M } \right)} \right]}}\frac{1}{{{\rm{ }}(\tilde H - \tilde H_{{\rm{FMR}}} ) + i\dfrac{{\alpha \tilde \omega }}{{\cos (\theta_H  - \theta_M )}}}} \nonumber\label{chi1}
+\end{equation}
+であり、磁化率$\chi_{xx}=\chi_{xx}'-i\chi_{xx}''$の虚数成分は
+\begin{equation}
+\chi_{xx} '' = \frac{{4\pi {M_s}\alpha \gamma \omega \left( {{H_\text{FMR}}\cos ({\theta _H} - {\theta _M}) - 4\pi {M_s}\cos 2{\theta _M}} \right)}}{{2\pi \left( {{\alpha ^2}{\omega ^2} + {{(H - {H_\text{FMR}})}^2}{\gamma ^2}{{\cos }^2}({\theta _H} - {\theta _M})} \right)\left( {4H\cos ({\theta _H} - {\theta _M}) - 4\pi {M_s}(1+3\cos 2{\theta _M}}) \right)}}\label{chi2}\nonumber
+\end{equation}
+となる。簡単のため薄膜面内磁場$\theta_H=\theta_M=90^\circ$を考えると
+\begin{equation}
+\chi _{xx}'' = \frac{{{M_s}\left( {{H_\text{FMR}} + 4\pi {M_s}} \right)\alpha \gamma \omega }}{2{\left( H + 2\pi {M_s} \right)\left( { {{(H - {H_\text{FMR}})}^2}{\gamma ^2}+{\alpha ^2}{\omega ^2} } \right)}}
+\end{equation}
+が得られる。共鳴磁場$H\approx H_\text{FMR}$付近では
+\begin{equation}
+\chi _{xx}'' = \frac{\alpha{M_s}\left( H_\text{FMR} + 4\pi {M_s} \right)  }{2\left( H_\text{FMR} + 2\pi {M_s}  \right)}\frac{\left(\omega/\gamma\right)}{ (H - {H_\text{FMR}})^2+\left(\alpha\omega/\gamma\right)^2}\label{chi3}
+\end{equation}
+である。
+}。
+
+\subsection{磁化歳差運動の軌道楕円率}
+強磁性薄膜における磁化歳差運動を系統的に整理するため、共鳴状態における磁化歳差の軌道楕円率$A\equiv |m_y|/|m_x|$を定義する。ここで$|m_x|$と$|m_y|$ はそれぞれ楕円歳差運動の長軸半径と短軸半径を表す。
+式(\ref{mmx})及び(\ref{mmy})より、共鳴状態$H=H_\text{FMR}$における$m_x(t)$, $m_y(t)$の実部は
+\begin{equation}
+m_x (t) = \frac{{ 4\pi M_s h \left[ {-\alpha \omega \cos \omega t +\gamma\left(- H_{{\rm{FMR}}} \cos (\theta_H  - \theta_M ) + 4\pi M_s  \cos 2\theta_M\right) \sin \omega t} \right]}}{{2\pi \alpha  \omega \left[ {-4H_{{\rm{FMR}}}\cos (\theta_H  - \theta_M ) + 4\pi M_s ( 1 + 3\cos 2\theta_M )} \right]}}\label{m_x}
+\end{equation}
+\begin{equation}
+m_y (t) =  - \frac{{4\pi M_s h \cos \omega t}}{{2\pi \alpha \left[ {-4H_{{\rm{FMR}}}\cos (\theta_H  - \theta_M ) + 4\pi M_s (  1 + 3\cos 2\theta_M )} \right]}}\label{m_y}
+\end{equation}
+である。ここで共鳴状態では式(\ref{resonance})より
+\begin{equation}
+H_\text{FMR}\cos(\theta_H-\theta_M)=\pi\left(1+3\cos2\theta_M\right) M_s+\frac{\sqrt{4\omega^2+(4\pi M_s)^2\gamma^2 \sin^4\theta_M}}{2\gamma}
+\end{equation}
+が成り立つことを用いると、共鳴状態$H=H_\text{FMR}$における共鳴磁場$H_\text{FMR}$及び磁場角度$\theta_H$を含まない$m_x(t)$, $m_y(t)$の表式
+\begin{equation}
+m_x (t) = \frac{4\pi M_s\gamma h \left[ 2\alpha \omega \cos \omega t +\left(4\pi M_s\gamma\sin^2\theta_M +\sqrt{(4\pi M_s)^2\gamma ^2 \sin ^4\theta_M+4
+\omega ^2} \right) \sin \omega t \right]}{8\pi \alpha  \omega\sqrt{(4\pi M_s)^2\gamma ^2 \sin ^4\theta_M+4
+\omega ^2}} \label{m_x2}
+\end{equation}
+\begin{equation}
+m_y (t) =  - \frac{{4\pi M_s \gamma h \cos \omega t}}{4\pi \alpha \sqrt{(4\pi M_s)^2\gamma ^2 \sin ^4\theta_M+4
+\omega ^2}}\label{m_y2}
+\end{equation}
+が得られる。
+磁化歳差運動の軌道楕円率$A$は式(\ref{m_x2})及び(\ref{m_y2})の振幅比を求めることで
+\begin{equation}
+A=\frac{2 \omega }{4\pi M_s\gamma   \sin ^2\theta_M+\sqrt{ \left(4\pi M_s\right)^2\gamma ^2 \sin ^4\theta_M+4 \omega ^2}}\label{A}
+\end{equation}
+となる。図~\ref{Aspect}(a)に$\omega=5.93\times 10^{10}$ s$^{-1}$, $\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$とした場合の磁化角度$\theta_M$、飽和磁化$4\pi M_s $及び磁化歳差運動の楕円率$A$の関係を示した。図~\ref{Aspect}(a)が示すように、外部磁場を薄膜面法線方向に印加した場合($\theta_H=\theta_M=0$)は反磁場が磁化歳差運動の軸方向に働くため軌道楕円率$A=1$、即ち磁化歳差運動は真円軌道を描く。磁化角度が薄膜面法線方向から逸れ$\theta_M$が増大するに従って反磁場により歳差運動の軌道が歪み楕円率$A$が減少し、薄膜面内の歳差運動($\theta_M=90^\circ$)で$A$は最小となる。また図~\ref{Aspect}(b)に飽和磁化$4\pi M_s=0.25$, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00 Tとした場合の楕円率を示した。この結果から飽和磁化の大きな物質ほど反磁場が強く働き、軌道楕円率が小さいことが確認できる。
+%磁化角度が大きくなるにつれ歳差運動の楕円率は小さくなり、さらに飽和磁化が大きな物質ほど反磁場の効果が大きいために歳差運動が歪み、楕円率が小さいことがわかる。
+
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=11cm,keepaspectratio,clip]{Aspect.eps}
+%\vskip -\lastskip \vskip -3pt
+\caption{(a) 磁化角度$\theta_M$、飽和磁化$4\pi M_s $及び磁化歳差運動の楕円率$A$の関係。式(\ref{A})において、$\omega=5.93\times 10^{10}$ s$^{-1}$及び$\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$として求めた。(b) 楕円率$A$の磁化角度$\theta_M$依存性。$4\pi M_s=0.25$, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00 Tとした場合を示した。$\omega=5.93\times 10^{10}$ s$^{-1}$及び$\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$を用いた。}
+\label{Aspect}
+\end{center}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\section{磁化ダイナミクスによるスピン流生成}
+\subsection{スピン流の定式化と逆スピンホール起電力との比較}
+解析的な磁化振動成分の表式を用い、磁化ダイナミクスによるスピン流生成の現象論的模型を構築する。
+スピンポンピングの標準模型において、磁化ダイナミクスにより生成されるスピン流の直流成分は式(\ref{pumppump})より次のように表される。
+\begin{equation}
+J_s= \frac{\omega}{2\pi}\int^{2\pi/\omega}_0\frac{\hbar}{4\pi}g^{\uparrow\downarrow}_r \frac{1}{M_s^2}\left[{\bm M}(t)\times\frac{d{\bm  M}(t)}{dt}\right]_z dt \label{Tserpump}
+\end{equation}
+スピン流が流れる常磁性層は理想的なスピン吸収体であり、back flowのスピン流がないものとした。式(\ref{m_x})及び式(\ref{m_y})を式(\ref{Tserpump})に代入することで、強磁性共鳴状態における強磁性/常磁性複合薄膜系で生成されるスピン流の現象論的な表式
+\begin{equation}
+J_s=\frac{g^{\uparrow\downarrow}_r \gamma  \hbar h^2 \left(H_\text{FMR}\cos(\theta_H-\theta_M)-4\pi M_s\cos2\theta_M\right)}{16\pi\alpha^2\left(H_\text{FMR}\cos(\theta_H-\theta_M)-\pi M_s\left(1+3\cos2\theta_M\right)\right)^2}\label{SPSP}
+\end{equation}
+が得られる。
+
+
+式(\ref{SPSP})は第\ref{ISHEchap}章で得られたNi$_{81}$Fe$_{19}$/Pt複合膜におけるスピンポンピングによる逆スピンホール起電力$V_\text{ISHE}$の面外磁場角度依存性、図\ref{spinpumpISHE}(d)を定量的に再現する。式(\ref{SPSP})は強磁性共鳴時における磁化歳差軸角度$\theta_M$を含むため、はじめに強磁性共鳴磁場$H_\text{FMR}$より
+式(\ref{equiriblium})、(\ref{0deg})及び(\ref{90deg})を用いてNi$_{81}$Fe$_{19}$/Pt複合膜における磁化角度$\theta_M$の磁場角度$\theta_H$依存性を求める。
+
+%式(\ref{0deg})、(\ref{90deg})及び$\theta_H=0$, $90^\circ$における共鳴磁場の測定結果からNi$_{81}$Fe$_{19}$の飽和磁化$4\pi M_s$を調べる。
+Ni$_{81}$Fe$_{19}$/Pt複合薄膜における共鳴磁場$H_\text{FMR}$の外部磁場角度$\theta_H$依存性の測定結果を図\ref{Res_Mag}(a)に示す。
+$\theta_H=90^\circ$において$H_\text{FMR}=0.118$ T, $\theta_H=0$において$H_\text{FMR}=1.06$ Tであり、式(\ref{0deg})及び(\ref{90deg})を用いることで
+$\omega/\gamma=0.319$ T及び$4\pi M_s=0.745$ Tが得られる。
+共鳴磁場から得られた$4\pi M_s$及び式(\ref{equiriblium})を用いることで、共鳴時における磁化角度$\theta_M$の外部磁場角度$\theta_H$依存性が図\ref{Res_Mag}(b)のように得られる。磁化角度$\theta_M$は外部磁場角度$\theta_H=0$付近において急激な変化を示した。これは起電力信号の振る舞いと類似しており、起電力と磁化角度の間の強い相関を示す結果である。
+
+\begin{figure}[htbp]
+\begin{center}
+%\includegraphics[width=11cm,keepaspectratio,clip]{Res_Mag.eps}
+\vskip -\lastskip \vskip -3pt
+\caption{(a) 共鳴磁場$H_\text{FMR}$の外部磁場角度$\theta_H$依存性。実線は式(\ref{equiriblium})及び(\ref{resonance})を用いた計算値である。
+(b) 磁化角度$\theta_M$の外部磁場角度$\theta_H$依存性。磁化角度は
+$4\pi M_s=0.745$ T及び式(\ref{equiriblium})を用いて求めた。
+}
+\label{Res_Mag}
+\end{center}
+\end{figure}
+
+
+%図~\ref{fig8}に起電力$V_\text{ISHE}/V_\text{max}$の面外磁場角度$\theta_H$依存性を示した。前述の通り起電力は$\theta_H=0$付近で急激な変化を示している。このような振る舞いは現象論的なスピン流の現象論的表式、式(\ref{pumping2})によって再現される。
+スピンポンピングによる直流成分のスピン流のスピン分極$\bm{\sigma}$は歳差運動の軸方向（$z$軸方向）であり、逆スピンホール効果$\bm{E}_\text{ISHE}\propto \bm{J}_s\times\bm{\sigma}$によって生じる起電力$E_\text{ISHE}$は生成されるスピン流のスピン分極$\bm{\sigma}$の薄膜面への射影成分に比例し
+\begin{equation}
+E_\text{ISHE}\propto J_s \sin\theta_M\label{shaei}
+\end{equation}
+となる。式(\ref{shaei})及び式(\ref{SPSP})を用いることで、逆スピンホール起電力の面外磁場角度依存性が次のように得られる。
+\begin{equation}
+E_\text{ISHE}\propto \frac{g^{\uparrow\downarrow}_r \gamma  \hbar h^2 \sin\theta_M\left(H_\text{FMR}\cos(\theta_H-\theta_M)-4\pi M_s\cos2\theta_M\right)}{16\pi\alpha^2\left(H_\text{FMR}\cos(\theta_H-\theta_M)-\pi M_s\left(1+3\cos2\theta_M\right)\right)^2}\label{ISHE_V}
+\end{equation}
+図\ref{fig8}に式(\ref{ISHE_V})を用いて計算した起電力の面外磁場角度依存性を示す。ここで強磁性共鳴測定から得られたパラメータである$\omega=5.93\times 10^{10}$ s$^{-1}$, $\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$及び図~\ref{Res_Mag}(a)、\ref{Res_Mag}(b)に示す共鳴磁場$H_\text{FMR}$、共鳴磁場から求めた磁化角度$\theta_M$を用いた。実験結果は式(\ref{ISHE_V})により非常によく再現されており、現象論的な磁化ダイナミクスによるスピン流生成及び逆スピンホール効果の模型の妥当性を実証するものである。
+ 
+
+\begin{figure}[t]
+\centerline{
+%\includegraphics[width=6.5cm]{fig8.eps}
+}
+\caption{Ni$_{81}$Fe$_{19}$/Pt薄膜における共鳴起電力$V_\text{ISHE}/V_\text{max}$の面外磁場角度$\theta_H$依存性。$\theta_H$は挿入図に示すように外部磁場と薄膜面法線方向のなす角である。青丸は実験結果であり、青線は式~(\ref{ISHE_V})に基づく計算結果である。
+}
+\label{fig8} 
+\end{figure}
+
+
+
+
+
+%この場合、強磁性/常磁性複合薄膜における逆スピンホール効果による起電力の面外磁場角度依存性は
+%\begin{equation}
+%V_\text{ISHE}\propto \frac{  \gamma^2 h^2 \hbar g^{\uparrow\downarrow} \sin\theta_M \left(4 \pi  M_s \gamma  \sin ^2\theta_M+\sqrt{ (4 \pi
+% M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\right)}{8 \pi \alpha^2  \left((4 %\pi  M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2\right)}\label{VangleC}
+% \end{equation}
+%となる。
+式(\ref{ISHE_V})は起電力の面外磁場依存性の振る舞いが強磁性金属の飽和磁化$4\pi M_s$に依存することを示唆している。%これは磁化角度$\theta_M$が反磁場を経由して飽和磁化の大きさに強く依存することが要因である。
+そのため飽和磁化の異なる強磁性物質についても同様の測定を行った。
+図\ref{ISHEangle}(a)にNi/Pt薄膜、Ni$_{81}$Fe$_{19}$/Pt薄膜、Fe/Pt薄膜における共鳴磁場$H_\text{FMR}$の外部磁場角度依存性、図\ref{ISHEangle}(b)挿入図に式(\ref{equiriblium})及び式(\ref{resonance})を用いて求めた磁化角度$\theta_M$の外部磁場角度依存性を示す。飽和磁化の小さなNi薄膜の磁化は外部磁場角度によく追従するが、飽和磁化の大きなFe薄膜において磁化はほとんど外部磁場方向に揃わないことがわかる。また共鳴磁場の磁場角度依存性の測定結果図\ref{ISHEangle}(a)が結晶磁気異方性を取り入れていない式(\ref{equiriblium})及び式(\ref{resonance})でよく再現されることは、本研究で用いたFe、Niにおける結晶磁気異方性は十分に小さく、本測定の範囲では無視できるものであることを示している。実際、薄膜面外だけでなく薄膜面内における結晶磁気異方性も非常に小さいことが図\ref{Kerr_Fe_Ni}(a)、\ref{Kerr_Fe_Ni}(b)に示すカー効果を用いて測定したヒステリシスループからも確認できる。
+
+図\ref{ISHEangle}(b)に逆スピンホール起電力$V_\text{ISHE}$の磁場角度依存性の測定結果及び式(\ref{ISHE_V})を用いた計算結果を示した。強磁性共鳴スペクトルから求め、計算で用いたパラメータを表\ref{tablepara}に示す。図\ref{ISHEangle}(b)の起電力面外磁場角度依存性は全ての物質において式(\ref{ISHE_V})により非常に良く再現されており、
+スピンポンピング及び逆スピンホール効果の模型の妥当性を強く支持するものである。
+
+\begin{table}
+\begin{center}
+\caption{測定時のマイクロ波周波数$f$と強磁性共鳴スペクトルから求められたパラメータ。$M_s$は飽和磁化、$\omega=2\pi f$であり、$\gamma$はジャイロ定数、$\alpha$は緩和定数を表す。}
+\begin{tabular}{ccccc}
+\hline\hline
+&$f$ (GHz)&$4\pi M_s$ (T)&$\omega/\gamma$ (T)&$\alpha$\\
+\hline
+Ni$_{81}$Fe$_{19}$/Pt&9.44&0.745&0.319&0.0172 \\
+Fe/Pt&9.44&1.69&0.322&0.0124\\
+Ni/Pt&9.44&0.171&0.312&0.0605\\
+\hline\hline
+\label{tablepara} 
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[t]
+\centerline{
+%\includegraphics[width=8.2cm]{ISHEangle.eps}
+}
+\caption{(a) Ni/Pt薄膜、Ni$_{81}$Fe$_{19}$/Pt薄膜、Fe/Pt薄膜における共鳴磁場$H_\text{FMR}$の外部磁場角度$\theta_H$依存性。実線は式(\ref{equiriblium})及び式(\ref{resonance})を用いた計算結果。表\ref{tablepara}のパラメータを用いた。(b) 逆スピンホール起電力$V_\text{ISHE}$の外部磁場角度$\theta_H$依存性。実線は式(\ref{ISHE_V})を用いた計算結果である。挿入図は式(\ref{equiriblium})及び(\ref{resonance})を用いて求めた磁化角度$\theta_M$の外部磁場角度$\theta_H$依存性。}
+\label{ISHEangle} 
+\end{figure} 
+
+
+\begin{figure}[htbp]
+\begin{center}
+%\includegraphics[width=10cm,keepaspectratio,clip]{Kerr_Fe_Ni.eps}
+\caption{カー効果測定によるヒステリシスループ。
+(a) Fe/Pt薄膜におけるヒステリシスループ。(b) Ni/Pt薄膜におけるヒステリシスループ。薄膜面内で$45^\circ$ずつ回転して測定したものである。挿入図に磁場方向を示した。ヒステリシスループは外部磁場角度に殆ど依存しておらず、薄膜面内の磁気異方性が小さいことを示す結果である。}
+\label{Kerr_Fe_Ni}
+\end{center}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{スピン流生成効率の最適化と磁化歳差運動の軌道楕円率・軌道面積}
+磁化ダイナミクスにより生成されるスピン流、式(\ref{Tserpump})は式(\ref{m_x2})、(\ref{m_y2})を用いることで、磁場強度$H$と磁場角度$\theta_H$を含まない
+\begin{equation}
+J_s=\frac{ g^{\uparrow\downarrow}_r \gamma^2  \hbar h^2 \left(4 \pi  M_s \gamma  \sin ^2\theta_M+\sqrt{ (4 \pi
+ M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\right)}{8 \pi \alpha^2  \left((4 \pi  M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2\right)}\label{pumping2}
+\end{equation}
+の形に表すことができる。
+式(\ref{pumping2})は磁化ダイナミクスにより生成されるスピン流量が飽和磁化$4\pi M_s$及び磁化角度$\theta_M$に強く依存することを示している。これは飽和磁化及び磁化角度が強磁性薄膜における磁化歳差運動の軌道を決める重要なパラメータであることに起因する。
+%即ち歳差運動の軌道に緩和トルクが依存することを反映した結果である。
+このような結果は磁化角度$\theta_M$を外部から操作することで歳差運動の軌道を変え、スピン流生成効率を制御可能であることを示唆している。
+そこで磁化歳差運動の軌道とスピン流生成量の関係を調べ、スピン流生成が最適化される条件を求めるため、
+スピン流$J_s$を円軌道($A=1$, $\theta_H=\theta_M=0$)におけるスピン流量$J_s^{A=1}$で規格化したスピン流生成効率${\tilde J}_s\equiv J_s / J_s^{A=1}$を定義する。式(\ref{pumping2})を用いることで、スピン流生成効率${\tilde J}_s$は
+\begin{equation}
+{\tilde J}_s= \frac{2\omega\left(4 \pi  M_s   \gamma  \sin ^2\theta_M+\sqrt{(4 \pi
+ M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\right)}{(4 \pi  M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\label{pumping3}
+\end{equation}
+となる。図\ref{pumping_M}(a)に磁化角度$\theta_M$及び飽和磁化 $4\pi M_s$を変数として式(\ref{pumping3})のスピン流生成効率${\tilde J}_s$を計算した結果を示した。ここで $\omega=5.93\times 10^{10}$ s$^{-1}$及び$\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$を用いた。スピン流の生成効率${\tilde J}_s$が最大となる磁化角度$\theta_M$は図\ref{pumping_M}(a)が示すように薄膜面から逸れた場合であり、その角度は飽和磁化に強く依存する。この結果はスピン流生成効率${\tilde J}_s$が歪んだ磁化歳差運動の軌道で最大化されることを示している。式(\ref{pumping3})よりスピン流生成効率が最大となる条件は
+\begin{equation}
+\sin \theta_M  = 3^{-1/4}\sqrt {\frac{{2\omega }}{{4\pi M_s \gamma }}} \label{max}
+\end{equation}
+である。
+
+
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=10.5cm,keepaspectratio,clip]{pumping_M.eps}
+%\vskip -\lastskip \vskip -3pt
+\caption{(a) スピン流生成効率${\tilde J}_s$と磁化角度$\theta_M$及び飽和磁化$4\pi M_s $の関係。式(\ref{pumping3})を用い、$\omega=5.93\times 10^{10}$ s$^{-1}$及び$\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$とした。(b) スピン流生成効率${\tilde J}_s$の楕円率$A$依存性。式(\ref{JsA})を用いた。矢印は$\omega=5.93\times 10^{10}$ s$^{-1}$及び$\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$とした場合に飽和磁化$4\pi M_s$を持つ軟強磁性体において磁化角度$\theta_M$を0から$90^\circ$まで変えたとき楕円率$A$の取り得る範囲を示す（図\ref{Aspect}(b)参照）。最小の$A$は薄膜面内に磁場を印加した場合に対応する。上部に楕円率$A=0.16$, 0.58, 1.0の場合における歳差運動の軌道を示した。}
+\label{pumping_M}
+\end{center}
+\end{figure}
+
+
+
+
+図\ref{pumping_M}(a)はスピン流の生成効率が飽和磁化$4\pi M_s$に依らず、特定の歳差軌道で最大化されることを示唆している。そこで
+スピン流の生成効率${\tilde J}_s$を磁化歳差軌道の楕円率$A$に基づき整理する。スピン流生成効率${\tilde J}_s$と歳差軌道の楕円率$A$の関係は式(\ref{A})と式(\ref{pumping3})を用いることで
+\begin{equation}
+{\tilde J}_s=\frac{4 A}{\left(1+A^2\right)^2}\label{JsA}
+\end{equation}
+となる。式(\ref{JsA})は歳差運動の楕円率$A$によってスピン流生成効率${\tilde J}_s$が決定されることを示しており、磁化ダイナミクスによるスピン流生成において、強磁性物質の種類に依らず歳差運動の軌道が本質的なパラメータであることを示している。式(\ref{JsA})からスピン流生成効率が最大となるのは$A=1/\sqrt{3}$の場合である。
+式~(\ref{JsA})のスピン流生成効率の軌道楕円率$A$依存性を図\ref{pumping_M}(b)に示した。物質依存性は軌道楕円率$A$の取り得る範囲に反映される。即ち飽和磁化の小さな物質は反磁場も小さいため、薄膜面方向を軸として歳差運動を行う場合でも軌道楕円率が1に近い軌道となる。図\ref{pumping_M}(b)が示すように、薄膜面内磁場を印加した場合に軌道楕円率$A$が$1/\sqrt{3}$より大きな物質ではスピン流生成効率が最大となるのは薄膜面内に磁場を印加した場合であり、薄膜面内に磁場を印加した場合に軌道楕円率が$1/\sqrt{3}$より小さくなる物質では楕円率$A=1/\sqrt{3}$で生成効率が最大となる。
+
+
+
+
+
+
+%スピン流生成効率が楕円率によって整理できることが以上の結果から明らかとなったが、
+歳差運動の楕円率が変わるとき磁化歳差軌道が描く面積も変化する。このためスピン流生成効率と磁化歳差軌道が描く楕円面積の間の強い相関が予想される。そこで以下では
+スピン流の生成効率${\tilde J}_s$と磁化歳差運動が描く軌道の面積$S$の関係を式(\ref{m_x2})及び式(\ref{m_y2})に基づいて体系化する。
+
+無次元化した面積を${\tilde S}\equiv S/S^{A=1}$と定義する。ここで$S=\pi |m_x||m_y|$であり、歳差運動の軌道が描く面積である。
+$S^{A=1}$は歳差運動が円軌道を描く場合の面積であり、外部磁場を薄膜面法線方向に印加した場合に対応する。式(\ref{m_x2})及び式(\ref{m_y2})を用いると、
+\begin{equation}
+S= \frac{2\gamma^2 M_s^2 h^2\left(4 \pi  M_s   \gamma  \sin ^2\theta_M+\sqrt{(4 \pi
+ M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\right)}{4\omega\alpha^2\left((4 \pi  M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2\right)}\label{areaA}
+\end{equation}
+であり、
+無次元化した面積
+\begin{equation}
+{\tilde S}= \frac{2\omega\left(4 \pi  M_s   \gamma  \sin ^2\theta_M+\sqrt{(4 \pi
+ M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\right)}{(4 \pi  M_s)^2 \gamma ^2 \sin ^4\theta_M+4 \omega ^2}\label{area}
+\end{equation}
+が得られる。無次元化した面積${\tilde S}$の表式(\ref{area})は式(\ref{pumping3})のスピン流生成効率${\tilde J}_s$と全く同一である。
+\begin{equation}
+{\tilde J_s}={\tilde S}
+\end{equation}即ち磁化ダイナミクスにるスピン流生成の基本的な定理として、スピン流の生成効率が歳差運動の軌道面積によって決定されることを示している。
+
+
+
+
+\begin{figure}[tbp]
+\centerline{
+%\includegraphics[width=9.5cm]{opt.eps}
+}
+\caption{(a) 共鳴磁場$H_\text{FMR}$の外部磁場角度$\theta_H$依存性。
+(b) 磁化角度$\theta_M$の外部磁場角度$\theta_H$依存性。(c) Ni$_{81}$Fe$_{19}$/Pt薄膜における$\tilde{V}_\text{ISHE}/V_\text{ISHE}^{\theta_M=90^\circ}$の磁化角度$\theta_M$依存性。 $\tilde{V}_\text{ISHE}=V_\text{ISHE}/\sin\theta_M$である。$V_\text{ISHE}^{\theta_M=90^\circ}$は$\theta_H=90^\circ$で得られた逆スピンホール効果による起電力である。黒丸は測定結果であり、実線は式(\ref{pumping3})に比例した曲線である。 
+}
+\label{opt} 
+\end{figure}
+
+
+
+スピン流の生成効率のこのような振る舞いは、逆スピンホール効果を用いて実験的に検証可能である。
+図\ref{opt}(c)にNi$_{81}$Fe$_{19}$/Pt薄膜における$\tilde{V}_\text{ISHE}\equiv V_\text{ISHE}/\sin\theta_M$の磁化角度$\theta_M$依存性を示す。ここで$V_\text{ISHE}$はスピンポンピングによる逆スピンホール起電力である。磁化角度$\theta_M$は外部磁場角度$\theta_H$及び共鳴磁場$H_\text{FMR}$から求めた。共鳴磁場$H_\text{FMR}$の外部磁場角度依存性及び磁化角度$\theta_M$の外部磁場角度依存性をそれぞれ図\ref{opt}(a)と図\ref{opt}(b)に示す。逆スピンホール起電力は生成されるスピン流のスピン分極$\bm{\sigma}$の薄膜面への射影成分に比例し、式(\ref{shaei})の関係があるため、スピンポンピングによるスピン流生成量$J_s$は$\tilde{V}_\text{ISHE}=V_\text{ISHE}/\sin\theta_M$に比例する。図\ref{opt}(c)が示すようにスピン流生成効率は磁化角度が薄膜面に対し傾いた条件で最大となり、式(\ref{pumping3})により非常によく定量的に再現された。この結果は歪んだ歳差軌道でスピン流生成効率が最大化されることを実証すると同時に、磁化歳差軌道に基づいたスピン流生成量制御が可能であることを示している。
+
+
+
+
+
+
+本定式化により得られた興味深い結果は、直感的には歳差運動の振幅がスピン流生成量を決める重要なパラメータと予想されるのに反し、スピン流の生成量は磁化歳差運動の軌道面積に支配されるという点にある。
+実際、式(\ref{m_x2})及び(\ref{m_y2})を用いて得られる歳差運動の振幅$m(t)=\sqrt{m_x(t)^2+m_y(t)^2}$の歳差運動一周期の平均
+\begin{equation}
+m=\frac{\omega}{2\pi}\int^{2\pi/\omega}_0 m(t) dt
+\end{equation}
+の磁化角度$\theta_M$依存性は
+図\ref{precessionamplitude}(a)のようになり、歳差運動の振幅は図\ref{precessionamplitude}(b)に示すスピン流生成効率の$\tilde {J}_s$とは明確に異なった振る舞いを示す。
+
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=11.2cm,keepaspectratio,clip]{precessionamplitude.eps}
+%\vskip -\lastskip \vskip -3pt
+\caption{(a) 歳差運動の振幅$m(t)=\sqrt{m_x(t)^2+m_y(t)^2}$の歳差運動一周期の平均$m$の磁化角度$\theta_M$依存性。式(\ref{m_x2})及び(\ref{m_y2})を用いた。$M_s$は飽和磁化である。(b) スピン流生成効率の$\tilde {J}_s$の磁化角度$\theta_M$依存性。式(\ref{pumping3})を用いた。パラメータとして$\omega=5.93\times 10^{10}$ s$^{-1}$, $\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$を用いた。
+}
+\label{precessionamplitude}
+\end{center}
+\end{figure}
+
+\subsection{強磁性/常磁性薄膜におけるスピンポンピングの強磁性物質依存性}
+強磁性/常磁性複合金属系において、強磁性物質の電子構造の詳細が磁化ダイナミクスによるスピン流生成に与える影響を系統的に調べることは、スピンポンピングによるスピン流生成現象の物理解明及びスピン流生成技術の確立のために重要である。スピン流検出部としてPtを用い、強磁性金属$F$/Pt複合薄膜 ($F=$ Ni, Ni$_{20}$Fe$_{80}$, Ni$_{45}$Fe$_{55}$, Ni$_{81}$Fe$_{19}$, Fe, Co) における逆スピンホール効果測定を行い、本定式化との比較により金属複合膜におけるスピンポンピングの強磁性物質依存性を体系的に調べた。
+
+
+\begin{figure}[tbp]
+\centerline{
+%\includegraphics[width=7.5cm]{ISHE_F.eps}
+}
+\caption{(a) $F$/Pt ($F=$ Ni, Ni$_{20}$Fe$_{80}$, Ni$_{45}$Fe$_{55}$, Ni$_{81}$Fe$_{19}$, Fe, Co)/Pt複合薄膜における強磁性共鳴スペクトル$dI(H)/dH$。(b) $F$/Pt ($F=$ Ni, Ni$_{20}$Fe$_{80}$, Ni$_{45}$Fe$_{55}$, Ni$_{81}$Fe$_{19}$, Fe, Co)/Pt複合薄膜における起電力スペクトル$V$。$H_\text{FMR}$は共鳴磁場である。}
+\label{ISHE_F} 
+\end{figure}
+
+
+\begin{figure}[t]
+\centerline{
+%\includegraphics[width=7.5cm]{satM.eps}
+}
+\caption{(a) Ni$_x$Fe$_{1-x}$/Pt ($x=0, 0.2, 0.45, 0.81, 1$) 複合薄膜における逆スピンホール起電力$V_\text{ISHE}$。(b) Ni$_x$Fe$_{1-x}$/Pt ($x=0, 0.2, 0.45, 0.81, 1$) 複合薄膜において強磁性共鳴測定により得られた飽和磁化$4\pi M_s$。(c) $F$/Pt ($F=$ Ni, Ni$_{20}$Fe$_{80}$, Ni$_{45}$Fe$_{55}$, Ni$_{81}$Fe$_{19}$, Fe, Co)/Pt複合薄膜において測定された逆スピンホール起電力$V_\text{ISHE}$と式(\ref{pumping3})のスピン流$J_s$の計算結果の関係。ここで$\bar{J}_s\equiv J_s/J_s^{4\pi M_s=1.5 \text{T}, \alpha=0.01}$である。式(\ref{pumping3})を用いたスピン流$J_s$の計算には強磁性共鳴測定により得られた飽和磁化$4\pi M_s$及び緩和定数$\alpha$を用いた。}
+\label{satM} 
+\end{figure}
+
+
+
+
+図\ref{ISHE_F}(a), (b)に$F$/Pt ($F=$ Ni, Ni$_{20}$Fe$_{80}$, Ni$_{45}$Fe$_{55}$, Ni$_{81}$Fe$_{19}$, Fe, Co)/Pt複合薄膜における強磁性共鳴スペクトル及び同時に測定した起電力スペクトル$V$を示す。起電力は符号まで含めて測定した結果である。図\ref{ISHE_F}(b)の起電力スペクトルには組成比に対して非自明な振る舞いを示している。しかし、NiとFeの中間の組成比において極大をとる振る舞いはスレーターポーリング曲線を連想させる。この振る舞いの起源を明らかにするため、特にNi-Fe合金に着目し、スピンポンピングによる逆スピンホール起電力を強磁性物質の飽和磁化と比較する。
+
+図\ref{satM}(a)に示したのは薄膜面内に磁場を印加($\theta_H=90^\circ$)して測定した、Ni$_x$Fe$_{1-x}$/Pt ($x=0, 0.2, 0.45, 0.81, 1$) 薄膜における逆スピンホール起電力$V_\text{ISHE}$である。測定時のマイクロ波強度は200 mWとした。また逆スピンホール効果測定と同時に強磁性共鳴測定を行い、得られた強磁性共鳴スペクトルの共鳴磁場$H_\text{FMR}$から図\ref{satM}(b)に示すように各物質の飽和磁化を求めた。図\ref{satM}(a)に示す起電力$V_\text{ISHE}$の大きさは図\ref{satM}(b)の飽和磁化と類似した傾向を示しており、これはスピンポンピングにおいて本質的なのは強磁性物質の電子構造の詳細ではなく、マクロパラメータである飽和磁化$4\pi M_s$であることを示唆している。一方で図\ref{satM}(a)と\ref{satM}(b)が完全に同一の振る舞いを示さないことは、飽和磁化が重要なパラメータであることを示すと同時に、飽和磁化がスピンポンピングを支配する唯一のパラメータではないことを表している。
+
+前述のようにスピンポンピングによるスピン流生成において磁化歳差運動の軌道が本質的な役割を果たす。磁化歳差軌道を決定する重要なパラメータには飽和磁化に加えて緩和定数$\alpha$がある。スピンポンピングの標準模型である式(\ref{Tserpump})において、
+薄膜面内に磁場を印加した場合($\theta_H=90^\circ$)にスピンポンピングより生成される直流成分のスピン流量は、式(\ref{pumping2})より
+\begin{equation}
+J_s=\frac{  g^{\uparrow\downarrow}_r \gamma^2  \hbar h^2\left(4 \pi  M_s \gamma +\sqrt{(4 \pi
+ M_s)^2 \gamma ^2+4 \omega ^2}\right)}{8 \pi \alpha^2  \left((4 \pi  M_s)^2 \gamma ^2 +4 \omega ^2\right)}\label{pumping44}
+\end{equation}
+と表される。式(\ref{pumping44})において強磁性共鳴スペクトルより得られる飽和磁化$4\pi M_s$及び緩和定数$\alpha$を用い、磁化ダイナミクスにより生成されるスピン流$J_s$を$F$/Pt複合薄膜 ($F=$ Ni, Ni$_{20}$Fe$_{80}$, Ni$_{45}$Fe$_{55}$, Ni$_{81}$Fe$_{19}$, Fe, Co) について求めた。それぞれの物質についての$J_s$の計算値と観測された逆スピンホール起電力$V_\text{ISHE}$の関係を図\ref{satM}(c)に示す。
+ここですべての物質について、パラメータ$\omega=5.93\times 10^{10}$ s$^{-1}$, $\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$を用い、ミキシングコンダクタンスの実数成分$g^{\uparrow\downarrow}_r$は強磁性物質の種類に依らないとを仮定した。この仮定はこれまでに報告されている多種の強磁性/常磁性金属接合における$g^{\uparrow\downarrow}_r$が$g^{\uparrow\downarrow}_r=0.5\pm 0.05$程度であり~\cite{Zwierzycki}、物質依存性が比較的小さいことを考慮したものである。本測定ではスピン流検出部としてすべてPtを用いており、スピン流から起電力への変換効率がすべての試料において同一である。従って図\ref{satM}(c)において観測された逆スピンホール効果による起電力$V_\text{ISHE}$がスピン流の$J_s$の計算値と比例することは、式(\ref{pumping44})が$F$/Pt複合薄膜において生成されたスピン流量をよく再現することを示している。
+
+以上の結果は特にFe-Ni合金の範囲内で、強磁性/常磁性金属系におけるスピンポンピングの本質が強磁性物質の電子構造の詳細ではなく、磁化歳差運動の軌道であることを示している。
+式(\ref{pumping2})及び(\ref{areaA})より、スピン流生成量は磁化歳差運動の立体角$\Omega=(1/M_s^2)S$を用いて
+\begin{equation}
+J_s=\frac{g^{\uparrow\downarrow}_r \omega\hbar}{4\pi }\Omega
+\end{equation}
+と書け、歳差軌道の立体角がスピン流生成に本質的であることを表す。マクロな物質定数である飽和磁化と緩和定数は歳差運動の立体角$\Omega$の中に含まれ、$g^{\uparrow\downarrow}_r$を除く物質パラメータは磁化歳差運動の軌道を決めるパラメータとして歳差運動の立体角に集約される。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{本章のまとめ}
+本章で得られた主要な結果は以下の5点である。
+\begin{enumerate}
+ \item スピンポンピングの標準模型及びLandau-Lifshitz-Gilbert方程式に基づき強磁性/常磁性金属薄膜系におけるスピン流生成の現象論的模型を構築し、Ni$_{81}$Fe$_{19}$/Pt複合膜におけるスピンポンピングによる逆スピンホール起電力の薄膜面外磁場角度依存性を定量的に再現した。
+ \item 強磁性/常磁性金属薄膜系における磁化ダイナミクスによるスピン流生成を磁化歳差運動の軌道に基づき体系化し、スピン流の生成効率は歳差軌道が歪み、楕円率$A=1/\sqrt{3}$のとき最大化されることを見出した。
+ \item 磁化ダイナミクスによるスピン流生成の基本定理としてスピン流生成量が磁化歳差運動の軌道面積によって決定されることを明らかにした。
+ \item Ni$_{81}$Fe$_{19}$/Pt複合膜におけるスピンポンピングによる逆スピンホール効果を用い、磁化歳差軌道に基づくスピン流生成効率の最適化を実証した。
+ \item 逆スピンホール効果を用いてスピンポンピングの強磁性金属依存性を調べ、現象論的模型と整合する結果を得ると同時に、スピンポンピングにおける磁化歳差軌道を決定するマクロパラメータの重要性を示した。
+\end{enumerate}

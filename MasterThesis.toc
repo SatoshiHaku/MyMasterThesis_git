@@ -1,0 +1,28 @@
+\contentsline {chapter}{\numberline {第1章}序論}{1}
+\contentsline {section}{\numberline {1.1}スピンと磁化ダイナミクス}{2}
+\contentsline {subsection}{\numberline {1.1.1}スピンについての運動方程式}{2}
+\contentsline {subsection}{\numberline {1.1.2}Landau-Lifshitz-Gilbert(LLG)方程式}{4}
+\contentsline {subsection}{\numberline {1.1.3}スピン流の定義}{5}
+\contentsline {subsection}{\numberline {1.1.4}スピン軌道相互作用による現象}{7}
+\contentsline {subsubsection}{スピンホール効果}{7}
+\contentsline {subsubsection}{Rashba効果}{9}
+\contentsline {subsection}{\numberline {1.1.5}damping-likeトルクおよびfield-likeトルク}{9}
+\contentsline {section}{\numberline {1.2}自己組織化単分子膜(Self Assembled Monolayer : SAM)}{12}
+\contentsline {subsection}{\numberline {1.2.1}SAMの自己形成プロセス}{13}
+\contentsline {subsection}{\numberline {1.2.2}SAMによる仕事関数の変化}{15}
+\contentsline {section}{\numberline {1.3}イオン液体:Ionic Liquid}{15}
+\contentsline {subsection}{\numberline {1.3.1}イオン液体による電気二重層の制御}{16}
+\contentsline {subsection}{\numberline {1.3.2}イオン液体による電気化学エッチング}{17}
+\contentsline {section}{\numberline {1.4}本研究の目的}{17}
+\contentsline {section}{\numberline {1.5}本論文の構成}{18}
+\contentsline {chapter}{\numberline {第2章}試料作成および高調波ホール測定の解析方法}{19}
+\contentsline {section}{\numberline {2.1}試料設計及び作成方法}{19}
+\contentsline {subsection}{\numberline {2.1.1}スパッタリング法を用いた金属薄膜の成膜}{19}
+\contentsline {subsection}{\numberline {2.1.2}レーザー描画法及びリフトオフ法を用いた微小ホールバー構造の作成}{20}
+\contentsline {subsection}{\numberline {2.1.3}自己組織化単分子膜(self assembled monolayer : SAM)の作成}{22}
+\contentsline {section}{\numberline {2.2}高調波ホール測定を用いたスピン軌道トルクの定量}{23}
+\contentsline {subsection}{\numberline {2.2.1}測定系について}{23}
+\contentsline {subsection}{\numberline {2.2.2}スピン軌道トルクの導出}{24}
+\contentsline {subsection}{\numberline {2.2.3}ロックインアンプについて}{28}
+\contentsline {subsection}{\numberline {2.2.4}磁場補正について}{29}
+\contentsline {chapter}{参考文献}{31}

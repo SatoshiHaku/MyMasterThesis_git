@@ -1,0 +1,43 @@
+\contentsline {chapter}{\numberline {第1章}序論}{1}
+\contentsline {section}{\numberline {1.1}スピンと磁化ダイナミクス}{2}
+\contentsline {subsection}{\numberline {1.1.1}スピンについての運動方程式}{2}
+\contentsline {subsection}{\numberline {1.1.2}Landau-Lifshitz-Gilbert(LLG)方程式}{4}
+\contentsline {subsection}{\numberline {1.1.3}スピン流の定義}{5}
+\contentsline {subsection}{\numberline {1.1.4}スピン軌道相互作用による現象}{7}
+\contentsline {subsubsection}{スピンホール効果}{7}
+\contentsline {subsubsection}{Rashba効果}{9}
+\contentsline {subsection}{\numberline {1.1.5}damping-likeトルクおよびfield-likeトルク}{9}
+\contentsline {section}{\numberline {1.2}イオン液体:Ionic Liquid}{12}
+\contentsline {subsection}{\numberline {1.2.1}イオン液体による電気二重層}{13}
+\contentsline {subsection}{\numberline {1.2.2}イオン液体のキャパシタンス}{19}
+\contentsline {subsection}{\numberline {1.2.3}イオン液体による電気化学エッチング}{21}
+\contentsline {section}{\numberline {1.3}グラフェン}{21}
+\contentsline {subsection}{\numberline {1.3.1}二次元電子系としてのグラフェン}{22}
+\contentsline {subsection}{\numberline {1.3.2}グラフェン中のディラック電子}{24}
+\contentsline {section}{\numberline {1.4}本研究の目的}{28}
+\contentsline {section}{\numberline {1.5}本論文の構成}{28}
+\contentsline {chapter}{\numberline {第2章}試料作成，ST-FMR測定及びイオン液体を用いた電気化学エッチング方法}{29}
+\contentsline {section}{\numberline {2.1}試料設計及び作成方法}{29}
+\contentsline {subsection}{\numberline {2.1.1}スパッタリング法を用いた金属薄膜の成膜}{29}
+\contentsline {subsection}{\numberline {2.1.2}レーザー描画法及びリフトオフ法を用いたST-FMR測定系の作成}{30}
+\contentsline {section}{\numberline {2.2}ST-FMR測定を用いた電流-スピン軌道トルク変換効率の定量}{32}
+\contentsline {subsection}{\numberline {2.2.1}測定系について}{33}
+\contentsline {subsection}{\numberline {2.2.2}スピン軌道トルクの導出}{34}
+\contentsline {subsection}{\numberline {2.2.3}イオン液体を利用した電気化学エッチングの方法}{34}
+\contentsline {chapter}{\numberline {第3章}PdO$_{\rm x}$の電流-スピン軌道トルク変換効率に関する研究}{35}
+\contentsline {section}{\numberline {3.1}PdO$_{\rm x}$/Ni$_{81}$Fe$_{19}$薄膜の作成}{35}
+\contentsline {section}{\numberline {3.2}PdO$_{\rm x}$/Ni$_{81}$Fe$_{19}$薄膜のST-FMR測定および電流-スピン軌道トルク変換効率の定量}{35}
+\contentsline {chapter}{\numberline {第4章}イオン液体を用いた電気化学エッチングによるST-FMR測定の強磁性体膜厚依存性}{37}
+\contentsline {section}{\numberline {4.1}Ni$_{81}$Fe$_{19}$/Pt二層薄膜のST-FMR測定及びNi$_{81}$Fe$_{19}$膜厚依存性の測定}{37}
+\contentsline {subsection}{\numberline {4.1.1}Ni$_{81}$Fe$_{19}$/Pt二層薄膜のST-FMR測定}{37}
+\contentsline {section}{\numberline {4.2}イオン液体によるNi$_{81}$Fe$_{19}$薄膜のエッチング}{41}
+\contentsline {subsection}{\numberline {4.2.1}イオン液体による電気化学エッチング -正のゲート電圧-}{41}
+\contentsline {subsection}{\numberline {4.2.2}イオン液体による電気化学エッチング -負のゲート電圧-}{46}
+\contentsline {section}{\numberline {4.3}まとめ}{52}
+\contentsline {chapter}{\numberline {第5章}SLG/Al$_{2}$O$_{3}$基板におけるコバルトインターカレーション}{53}
+\contentsline {section}{\numberline {5.1}CVD法によるSLGの作成}{53}
+\contentsline {section}{\numberline {5.2}ラマン分光法によるSLGの評価}{53}
+\contentsline {section}{\numberline {5.3}コバルトインターカレーションの評価}{53}
+\contentsline {subsection}{\numberline {5.3.1}XPS測定}{53}
+\contentsline {subsection}{\numberline {5.3.2}AFM測定による評価}{53}
+\contentsline {chapter}{参考文献}{55}

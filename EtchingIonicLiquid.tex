@@ -1,0 +1,353 @@
+
+\chapter{序論}
+
+%\section{スピントロニクスとスピン流物理}
+
+
+%電子とは負の電荷を持ち，固体物理の様々な特性を支配する基本粒子である．この電荷という内部自由度に加え，電子は角運動量という内部自由度も持つ．この角運動量は古典的に見れば電子がスピンしていることに対応しており，スピンと呼ばれる．このスピンは電子の相対論的量子力学におけるDirac方程式より導かれ，また磁性の起源ともなっている．
+
+%従来のエレクトロニクスは電子における電荷の自由度のみに注目して発展を遂げた．しかし，電子にはスピンという．
+
+身の回りを見回してみると家電製品や通信機器など多くのものがエレクトロニクスによって生み出されたものだと気づく．今の世界でエレクトロニクスはなくてはならない技術となっている．しかしエレクトロニクスは電子の電荷を利用することで展開している分野であり電子の持つもう一つの自由度，スピンを無視している．ここでスピンも電荷も利用しようとする学問がスピントロニクスである．スピンと電子の相互作用はナノスケールの長さで現れるため\cite{maekawa2002spin}，1990年代におけるナノテクノロジーの大きな進歩がスピントロニクスの幕を上げたと言っても過言ではない．
+スピントロニクスはスピンと電荷を組み合わせることによって革新的なデバイス機能を創り出そうとする分野である\cite{prinz1998magnetoelectronics,vzutic2004spintronics,wolf2001spintronics}．その発展は1988年における巨大磁気抵抗(GMR)の発見\cite{baibich1988giant,binasch1989enhanced}によって始まった．巨大磁気抵抗効果はGMR素子としてハードディスクドライブの磁気ヘッドなどに応用されていて，これは最初に成功したスピンデバイスとみなされている．
+スピントロニクスの基本的な考え方は，今まで電子のスピンを無視して利用してきた電流に代わって，スピン分極した電子の流れであるスピン流を巧みに操るというものである．電荷に加えてスピンの自由度も考慮に入れると，今までは見えなかった電子の持つ効果や機能性が現れる．その一つが磁場を介さない磁化制御である．スピン流と磁化の相互作用はまだ解明されていない部分が大きいが，近年スピン流が磁化に与えるトルクの大きさを見積もる報告がされている\cite{hayashi2014quantitative,yang2014platinum}．本研究では，金属の界面に影響を与える自己組織化単分子膜(self assembled monolayer : SAM)という有機分子膜\cite{de2005tuning,love2005self,xu2014regulating}を用いて常磁性金属の表面状態を変化させ，そのときのスピン流によるトルクの変化を調べた．この研究によりスピン流によるトルクと金属表面との結びつきについて理解が深まるだけでなく，スピントロニクスの発展に寄与することが期待される．
+本章ではまず磁化の運動方程式としてLandau-Lifshitz-Gilbert(LLG)方程式を導入する．そしてスピン流およびスピン蓄積を説明し，それらと磁化の相互作用として現れるスピン軌道トルクを定義する．
+
+%\section{スピントロニクスと磁化制御}
+
+
+%スピン流は，薄膜などの磁気構造に流すことで局所的な磁気電子と直接相互作用を引き起こせるため，磁化をコントロールする効果的な方法として注目を集めている．
+%電気的に磁化をコントロールしている応用のひとつとして，商業的に利用されているSTT(spin transfer torque) MTJ(magnetic tunnel junction)メモリである．
+%STTでは，磁化方向を固定された強磁性体層（固定層）に垂直に流れた電子はその磁化方向にスピン分極する．このスピン流は絶縁体を超えて，隣の強磁性体層にトルクを与え，磁化の方向を決めることができる．
+%STTではスピン流のスピン分極を固定層によって誘起しているが，その代わり常磁性体/強磁性体の薄膜構造に面内方向へ電流を流したときに見られるスピン軌道相互作用を利用する方法がある．
+\section{スピンと磁化ダイナミクス}
+本節ではまず磁気モーメントのダイナミクスについての運動方程式を量子力学に導く．次にそれを磁化についての運動方程式に拡張し現象論的に緩和項を取り入れたLandau-Lifshitz-Gilbert(LLG)方程式について述べる．
+\subsection{スピンについての運動方程式}
+磁石の持つ磁性はほとんど電子のスピン角運動量によるものである．量子力学によると，スピン角運動量$\bm{s}$は磁気モーメント$\bm{\mu}$と比例関係にあり，
+\begin{equation}
+\bm{\mu} = -\gamma\bm{s}
+\label{eq:mudef}
+\end{equation}
+と書ける．このときの比例定数$\gamma$は磁気回転比と呼ばれている．
+これから磁化ダイナミクスを考える上でのスタートとして，この磁気モーメントが有効磁場$\bm{H_{0}}$の下にあるときの運動方程式を考える．$\bm{\mu}$と$\bm{H_{0}}$の間に両者を平行にするような相互作用を導入し，そのHamiltonianを次のように表す．
+
+\begin{equation}
+\sl{H} = -\bm{\mu}\cdot\mu_{0}\bm{H_{0}} = \gamma\mu_{0}\bm{s}\cdot\bm{H_{0}}
+\label{eq:hamil1}
+\end{equation}
+ただし$\mu_{0}$は真空の透磁率である．
+
+ここで，昇降演算子
+\begin{equation}
+\bm{\sigma_{+}} = \bm{\sigma_{x}} + \bf{i}\bm{\sigma_{y}}, \ \ 
+\bm{\sigma_{-}} = \bm{\sigma_{x}} - \bf{i}\bm{\sigma_{y}}
+\end{equation}
+\begin{equation}
+\therefore \bm{\sigma_{x}} = \frac{1}{2}(\bm{\sigma_{+}} + \bm{\sigma_{-}}),　\ 
+\bm{\sigma_{y}} =  \frac{1}{2\bf{i}}(\bm{\sigma_{+}} - \bm{\sigma_{-}})
+\label{eq:sigmai}
+\end{equation}
+をPauli行列を用いてスピノル表示すると（$\frac{\hbar}{2}\bm{\sigma} := \bm{s}$），
+\begin{equation}
+\bm{\sigma_{+}} \doteq \left(
+\begin{array}{cc}
+0 & 1\\
+0 & 0
+\end{array}
+\right),\ 
+\bm{\sigma_{-}} \doteq \left(
+\begin{array}{cc}
+0 & 0\\
+1 & 0
+\end{array}
+\right)
+\end{equation}
+と表せ，$|\uparrow\rangle$，$\langle\downarrow|$に作用させると，
+\begin{equation}
+\bm{\sigma_{+}}|\uparrow\rangle = 0,\ \ 
+\bm{\sigma_{+}}|\downarrow\rangle = |\uparrow\rangle,\ \ 
+\bm{\sigma_{-}}|\uparrow\rangle = |\downarrow\rangle,\ \ 
+\bm{\sigma_{-}}|\downarrow\rangle = 0
+\end{equation}
+となる．
+一定の外部磁場$\bm{H_{0}}$が印加されているスピン状態のエネルギーは式（\ref{eq:hamil1}）から，$\mp\gamma\mu_{0}\bm{H_{0}}\hbar/2$とわかる．これより，
+\begin{equation}
+|\bm{\Psi};t\rangle = c_{\uparrow}(t)|\uparrow\rangle + c_{\downarrow}(t)|\downarrow\rangle = c_{\uparrow}(0)e^{\bf{i}\gamma\mu_{0}\sl{H_{0}} t/2}|\uparrow\rangle + c_{\downarrow}(0)e^{-\bf{i}\gamma\mu_{0}\sl{H_{0}} t/2}|\downarrow\rangle
+\end{equation}
+と書き表せる．ここで$\gamma\mu_{0}\bm{H_{0}}=:\omega_{0}$と定義しておく．さらに$c_{\uparrow}(0)$と$c_{\downarrow}(0)$を
+\begin{equation}
+c_{\uparrow}(0)=: ae^{\bf{i}\alpha},\ \ 
+c_{\downarrow}(0)=: be^{\bf{i}\beta}
+\end{equation}
+とすれば，$\bm{\mu_{i}}=\gamma\frac{\hbar}{2}\bm{\sigma_{i}}$の期待値を計算できて，式(\ref{eq:sigmai})の関係を用いるとそれぞれ
+\begin{subequations}
+\begin{eqnarray}
+\langle\mu_{x}(t)\rangle&=&\langle\bm{\Psi};t|\mu_{x}(t)|\bm{\Psi};t\rangle=\sum_{\sigma,\sigma`}\gamma\frac{\hbar}{2}c_{\sigma`}(t)c_{\sigma}(t)\langle\sigma`|\bm{\sigma_{x}}|\sigma\rangle\nonumber \\
+&=&\frac{\gamma\hbar}{2}(abe^{\bf{i}(\beta-\alpha-\omega_{0}t)}+abe^{\bf{i}(\beta-\alpha+\omega_{0}t)})=\gamma\hbar ab \cos(\beta-\alpha-\omega_{0}t)\\
+\langle\mu_{y}(t)\rangle&=&\frac{\gamma\hbar}{2}(abe^{\bf{i}(\beta-\alpha-\omega_{0}t)}-abe^{\bf{i}(\beta-\alpha+\omega_{0}t)})=\gamma\hbar ab \sin(\beta-\alpha-\omega_{0}t)\\
+\langle\mu_{z}(t)\rangle&=&\frac{\gamma\hbar}{2}(a^{2}-b^{2})
+\end{eqnarray}
+\label{eq:muave}
+\end{subequations}
+と求められる．さらに，期待値の全確率が１であること（$a^{2}+b^{2}=1$）から
+\begin{eqnarray}
+a=:\cos\frac{\theta}{2},\ \ 
+b=:\sin\frac{\theta}{2},\ \ 
+\beta-\alpha=:\phi_{0}
+\end{eqnarray}
+と定数を定義しなおし，式(\ref{eq:muave})の結果に適応すると
+\begin{subequations}
+\begin{eqnarray}
+\langle\mu_{x}(t)\rangle&=&\frac{\gamma\hbar}{2}\sin\theta\cos(\phi_{0}-\omega_{0}t)\\
+\langle\mu_{y}(t)\rangle&=&\frac{\gamma\hbar}{2}\sin\theta\sin(\phi_{0}-\omega_{0}t)\\\
+\langle\mu_{z}(t)\rangle&=&\frac{\gamma\hbar}{2}\cos\theta
+\end{eqnarray}
+\label{eq:muave2}
+\end{subequations}
+となる．この結果から分かることは，磁気モーメントの期待値は$\frac{\gamma\hbar}{2}$の大きさを持って，$z$軸から$\theta$傾いた状態で歳差運動をしているということである．
+以上のような磁化の描像はHeisenbergの運動方程式を用いた方法によっても簡単に導くことができる．式(\ref{eq:mudef})より磁気モーメントとスピン角運動量は比例していることから角運動量が満たすべき特徴的な交換関係
+\begin{eqnarray}
+[\bm{s_{x}},\bm{s_{y}}]=\bf{i}\hbar\bm{s_{z}},\ \ 
+[\bm{s_{y}},\bm{s_{z}}]=\bf{i}\hbar\bm{s_{x}},\ \ 
+[\bm{s_{z}},\bm{s_{x}}]=\bf{i}\hbar\bm{s_{y}}
+\end{eqnarray}
+を用いて，$\mu_{z}=\gamma s_{z}$についてのHeisenbergの運動方程式を求めると次のようになる．
+\begin{eqnarray}
+\frac{\mathrm{d}\mu_{z}}{\mathrm{d}t}&=&\frac{1}{\bf{i}\hbar}[\bm{\mu_{z}},\bm{\mu\cdot H}]=\frac{\mu_{0}}{\bf{i}\hbar}([\bm{\mu_{z}},\bm{\mu_{x}}]H_{x}+[\bm{\mu_{z}},\bm{\mu_{y}H_{y}}])\nonumber\\
+&=&\gamma\mu_{0}(\bm{\mu_{y}H_{x}}-\bm{\mu_{x}H_{y}})=-\gamma\mu_{0}(\bm{\mu}\times\bm{H})_{z}
+\end{eqnarray}
+同様にして他の成分も$\bm{\mu}$と$\bm{H}$の外積で書けるので，磁気モーメントについての運動方程式は
+\begin{eqnarray}
+\frac{\mathrm{d}\mu}{\mathrm{d}t}=-\gamma\mu_{0}\bm{\mu}\times\bm{H}
+\label{eq:mueq}
+\end{eqnarray}
+となる．この結果について，磁気モーメント$\bm{\mu}$が古典的な角運動量$\bm{s}$に比例していると考えると剛体の回転運動を表すEulerの運動方程式に一致する．Eulerの運動方程式によると回転中心が固定されている系でのトルクは角運動量の時間変化に等しい．磁場中の磁化モーメントに加わるトルクは$\bm{\mu}\times\mu_{0}\bm{H}$と表せるから，磁気モーメントに関する古典的な運動方程式$\frac{\mathrm{d}m}{\mathrm{d}t}=-\gamma\mu_{0}\bm{\mu}\times\bm{H}$が導かれる．
+\subsection{Landau-Lifshitz-Gilbert(LLG)方程式}
+次に磁化のダイナミクスについて表現する際，一般的に用いられるLandau-Lifshitz-Gilbert(LLG)方程式について説明する．\\
+
+磁化$\bm{M}$は単位体積あたりの磁気モーメントなので，式(\ref{eq:mueq})の$\mu$について空間平均をとると磁化についての運動方程式に書き直すことができ，
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=-\gamma\mu_{0}\bm{M}\times\bm{H}
+\label{eq:Meq}
+\end{eqnarray}
+となる．
+磁化$\bm{M}$と磁場$\bm{H}$が初期角度$\bm{\theta}$を持っているとすると，式(\ref{eq;Meq})に従う磁化は永久に歳差運動を続けることになる．しかし現実には，磁化はエネルギーが最小となるよう$\bm{\theta}$を減らし磁場方向に緩和して，最終的に歳差運動が止まる．この事実を表すために式(\ref{eq:Meq})に緩和項を現象論的に加えた方程式がいくつか提案されている．その中でLandauとLifshitz(LL)に提案されたLL方程式とGilbertによって提案されたGilbert方程式について述べる．これらはスピンとの相互作用を考えない場合にほとんど等価となるので，Gilbert方程式はLandau-Lifshitz-Gilbert(LLG)方程式とも呼ばれている．
+まずLandauとLifshitzによるLL方程式は以下のようなものである．
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=-\gamma\mu_{0}\bm{M}\times\bm{H}-\frac{\alpha`\gamma\mu_{0}}{M}\bm{M}\times(\bm{M}\times\bm{H})
+\label{eq:LLeq}
+\end{eqnarray}
+右辺第２項が加えられた$\bm{M}$を$\bm{H}$に緩和させる項で，$\alpha`$は緩和の強さを表す無次元の定数，$M$は飽和磁化である．この項は$\bm{M}$と$\bm{H}$が平行な状態になるまでトルクとして働く．よって，LL方程式(\ref{eq:LLeq})の最後の緩和先は式(\ref{eq:hamil1})が最小となる状態である．\\
+これに対してGilbertによって提案された方程式は，
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=-\gamma\mu_{0}\bm{M}\times\bm{H}-\frac{\alpha}{M}\bm{M}\times\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}
+\label{eq:LLGeq}
+\end{eqnarray}
+である．式(\ref{eq:LLeq})と同様に右辺第２項が緩和項である．$\alpha$が緩和を表す無次元の定数で，特にGibert緩和定数と呼ばれている．LL方程式と違いGilbert方程式の緩和項は$\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=0$となったときゼロとなる．つまり磁化$\bm{M}$の最終的な緩和先は$\bm{M}$の運動が停止する状態である．
+この緩和定数$\alpha$は磁化歳差運動の緩和時間を決定するだけでなく，磁化ダイナミクスを支配している本質的なパラメータの一つである．緩和定数は強磁性共鳴によるマイクロ波吸収スペクトル線幅を測定することで定量が可能な値である．
+
+\subsection{スピン流の定義}
+次にスピントロニクスにおいて重要な物理現象であるスピン流について説明する．スピン流とはスピン角運動量の流れを指す．ここで考えなくてはならないのがスピン角運動量はベクトルなので，スピン流自体は２階のテンソルになるということである．これはスピン流が，「ある方向を向いたスピンが」，「ある方向に流れる」，という２成分を持っていることを表している．本論文ではこの２成分をわかりやすく記述するために，スピンの方向は$\vec{j}_{s}$と表し，流れる方向を普通のベクトル表示の太文字で$\bm{j}_{s}$と書き表すことにする．これに従い$x,y,z$空間内でのスピン流は，$\bm{j}_{s}=(\vec{j}_{s}^{x},\vec{j}_{s}^{y},\vec{j}_{s}^{z})$と表せる．
+
+次にスピン流を定義する．定義の仕方はいくつか考えられているが，一つは電流とスピン流をどちらも同時に考えたいときに用いられる方法である．それはアップスピンを持つ電子流$\bm{j}_{\uparrow}$とダウンスピンの電子流$\bm{j}_{\downarrow}$の差をスピン流とする方法である．式で表示すると，
+\begin{eqnarray}
+\bm{j}_{s}=\frac{\hbar}{2}(\bm{j}_{\uparrow}-\bm{j}_{\downarrow})
+\end{eqnarray}
+となる．ここでのスピンの方向は量子化軸の向きである．この様子を模式的に表したのが図\ref{spincurrent}である．またこの図では電流は完全に電荷のみを運びスピン流はスピン角運動量のみを輸送しているが，強磁性体などのようなフェルミ面におけるアップスピンとダウンスピンの状態密度に差があるスピン分極のある）物質内に電流を流すと，電荷もスピンも流すスピン流が流れることになる．
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{spincurrent.eps}
+ \end{center}
+ \caption{電荷の流れとスピンの流れの模式図．一般に前者を電流と呼び，後者をスピン流と呼ぶ．}
+ \label{spincurrent}
+\end{figure}
+
+
+
+
+もう一つの定義の方法は，磁化に対するスピン角運動量の連続の式を満足する流れとしてスピン流を定義する方法だ．磁場やスピンの緩和を考えないとすると，スピン角運動量保存則から，ある体積$\Omega$中の磁気モーメントの時間変化$\int_{\Omega} \frac{\partial \bm{M}}{\partial t} \mathrm d\Omega$は，その体積の表面積$S$から流れ込んでくる磁気モーメントの流れ（つまりスピン流）$-\int_{S}(-\gamma\bm{j}_{s})\cdot\mathrm d\bm{n}$と等しくなる．（$\bm{n}$は表面積$S$の法線ベクトル）つまり，
+\begin{eqnarray}
+\int_{\Omega} \frac{\partial \bm{M}}{\partial t} \mathrm d\Omega=-\int_{S}(-\gamma\bm{j}_{s})\cdot\mathrm d\bm{n}
+\end{eqnarray}
+となる．この右辺にGaussの定理を用いて発散の体積分に書き直すと，
+\begin{eqnarray}
+\frac{\partial \bm{M}}{\partial t}&=&\gamma\mathrm{div}\bm{j}_{s}
+\label{eq:divjs1}\\
+&=&\frac{\partial\vec{j}_{s}^{x}}{\partial x}+\frac{\partial\vec{j}_{s}^{y}}{\partial y}+\frac{\partial\vec{j}_{s}^{z}}{\partial z}\label{eq:divjs2}
+\end{eqnarray}
+となり，磁化についての連続方程式としてスピン流を定義できた．これはある空間に出入りするスピン流の空間変化に応じて全磁気モーメントが時間変化することを意味している\cite{kiselev2003microwave}．具体的な形式である式(\ref{eq:divjs2})を見てみると $\mathrm{div}\bm{j}_{s}$はスピン成分のみのベクトルとなっていることがわかる．この定義は磁化ダイナミクスを考える際によく利用される．\\
+
+スピン流を生成する方法はいくつも考案されている．中でも明快なスピン流は強磁性体に電流を流したときに付随するスピン流だと思われる．強磁性体は電子の持つスピンの向きによって伝導度$\sigma_{\uparrow}$と$\sigma_{\downarrow}$が異なっている．これは伝導のスピン分極率$p:=\frac{\sigma_{\uparrow}-\sigma_{\downarrow}}{\sigma_{\uparrow}+\sigma_{\downarrow}}$として定量できる．強磁性体に電流$\bm{j}_{c}$を流すとアップスピンとダウンスピンの電子流密度に差$\frac{p}{e}\bm{j}_{c}$ができる．この差は図\ref{spincurrent}のスピン流のような実質的なスピン角運動量の流れを表しているので，強磁性体に電流を流すと同時にスピン流が流れることがわかる．
+
+また常磁性体/強磁性体金属複合系においてスピンポンピングというスピン流生成方法\cite{mizukami2002effect,tserkovnyak2002enhanced}も考案さている．スピンポンピングとは強磁性金属層の磁化歳差運動を励起すると，その歳差運動の緩和に伴うスピン角運動量の散逸により隣接した常磁性金属層にスピン流が誘起されるという現象である．これは磁化ダイナミクスとスピン流の結合を端的に示している極めて重要な現象でだと言える．\\
+
+
+\subsection{スピン軌道相互作用による現象}
+本研究では常磁性体で生じたスピン分極（スピン流やスピン蓄積）によって強磁性体内の磁化に影響を与え，その変化を定量する．常磁性体/強磁性体複合系において電流を流したときの磁化のダイナミクスに密接に関係している現象がスピンホール効果とRashba効果である．この節ではこれらについて述べる．\\
+\subsubsection{スピンホール効果}
+
+
+スピンホール効果とは図\ref{spinhall}で表したように電場と垂直な方向にスピン流が誘起されるという現象のことである．
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{spinhall.eps}
+ \end{center}
+ \caption{スピンホール効果の模式図．同じ方向に流れるアップスピンとダウンスピンはスピン軌道相互作用によって散乱される方向が逆になるため，電流$\bm{j}_{c}$の流れる方向に垂直な方向にスピン流$\bm{j}_{s}$が流れる．}
+ \label{spinhall}
+\end{figure}
+
+半古典的な扱いでは電流やスピン流は電子の「群速度」と「分布関数」の積の積分として定義されるが，スピンホール効果の発生機構にはこのうち、電子の群速度が変化するside jumpや電子の分布関数が変化するskew scatteringによる効果とされている。これら２つの発生機構による解釈のスピンホール効果は異方的不純物散乱による外因性スピンホール効果と呼ばれるが、ほかにもバンド構造に起因する内因性スピンホール効果というものも存在する。SinovaらはRashbaのス
+ピン軌道相互作用のはたらく２次元電子系を考えてスピンホール効果を導出した。また村上らはバルク半導体中のホール状態に着目し、大きなスピン軌道相互作用によって分裂したheavy-hole バンドとlight-holeバンドにおけるスピンホール効果を導いた。そして以上の全ては相対論的効果であるスピン軌道相互作用に起因している。\\
+スピン軌道相互作用とは物質中を運動する電子がその自身の持つスピンの方向に応じた力を受けるような相互作用を指す．これは電場中を運動する粒子はその静止した系を考えたときに電場と直行した磁場を感じているというLorentz変換と，磁場とスピンの磁気的相互作用を組み合わせることで古典的に捉えることができる．\\
+正電荷を持った原子核が作るポテンシャル$U(\bm{r})$中を運動量$\bm{p}$で運動する電子がスピン$\bm{\sigma}$を持っているとする．この電子のスピン軌道相互作用Hamiltonianは
+\begin{eqnarray}
+\bm{H}_{so} = \lambda(\Delta U(\bm{r})\times\bm{p})\cdot\bm{\sigma}=\lambda(\bm{p}\times\Delta U(\bm{r}))\cdot\bm{\sigma}
+\label{eq:hamilso}
+\end{eqnarray}
+と書ける．ここで$\lambda$はスピン軌道相互作用の大きさを表す．原子核がつくる電場のように電場の空間勾配$\Delta U(\bm{r})$が存在すると，それを感じている電子の静止系において電子は磁場勾配を感じる．この磁場とスピンの向きが平行なとき電子は原子核に近づく力を受け，磁場とスピンの向きが半平行ならば電子は原子核から当座かるような力を受けることになる．これをまとめると，運動方向$\bm{p}$と垂直なスピン$\bm{\sigma}$を持った電子はそれらの外積$\bm{p}\times\bm{\sigma}$方向の力を受ける．これよりスピン軌道相互作用によってアップスピンとダウンスピンが逆の方向に曲げられることがわかる．よって，電流$\bm{j}_{c}$を流したときにスピンHall効果によって誘起されるスピン流$\bm{j}_{s}$は
+\begin{eqnarray}
+\bm{j}_{s}\propto\bm{j}_{c}\times\bm{\sigma}
+\end{eqnarray}
+となる．
+スピンホール効果はスピン軌道相互作用の大きい重金属で大きく，Ptなどで顕著にこの現象が観測されている．またスピンホール効果を用いると磁場や磁性体を使わずにスピン流を誘起することができる．\\
+
+スピンホール効果の最初の発見はKatoら\cite{kato2004observation}とWunderlichら\cite{wunderlich2005experimental}によって独立になされた．Katoらはn型半導体のGaAsの試料に電場を印加し，試料上の各点でのKerr効果測定によって試料の両端に逆向きのスピン蓄積が生じていることを発見した．またWunderlichらはpn接合においてp型ドープ層に電場を印加し，スピンホール効果によりスピン分極したホールをn型ドープ層からの電子と再結合させ，それを円偏光として観測した．
+\subsubsection{Rashba効果}
+Rashba効果とは２次元電子気体に対するスピン軌道相互作用でありRashbaスピン軌道相互作用\cite{bychkov1984oscillatory}とも呼ばれる．
+
+結晶中の電子状態は時間反転対称性から$E(\bm{k},\uparrow)=E(-\bm{k},\downarrow)$が要請される．また空間反転対称性のある結晶中では，電子状態は$E(\bm{k},\uparrow)=E(-\bm{k},\uparrow)$を満たす．よって$E(\bm{k},\uparrow)=E(\bm{k},\downarrow)$となるので，スピンの状態は縮退している．しかし空間反転対称性が破れている系だと$\bm{k}=0$を除きスピンの縮退が解ける．
+
+半導体のヘテロ接合や常磁性体/強磁性体界面などの系では反転対称性が破れていて，そこに生じた２次元電子気体に対して面に垂直なポテンシャル勾配ができている．スピン軌道相互作用は式(\ref{eq:hamilso})と表されるが，面に面直な方向に$s$軸をとると$\Delta U(\bm{r})$の部分が$\Delta_{z} U(\bm{r})$と書き換えられる．このとき電子の面内波数ベクトルを$\bm{k}_{\parallel}$と書くと，式(\ref{eq:hamilso})を書き直して
+\begin{eqnarray}
+\bm{H}_{ra} = \lambda_{ra}(\bm{e}_{z}\times\bm{k}_{\parallel})\cdot\bm{\sigma}
+\label{eq:hamilra}
+\end{eqnarray}
+とできる．このRashba効果（Rashbaスピン軌道相互作用）が普通のスピン軌道相互作用と違う部分は．電子の感じる有効磁場が常に電子の運動方向と垂直になることである．これにより常磁性体/強磁性体金属膜に電流を流すと，その界面に面内方向かつ電流の向きに垂直な方向にスピン分極したスピン蓄積が生まれる．
+
+\subsection{damping-likeトルクおよびfield-likeトルク}
+以前の節で先んじて触れたスピンポンピングから分かるようにスピン流と磁化ダイナミクスは密接に関係し合っている\cite{slonczewski1996current}．スピンポンピングとは逆に（むしろこちらの方が自明に）スピン流は磁化ダイナミクスに影響を与えることができる．はじめにスピン流が磁化ダイナミクスにどういう影響を及ぼすか考える．それを方程式で示す．以下の議論での磁化は強磁性体の磁化についてである．まずLLG方程式の右辺に式(\ref{eq:divjs1})の右辺を加える．すると
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=\gamma\mathrm{div}\bm{j}_{s}-\gamma\mu_{0}\bm{M}\times\bm{H}-\frac{\alpha}{M}\bm{M}\times\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}
+\label{eq:LLGeq2}
+\end{eqnarray}
+となる．この拡張されたLLG方程式を実際の系に対応させるときの磁化の取り扱いには２通りある．一つは全ての局所磁化のみについての方程式を立てる方法．もう一つは局在電子と伝導電子の磁化を分離してそれぞれについての方程式を立てるというものである．後者の方が厳密に解けるように感じられるが分離の正当性は常に自明とはいえない．そこで大まかな振る舞いを知るために簡単に考えられる前者の方法で取り扱うことにする．\
+式(\ref{eq:LLGeq2})を扱う上で最もよく用いられる方法はスピン流の項を局在磁化の方向に分解して考えるものである．つまりスピン流の項$\mathrm{div}\bm{j}_{s}$を$\bm{M}$に平行な成分$\mathrm{div}\bm{j}_{s}^{\parallel}$と垂直な成分$\mathrm{div}\bm{j}_{s}^{\perp}$に分解するのである．強磁性体にスピン流が注入されたとき，$\mathrm{div}\bm{j}_{s}^{\perp}$は$\bm{M}$の向きを変化させるトルクとして働く．これを以下damping-likeトルクと呼ぶことにする．一方で$\mathrm{div}\bm{j}_{s}^{\parallel}$はスピン蓄積と呼ばれ$M=|\bm{M}|$を変化させるように働く．また後の説で述べるRashba効果のように強磁性体/常磁性体界面の（強磁性体内部に入っていない）スピン蓄積は強磁性体の磁化と直接交換相互作用を通して有効的な磁場のように振る舞うことがわかっている．これにより磁化は歳差する方向にトルクを受ける．これを以下field-likeトルクと呼ぶ．damping-likeトルクとfield-likeトルクは磁化を倒す方向によって定義されている．それぞれdamping-likeトルクは磁化と磁場との角度$\theta$を変化させる方向にかかるトルクでありfield-likeトルクは磁化を歳差させる方向にかかるトルクである．これを図で表すと図\ref{torquefig}のような関係になっている．
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=10cm]{torquefig.eps}
+}
+\caption{磁化とdamping-likeトルクおよびfield-likeトルクの模式図．オレンジおよび緑の矢印はそれぞれのトルクによって磁化が変化する方向を表している．
+}
+\label{torquefig} 
+\end{figure}
+
+
+スピン流の影響をdamping-likeトルクとfield-likeトルクとしてLLG方程式(\ref{eq:LLGeq2})に加えたい．ここでトルクの影響をわかりやすく考えるためにトルクが生じることを有効磁場$\Delta \bm{H}$の存在を仮定する．LLG方程式に有効磁場が印加されると考えると式(\ref{eq:LLGeq2})は書き換えられれて
+
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=-\gamma\mu_{0}\bm{M}\times(\bm{H}+\Delta\bm{H})+\frac{\alpha}{M}\bm{M}\times\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}
+\label{eq:LLGeq4_0}
+\end{eqnarray}
+
+とできる．
+この有効磁場$\Delta \bm{H}$がdamping-likeトルクおよびfied-likeトルクから生じていると考えて磁場と考えたい．そこでまずdamping-likeトルクおよびfield-likeトルクの起源を考える．
+
+damping-likeトルク$\bm{\tau_{D}}$は磁化と伝導電子間の角運動量の交換に相当する．これを式で表すと
+\begin{eqnarray}
+\bm{\tau_{D}} = \frac{I_{s}\hbar}{2e}(\bm{m}\times\bm{\sigma}\times\bm{m})
+\label{eq:dtorque}
+\end{eqnarray}
+と書ける．$I_{s}$はスピン流を表し，$\bm{m}$および$\bm{\sigma}$は磁化とスピン流の偏極方向の単位ベクトルを表す．一方でfield-likeトルク$\bm{\tau_{F}}$は2つの電子間のおける交換相互作用に起源を発する．ハミルトニアンは
+\begin{eqnarray}
+H_{E} = -2J\bm{\sigma}\cdot\bm{m}
+\end{eqnarray}
+と与えられる．（$J$は交換定数）これは2つの電子間の有効磁場として働く．ここから生じるトルクは
+\begin{eqnarray}
+\bm{\tau_{F}} =-2J_{ex}\bm{\sigma}\times\bm{m}
+\label{eq:ftorque}
+\end{eqnarray}
+と書ける．
+
+式(\ref{eq:dtorque}),(\ref{eq:ftorque})から対称性によりそのトルクを作るような有効磁場を定義する\cite{yang2015layer}．
+\begin{eqnarray}
+\bm{\tau_{D}} &\propto& \frac{I_{s}\hbar}{2e}(\bm{m}\times\bm{\sigma}\times\bm{m})\nonumber\\
+&=&\bm{M}\times\bm{\Delta H_{L}}\\
+\bm{\tau_{F}} &\propto&-2J\bm{\sigma}\times\bm{m}\nonumber\\
+&=&\bm{M}\times\bm{\Delta H_{T}}
+\label{eq:dftorque}
+\end{eqnarray}
+この結果を模式的に表すと図\ref{harmonicFig2}のようになる．
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=100mm]{harmonicFig2.eps}
+\end{center}
+ \caption{(a)damping-likeトルクとその有効磁場$\Delta H_{L}$．(b)field-likeトルクとその有効磁場$\Delta H_{T}$}．
+ \label{harmonicFig2}
+\end{figure}
+本研究では電流とトルクおよび有効磁場の関係はこのようになっているとする．
+つまりLLG方程式は最終的に
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}&=&-\gamma\mu_{0}\bm{M}\times\left(\bm{H}+\Delta H_{L}\bm{x}+\Delta H_{T}\bm{y}\right)+\frac{\alpha}{M}\bm{M}\times\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}
+\label{eq:LLGeq4}
+\end{eqnarray}
+と書ける\cite{hayashi2014quantitative}．このようにスピン流およびスピン蓄積の磁化に対する影響はトルクひいてはその有効磁場として考えられる．damping-likeトルクとfield-likeトルクなどスピンによるトルクをスピントルクといい，その起源をスピン軌道相互作用とするものを特にスピン軌道トルク(spin orbit torque)と呼んでいる．
+
+
+
+
+
+
+本研究はスピンホール効果およびRashba効果によるスピン軌道トルクの変化について調べたものである．
+スピン軌道相互作用は金属内における有効電場に関係している．その有効電場を変化させることによってスピン軌道トルクを間接的に変調させることができること考えられる．
+そこで本研究では金属に有効電場を与えることができる自己組織化単分子膜に注目した．
+
+\section{自己組織化単分子膜(Self Assembled Monolayer : SAM)}
+はじめに自己組織化とは外的要因からの制御を受けずに，分子自身で自然に組織や構造を構築することを指す．自己組織化は自然界で自発的に生じている現象で，例えば細胞を取り囲む脂質二分子膜の自己組織化のように，多くの生体システムでは自己組織化を用いてさまざまな分子や構造が組織化している．こうした現象を模倣し，自己組織化によって分子集合体を構築し新規物性を開拓することは現在のナノテクノロジーにおける重要な技術のひとつとなっている．
+
+分子スケールで分子間力を正確かつ精密に利用することによって，以前は実現できなかった新しいナノ構造を得ることができる点が，今日のナノテクノロジーにおいて分子自己組織化が有望な研究分野とされている理由のひとつです．自然界の至る所に分子自己組織化の多様な例が多数存在しているが，まだ完全には理解されているとはいえないのが現状である．それは生体分子の集合体は精巧で単離が困難なことが多いため，その基礎となる科学を系統的かつ段階的に解析することが非常に難しいということが理由に挙げられる．現実に必要とされているのはより単純な分子自己組織化であり，容易に合成や形成できる自己組織化分子に用いることで、現状の実験技術でも簡単に用いることができるような単純な構造を得ることができる．
+
+分子自己組織化のさまざまな方法の中で，「静電相互作用による自己組織化（もしくは交互積層（Layer- by-Layer : LBL）法）」および「自己組織化単分子膜（SAM：Self-Assembled Monolayer）」の2つの方法が注目を集めている．LBL法とは適切な基板の上にアニオンとカチオンの電解質を交互に吸着させて自己組織化させる方法である．多くの場合，活性のある層はそのうち1層だけであり、他の層は静電相互作用によってこの複合多層膜を形成する役割を果たしている。SAMの場合は，ファンデルワールス結合などの弱い分子間結合を利用して，それらを配置・結合させて1つの構造へとまとめ上げている．そして任意の官能基を頭部基として用いることで，事実上どのような化学的性質を有する表面でも作製することができる．単に頭部基を交換するだけで，疎水性（メチル基），親水性（水酸基またはカルボキシル基），タンパク質吸着抵抗性（エチレングリコール基）の表面，あるいは化学結合可能な表面（NTA（nitrilotriacetic acid），アジド，カルボキシル基，アミン）を創り出すことができる．こうして目的とする機能を有する表面を自由に設計することが可能となる．これらの方法は機能性ナノデバイスを大量生産する上でも簡単で費用対効果も高いことから有利であると言える．
+この中でも本研究で注目したのが自己組織化単分子膜(SAM)である．
+SAMを金属膜に被膜すると金属膜表面の物理や化学的性質を選択的に制御することができる．中でも今回注目したのはSAMを形成することにより金属表面の仕事関数を変化させることができるという現象である．
+
+ではまず，次の節ではSAMがどう自己組織化するのかを簡単に述べたいと思う．
+
+\subsection{SAMの自己形成プロセス}
+
+自己組織化プロセスの研究によって，典型的なアルカンチオール単分子層は金属表面上で$(\sqrt{3}\times\sqrt{3})R30^{\circ}$構造を形成し\cite{strong1988structures}、チオール鎖は平面に対する垂線から約30度傾いて配向していることがわかっている\cite{dubois1992synthesis,bain1989formation}．また単分子膜の厳密な構造は鎖部分の化学的性質に依存している．自己組織化は，タンパク質のフォールディング，DNAの転写とハイブリダイゼーション，細胞膜の形成といった自然界の数多くのプロセスの基礎をなしている．
+自然界における自己組織化プロセスを支配するのは，分子を安定な低いエネルギー状態へと向かわせる分子間および分子内の力であり，水素結合や静電相互作用，疎水性相互作用ファンデルワールス力などがある．天然の自己組織化反応の場合と同様に，アルカンチオール類を貴金属表面上で組織化させるドライビングフォースは複数考えられている．第一は金属表面に対する硫黄の親和力である．硫黄-金属間相互作用は準共有結合レベルの安定な結合を形成することが見いだされている．もう一つのドライビングフォースは，アルカン鎖のメチレン炭素間に働くファンデルワールス力による疎水性相互作用である．アルカンチオール単分子層の場合，この相互作用はチオール鎖を表面に対して傾けることで鎖間の相互作用を最大化し，全体的な表面エネルギーを低下させている．秩序性の高い単分子層は炭素数10以上のアルカン鎖から生じることがわかっている．この長さの炭素鎖であれば，鎖間の疎水性相互作用が分子の回転自由度に打ち勝つことができるからである\cite{porter1987spontaneously}．単純なアルカンチオール分子の例を図\ref{SAM}に示す．
+
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=100mm]{SAM.eps}
+\end{center}
+ \caption{(a)基板をSAMとなる有機分子の溶けた溶液内に浸漬させているときの模式図．(b)基板にSAMが形成されたときの模式図．}
+ \label{SAM}
+\end{figure}
+
+アルカンチオールは、貴金属表面に結合する硫黄を含む結合基，炭化水素鎖(spacer group)（通常はメチレン基$(CH_{2})_{n}$構成されている）．機能性頭部基（head group）という3つの部分からできていると考えることができる．上述の通り，硫黄原子およびメチレン基中の炭素がアルカンチオール組織化の主なドライビングフォースとして作用する．
+SAMとなる有機物を溶媒(エタノールなど)に溶かし，膜を形成したい基板をその溶液に浸漬することで基板にSAMを形成できる．結合部としては一般的に３種類に分類され．チオール系(HS-基など），シラン系(X$_{3}$Si-基など)，醋酸系(COOH-基など)があるがそれぞれ吸着する物質が異なる．本研究ではPtやAu,Agなど我々がよく用いる金属に吸着するチオール基(HS-)を持つ有機分子を用いた．
+\subsection{SAMによる仕事関数の変化}
+SAMによって金属(Ag,Au)の仕事関数を変化させることができるという報告がある\cite{de2005tuning}．この研究ではヘキサデカンチオールは仕事関数を減少させ，パラフルオロデカンチオールは増加させていることがわかる．それぞれ有機分子の分子内の分極が逆であることから，金属表面にSAMを形成するとSAMが界面に２次元双極子をつくり仕事関数を変化させていると考えられる．SAM自身の有機分子の種類によってその双極子の分極している方向にが変化するので，有機分子の種類を選択することで金属表面に有効電場をかけることができる．
+
+
+
+
+
+
+
+
+\section{本研究の目的}
+本研究の目的は常磁性体/強磁性体/常磁性体の表面にSAMを形成し常磁性体に影響を与え，それによるスピン軌道トルクの変化を定量することである．そして最終的にはSAMを用いてスピン軌道トルクを制御したい．またスピン軌道トルクはさまざまな起源が考えられているが，まだまだ理解されていないことも多い．スピン軌道トルクは電流による磁化ダイナミクスの制御において重要な物理現象である．本研究はその物理的起源の解明への本質的な役割を果たすことが期待される．
+
+\section{本論文の構成}
+本論文の構成は以下のようになっている．まず第２章で本研究において行った資料作成および実験方法，スピン軌道トルクの定量の仕方について述べる．そして第３章では実際に行った測定について述べ，その結果を説明し考察する．
+
+
+
+
+%\section{本論文の構成}
+

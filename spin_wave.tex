@@ -1,0 +1,459 @@
+
+\chapter{強磁性/常磁性細線における非一様磁化ダイナミクス−スピン流相互作用}
+
+スピントロニクスの舞台である微小強磁性体における磁化ダイナミクスは、薄膜系における一様な歳差運動とは大きく異なり、量子化されたスピン波ダイナミクスに支配される。
+Ni$_{81}$Fe$_{19}$/Pt複合細線を電子線描画法及びリフトオフ法を用いて作成し、微小領域における非一様な磁化ダイナミクスとスピン流の相互作用を系統的に調べた。
+Ni$_{81}$Fe$_{19}$/Pt複合細線において検出したマイクロ波吸収に伴う起電力信号はスピン波共鳴駆動型スピンポンピングによる逆スピンホール効果の現象論的模型と整合する振る舞いを示した。LLG方程式に基づくスピン波共鳴駆動型スピンポンピングの模型を構築し、逆スピンホール効果を用いたスピン波スピンポンピングの検出が微小領域におけるスピン波共鳴の電気的検出を可能とすることを見出した。
+さらに同様のNi$_{81}$Fe$_{19}$/Pt複合細線においてスピンホール効果を用いたスピン波ダイナミクスへのスピン流注入を実現し、スピン波緩和変調効果を観測した。スピン波緩和変調効果のモード依存性を精密に調べ、高次モードのスピン波緩和変調がスピン流の高感度検出を可能とすることを明らかにした。
+
+
+\section{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピン波共鳴}
+\subsection{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるマイクロ波吸収スペクトル}
+
+
+\begin{figure}[htbp]
+ \begin{center}
+  %\includegraphics[width=85mm]{spinwave_sample.eps}
+ \end{center}
+ \caption{(a) Ni$_{81}$Fe$_{19}$/Pt複合細線の模式図。各細線はAuPd層により接続されている。Ni$_{81}$Fe$_{19}$細線におけるスピン波共鳴によりPt層にスピン流が流れ、逆スピンホール効果によりそれぞれの細線両端に起電力$\bm{E}_\text{ISHE}$を生む。細線を配列することでマイクロ波吸収及び起電力の信号を増幅した。
+(b) Ni$_{81}$Fe$_{19}$/Pt複合細線($w=1$ $\mu$m)の走査型電子顕微鏡像。測定は細線が
+外部直流磁場$\bm{H}$と平行、マイクロ波磁場と垂直となる条件で行い、外部直流磁場と垂直方向に生じる起電力を測定した。(c) Ni$_{81}$Fe$_{19}$/Pt複合細線 ($w=2$ $\mu$m)におけるマイクロ波吸収スペクトル。外部磁場は細線と平行に印加した。}
+ \label{spinwave_sample}
+\end{figure}
+
+スピンホール効果及び逆スピンホール効果を用いて
+非一様な磁化ダイナミクスとスピン流の相互作用を調べるため、電子線描画法及びリフトオフ法を用いて細線幅$w=1$, 1.5, 2 $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線試料を作成した。Ni$_{81}$Fe$_{19}$の膜厚は30 nm、Ptの膜厚は10 nmである。試料の模式図を図\ref{spinwave_sample}(a)に示す。マイクロ波吸収及びスピンポンピングによる逆スピンホール起電力の信号強度を増幅するため、図\ref{spinwave_sample}(b)の走査型電子線顕微鏡像に示すように、$500$ $\mu$mに渡り$1$ $\mu$m間隔で細線を配列した。細線間隔1 $\mu$mは細線間の磁気双極子相互作用が無視できる間隔である~\cite{Mathieu,Jorzick}。
+
+
+
+Ni$_{81}$Fe$_{19}$/Pt複合細線試料をTE$_{011}$モードマイクロ波空洞共振器内に設置し、周波数$f=9.44$ GHz のマイクロ波を共振器に導入した。外部磁場を図\ref{spinwave_sample}(b)に示すように強磁性細線と平行に印加し、電子スピン共鳴装置を用いてマイクロ波吸収を測定した。
+図\ref{spinwave_sample}(c)にマイクロ波強度を200 mWとして測定した細線幅$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線によるマイクロ波吸収スペクトルを示す。強磁性薄膜における一様歳差運動のモードに由来する単一の吸収信号（図\ref{fig5}参照）に加え、複数の共鳴吸収信号が観測された。このような複数の吸収信号は図\ref{spinwave_resonance_V}(a)、\ref{spinwave_resonance_V2}(a)に示すように
+$w=1$, 1.5 $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線においても観測された。90 mT付近に観測された一様モードに由来する吸収信号の共鳴磁場は細線幅$w$を変えてもほとんど変わらないのに対し、細線に特徴的な吸収信号の共鳴磁場は細線幅$w$に強く依存する結果となった。
+
+
+
+
+
+\subsection{有効双極子境界条件モデルによる解析}
+
+
+
+
+Ni$_{81}$Fe$_{19}$/Pt複合細線において観測された複数のマイクロ波吸収信号は有効双極子境界条件モデル~\cite{Guslienko}におけるスピン波共鳴モードの振る舞いと整合する。スピン波励起には境界条件の問題があり、境界でスピンが固定される固定端条件や、境界でスピンが自由に動ける自由端条件が広く用いられているが、これらの境界条件の妥当性は自明ではない\cite{Gurevich}。Guslienkoらは強磁性細線中における非局所的な磁気双極子相互作用\footnote{交換相互作用による寄与は長波長のスピン波では小さい}を表す積分方程式を直接計算することで、モード番号$n$の磁化の振動成分$m_n(x)$についての境界条件
+\begin{equation}
+\frac{\partial m_n(\xi )}{\partial \xi}\pm d(p) m_n(\xi)|_{\xi=\pm1/2}=0\label{boun}
+\end{equation}
+を得た\cite{Guslienko}。$m_n(x)$は磁化歳差運動の$y$成分を表す(図\ref{spinwave_sample}(b)参照)。ここで$\xi=x/w$は細線中の無次元座標であり、$x$は図\ref{spinwave_sample}(b)に示すように細線幅方向の座標を表し、細線の中心位置を原点とする。
+\begin{equation}
+d(p)=\frac{2\pi}{p[1+2\ln (1/p)]}
+\end{equation}
+は無次元の実効的なピニングパラメータであり、細線の形状はアスペクト比$p=t/w$によって特徴付けられる。$t$は強磁性層の膜厚である。式(\ref{boun})は交換モードの境界条件~\cite{Gurevich}と形式的には同一であるが、純粋に双極子相互作用によるものである。このようなピニングはスピン波に由来する表面磁極による静磁エネルギーが最小となるように働く。
+
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=85mm]{spinwave_resonancefield.eps}
+ \end{center}
+ \caption{Ni$_{81}$Fe$_{19}$/Pt複合細線における共鳴磁場とスピン波モード。
+(a) Ni$_{81}$Fe$_{19}$/Pt複合細線における共鳴磁場$H_n$。実線は測定結果の線形フィッティングである。挿入図はNi$_{81}$Fe$_{19}$/Pt複合細線の線幅の逆数$1/w$と共鳴スペクトルの共鳴磁場間隔$\Delta H\equiv H_n-H_{n+2}$の関係。実線は式(\ref{DH})を用いたフィッティング結果である。
+(b) 有効双極子境界条件模型におけるスピン波共鳴モード。$x$は細線幅方向の座標である。}
+ \label{spinwave_resonancefield}
+\end{figure}
+
+スピン波のモードの中で一様なマイクロ波を共鳴吸収できるのは交流磁化が平均でゼロとならない偶関数モード($n=1,\: 3,\: 5,\: 7,\: \cdots$)のみである。この選択則のため、
+有効双極子境界条件モデルにおいて一様マイクロ波によって励起されるスピン波モードは図\ref{spinwave_resonancefield}(b)に示す
+\begin{equation}
+m_n(x) = A_n \cos(\kappa _n x)\;\;\;\; (n=1,\: 3,\: 5,\: 7,\: \cdots)\label{coyuu}
+\end{equation}
+の形となる。
+ここで
+\begin{equation}
+\kappa_n = n\pi\left[1-\frac{2}{d(p)}\right]\frac{1}{w}=\frac{n\pi}{w_\text{eff}}
+\end{equation}
+は量子化された波数である。これは細線幅方向（$x$方向）に励起されたスピン波であり、本系では膜厚が線幅と比較して非常に薄く、膜厚方向（$y$方向）にはスピン波は励起されない~\cite{Guslienko2}。式(\ref{coyuu})は実効的な細線幅$w_\text{eff}=w[d/(d-2)]$の両端でスピンが固定されたモードを表している。本模型において、スピン波共鳴モードの共鳴磁場は近似的に
+\begin{equation}
+{H_n} = 4\pi {M_s}\left[ {\frac{1}{2}\left( {\sqrt {1 + 4\tilde \omega ^2}  - 1} \right) - \frac{1}{{\sqrt {1 + 4\tilde \omega ^2} }}\frac{{\pi (2n - 1)}}{4}\frac{t}{w}} \right] \label{refH}
+\end{equation}
+で表される~\cite{Guslienko}。ここで$\tilde \omega \equiv(\omega/\gamma)/(4\pi M_s)$である。式(\ref{refH})は$n$モードのスピン波共鳴の共鳴磁場$H_n$はモード番号$n$と線形関係にあることを示している。また式(\ref{refH})より、モード間隔$\Delta H\equiv H_n-H_{n+2}$は
+\begin{equation}
+\Delta H=\frac{(4\pi M_s)t \pi}{\sqrt {1 + 4\tilde \omega ^2}}\frac{1}{w}\label{DH}
+\end{equation}
+となり細線幅$w$の逆数と線形関係にある。図\ref{spinwave_resonancefield}(a)に示すように、測定されたマイクロ波吸収信号はこのような共鳴磁場の振る舞いと整合する。実際、式(\ref{DH})はパラメータとして$\omega=5.93\times10^{10}$ s$^{-1}$, $\gamma=1.86\times 10^{11}$ T$^{-1}$s$^{-1}$, $4\pi M_s=0.795$ T、$t=30$ nmを用いることで図\ref{spinwave_resonancefield}(a)の挿入図に示すように実験結果を非常によく再現し、観測された複数の吸収信号が本模型におけるスピン波共鳴モードに起因することを示している。
+
+
+
+
+
+
+
+
+\section{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピン波共鳴によるスピン流生成}
+\subsection{スピン波共鳴駆動型スピンポンピングの観測}
+
+スピン波共鳴は空間的に非一様な磁化ダイナミクスである。一様磁化歳差運動によってスピンポンピングが駆動されるのと同様に、スピン波共鳴駆動型のスピンポンピングによるスピン流生成が期待される。Ni$_{81}$Fe$_{19}$/Pt複合細線においてスピン波スピンポンピングはPt層に空間的に非一様なスピン流を誘起し、このスピン流は逆スピンホール効果によって起電力へと変換される。これはスピントロニクス拡充に不可欠な微小領域におけるスピンダイナミクスの電気的検出~\cite{hui,gui,GuiDYNAMO}がスピン波スピンポンピング及び逆スピンホール効果を用いることで可能となることを示唆している。スピン波共鳴により生成されるスピン流を検出するため、試料端に導電性ペースト（ドータイト）を用いてポリウレタン導線を配線した。その際電子スピン共鳴装置の変調磁場による誘導起電力の影響を除くため、導線を十分にねじった。図\ref{spinwave_sample}(b)のように外部直流磁場を強磁性細線と平行かつ電極と垂直となるように印加し、
+外部直流磁場に100 kHzの変調信号を重畳したロックイン法により、マイクロ波の吸収信号とPt層に生じた起電力の測定を同時に行った。起電力測定は差動アンプを用いて信号を2000倍に増幅した後、バンドパスフィルタによって3 kHzから300 kHzまでの信号を取り出した。Ni$_{81}$Fe$_{19}$/Pt複合細線の配列を5 nmのAuPd層で接合し、逆スピンホール効果に起因する起電力信号を増幅した。検出される起電力は細線1本が生じる起電力の積分値となる。測定は全て室温で行ったものである。
+
+図\ref{spinwave_resonance_V}(b)、\ref{spinwave_resonance_V2}(b)、\ref{spinwave_resonance_V3}(b)にマイクロ波吸収スペクトルと同時に測定したNi$_{81}$Fe$_{19}$/Pt複合細線における起電力スペクトルを示す。$w=1$, $1.5$, $2$ $\mu$mの全ての試料において複数の共鳴起電力信号が観測された。
+これらの起電力はスピン波共鳴と同様の選択則に従っており、起電力がスピン波共鳴に起因することを示している。
+
+Ni$_{81}$Fe$_{19}$/Pt複合細線において観測された起電力の起源を調べるため、
+Pt層をなくした$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$細線について同様の起電力測定を行った。起電力の測定結果を図\ref{spinwave_resonance_V3}(b)の挿入図に示す。Ni$_{81}$Fe$_{19}$/Pt複合細線において観測された起電力はNi$_{81}$Fe$_{19}$細線において消失し、Ni$_{81}$Fe$_{19}$/Pt複合細線において観測された起電力が異常ホール効果のようなNi$_{81}$Fe$_{19}$層に由来する電流磁気効果ではなく、Pt層に由来する起電力であることを示している。
+すなわち起電力信号はスピン波共鳴が駆動したスピンポンピングを逆スピンホール効果によって検出した結果である。
+測定された起電力のスペクトル形状もこれを強く支持している。
+図\ref{spinwave_resonance_V}(d)、\ref{spinwave_resonance_V2}(d)、\ref{spinwave_resonance_V3}(d)に、$n=3$モードのスピン波共鳴時に生じた起電力を
+式(\ref{fittingfunctionISHE})を用いてフィッティングした結果を示した。起電力信号のスペクトルはほぼローレンツ関数の微分形で再現されており、直流スピンポンピングによる逆スピンホール起電力が予言する形状と整合する。
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=90mm]{spinwave_resonance_V.eps}
+ \end{center}
+ \caption{$w=1$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線におけるマイクロ波吸収スペクトルと同時に測定した起電力信号。
+(a) 強磁性共鳴スペクトル$dI(H)/dH$。$I(H)$はマイクロ波吸収強度、$H$は外部直流磁場である。
+(b) 起電力$V$の磁場変調ロックイン信号$dV(H)/dH$。マイクロ波の吸収信号と対応した磁場で起電力信号が観測された。
+(c) 測定に用いたNi$_{81}$Fe$_{19}$/Pt複合細線($w=1$ $\mu$m)の走査型電子顕微鏡像。
+(d) $n=3$モードのスピン波共鳴における起電力信号を式(\ref{fittingfunctionISHE})を用いてフィッティングした結果。}
+ \label{spinwave_resonance_V}
+\end{figure}
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=90mm]{spinwave_resonance_V2.eps}
+ \end{center}
+ \caption{$w=1.5$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線におけるマイクロ波吸収スペクトルと同時に測定した起電力信号。
+(a) 強磁性共鳴スペクトル$dI(H)/dH$。$I(H)$はマイクロ波吸収強度、$H$は外部直流磁場である。
+(b) 起電力$V$の磁場変調ロックイン信号$dV(H)/dH$。マイクロ波の吸収信号と対応した磁場で起電力信号が観測された。
+(c) 測定に用いたNi$_{81}$Fe$_{19}$/Pt複合細線($w=1.5$ $\mu$m)の走査型電子顕微鏡像。
+(d) $n=3$モードのスピン波共鳴における起電力信号を式(\ref{fittingfunctionISHE})を用いてフィッティングした結果。}
+ \label{spinwave_resonance_V2}
+\end{figure}
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=90mm]{spinwave_resonance_V3.eps}
+ \end{center}
+ \caption{$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線におけるマイクロ波吸収スペクトルと同時に測定した起電力信号。
+(a) 強磁性共鳴スペクトル$dI(H)/dH$。$I(H)$はマイクロ波吸収強度、$H$は外部直流磁場である。
+(b) 起電力$V$の磁場変調ロックイン信号$dV(H)/dH$。マイクロ波の吸収信号と対応した磁場で起電力信号が観測された。挿入図は$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$細線における起電力の測定結果。
+(c) 測定に用いたNi$_{81}$Fe$_{19}$/Pt複合細線($w=2$ $\mu$m)の走査型電子顕微鏡像。
+(d) $n=3$モードのスピン波共鳴における起電力信号を式(\ref{fittingfunctionISHE})を用いてフィッティングした結果。}
+ \label{spinwave_resonance_V3}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{逆スピンホール起電力のマイクロ波強度依存性}
+
+$w=1$, 1.5, 2 $\mu$m Ni$_{81}$Fe$_{19}$/Pt複合細線の共鳴時における起電力信号$V'_n$のマイクロ波強度依存性を図\ref
+{spinwave_Vmicrodep}(b)、\ref{spinwave_Vmicrodep}(c)、\ref{spinwave_Vmicrodep}(d)に示す。$V'_n$は図\ref{spinwave_Vmicrodep}(a)に示すように起電力スペクトルの全振幅として定義した。起電力$V'_n$は全てのモード$n$においてマイクロ波強度$P_\text{MW}$に比例した。
+この結果は薄膜系における一様磁化歳差運動が誘起する直流スピンポンピングの結果と一致しており、本系において検出された起電力がスピンポンピングによる逆スピンホール起電力に起因することを強く支持している。
+
+
+
+
+
+\subsection{スピン波共鳴によるスピン流生成の現象論的定式化}
+
+スピン波共鳴により生成されるスピン流は空間的に非一様であり、一様磁化歳差運動によるスピンポンピングとは決定的に異なる。このためスピン波共鳴型スピンポンピングの系統的解明には、非一様な磁化ダイナミクスが生成するスピン流を理論・実験両面から体系化することが不可欠である。以下では
+有効双極子境界条件模型及びスピンポンピングの標準模型に基づき、スピン波共鳴が生成するスピン流の現象論的模型を構築する。
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=90mm]{spinwave_Vmicrodep.eps}
+ \end{center}
+ \caption{Ni$_{81}$Fe$_{19}$/Pt複合細線における起電力信号$V'_n$のマイクロ波強度$P_\text{MW}$依存性。
+(a) 起電力信号におけるモード番号$n$の定義。$V'_n$は起電力スペクトルの全振幅として定義した。
+(b) $w=2$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線における起電力信号のマイクロ波強度依存性。
+(c) $w=1$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線における起電力信号のマイクロ波強度依存性。
+(d) $w=1.5$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線における起電力信号のマイクロ波強度依存性。}
+ \label{spinwave_Vmicrodep}
+\end{figure}
+
+\subsubsection{スピン波ダイナミクス}
+図\ref{spinwave_sample}(b)に示すように、細線に沿う
+$z$方向に外部直流磁場$H$、細線幅方向である$x$方向にマイクロ波磁場$\bm{h}(t)$を印加した場合に励起されるスピン波を考える。以下では$x$, $y$成分の磁化の振動を求め、スピン波に対する磁化率$\chi(x)$を導入する。
+
+マイクロ波磁場の$x$, $y$成分は
+\begin{equation}
+\bm{h}(t) = \left( {\begin{array}{*{20}{c}}
+   {h{e^{i\omega t}}}  \\
+   0  \\
+\end{array}} \right)= {e^{i\omega t}} \bm{h}\label{microwaveA}
+\end{equation}
+であり、空間・時間に依存する磁化の$x$, $y$振動成分$\bm{m}(x, t)$をモード展開し
+\begin{equation}
+\bm{m}(x,t) = \left( {\begin{array}{*{20}{c}}
+   {{m_x}(x)}  \\
+   {{m_y}(x)}  \\
+\end{array}} \right){e^{i\omega t}} = {e^{i\omega t}}\sum\limits_n {\left( {\begin{array}{*{20}{c}}
+   {c_n^x}  \\
+   {c_n^y}  \\
+\end{array}} \right)} {\psi _n}(x)= {e^{i\omega t}}\sum\limits_n \bm{m}_n(x)=\sum\limits_n \bm{m}_n(x,t)\label{sindouseibn}
+\end{equation}
+と表す。式(\ref{microwaveA})、(\ref{sindouseibn})のもとで
+LLG方程式は
+\begin{equation}
+\sum\limits_n {\left( {{\Omega _n} + i{\Gamma _n}} \right)} {\bm{m}_n}(x) = \gamma M_s \bm{h}\label{SPLLG}
+\end{equation}
+となる。ここで
+\begin{equation}
+{\Omega _n} = \left( {\begin{array}{*{20}{c}}
+   {\omega _n^x} & { - i\omega }  \\
+   {i\omega } & {\omega _n^y}  \\
+\end{array}} \right),\:\:\:\:\:\:\:{\Gamma _n} = \left( {\begin{array}{*{20}{c}}
+   {{\alpha _n}\omega } & 0  \\
+   0 & {{\alpha _n}\omega }  \\
+\end{array}} \right)
+\end{equation}
+であり、緩和定数$\alpha_n$はモード番号$n$に依存するとした。また有効双極子境界条件モデルに基づき
+\begin{equation}
+ \omega _n^x = \gamma H + 4\pi \gamma {M_s}{\mu _n} \label{mu_nx}
+\end{equation}
+\begin{equation}
+ \omega _n^y=\gamma H + 4\pi \gamma {M_s}(1 - {\mu _n}) \label{mu_ny}
+\end{equation}
+として細線端付近における動的な磁化の非一様性が生む反磁場の効果を取り入れる~\cite{Guslienko}。
+ここで
+\begin{equation}
+\mu_n=\frac{\pi p}{2}\left(n-\frac{1}{2}\right)
+\end{equation}
+に細線の形状アスペクト比$p=t/w$が反映されるものとした。式(\ref{mu_nx})及び式(\ref{mu_nx})は$p\rightarrow 0$の極限で薄膜の条件を再現する。
+ここで
+\begin{equation}
+{U_n} = \left( {\begin{array}{*{20}{c}}
+   {\cos (\theta _n/2) }& {i\sin (\theta _n/2)}  \\
+   {i\sin (\theta _n/2)} & {\cos (\theta _n/2)}  \\
+\end{array}} \right)\label{henkangyoretu}
+\end{equation}を用いて
+\begin{equation}
+{\bm{m}_n}(x) \to {\bm{m}'_n}(x) = {U_n^\dag}{\bm{m}_n}(x) = \left( {\begin{array}{*{20}{c}}
+   {m_n^ + (x)}  \\
+   {m_n^ - (x)}  \\
+\end{array}} \right)\label{trans}
+\end{equation}
+の基底変換を行う。
+\begin{eqnarray}
+ \cos {\theta _n} &= &\dfrac{{\dfrac{{\omega _n^x - \omega _n^y}}{2}}}{{\sqrt {{\omega ^2} + {{\left( {\dfrac{{\omega _n^x - \omega _n^y}}{2}} \right)}^2}} }} \\ 
+ \sin {\theta _n} &= &\dfrac{\omega }{{\sqrt {{\omega ^2} + {{\left( {\dfrac{{\omega _n^x - \omega _n^y}}{2}} \right)}^2}} }} \label{sincos}
+\end{eqnarray}
+であり、
+$U_n$は$\Omega_n$を次のように対角化する。
+\begin{equation}
+{\Omega _n'} = {U_n^\dag}{\Omega _n}U_n  = \left( {\begin{array}{*{20}{c}}
+   {\omega _n^ + } & 0  \\
+   0 & {\omega _n^ - }  \\
+\end{array}} \right)
+\end{equation}
+\begin{equation}
+\omega _n^ \pm  = \frac{{{\omega _n^x} + {\omega _n^y}}}{2} \pm \sqrt {{\omega ^2} + {{\left( {\frac{{{\omega _n^x} - {\omega _n^y}}}{2}} \right)}^2}} 
+\end{equation}
+式(\ref{SPLLG})の左から$\displaystyle \int d x{\psi _n}(x){U_n^\dag}$をかけると
+\begin{equation}
+\sum\limits_{n'} {{U_n^\dag}} \left( {{\Omega _{n'}} + i{\Gamma _{n'}}} \right)U_{n'}{U_{n'}^\dag }\left( {\begin{array}{*{20}{c}}
+   {c_{n'}^x}  \\
+   {c_{n'}^y}  \\
+\end{array}} \right)\int {{\psi _n}(x){\psi _{n'}}(x)dx}  = \gamma {M_s}{U_n^\dag}\left( {\begin{array}{*{20}{c}}
+   h  \\
+   0  \\
+\end{array}} \right)\int {{\psi _n}(x)dx} 
+\end{equation}
+となる。ここで$U_n^\dag (i\Gamma_n) U_n=(i \Gamma_n)$であり、
+\begin{equation}
+\int {{\psi _n}(x){\psi _{n'}}(x)dx}  \simeq {\delta _{nn'}}\int {\left| {{\psi _n}{{(x)}}} \right|^2dx} 
+\end{equation}
+を用いると、
+\begin{equation}
+c_n^ \pm  = \frac{{\gamma {M_s}h_n^ \pm }}{{\omega _n^ \pm + i{\alpha _n}\omega }}\frac{{\int {{\psi _n}(x)dx} }}{{\int {\left| {{\psi _n}{{(x)}}} \right|^2dx} }}\label{keisuu}
+\end{equation}
+が得られる。ここで$ {U_n^\dag}^t\hspace{-1mm}\left( {c_n^x,c_n^y} \right)={}^t\hspace{-1mm}\left( {c_n^ + ,c_n^ - } \right) $と$ {U_n^\dag}^t\hspace{-1mm}\left( {h,0} \right)=
+ {}^t\hspace{-1mm}\left( {h_n^ + ,h_n^ - } \right)$を定義した。
+また、
+\begin{equation}
+\left( {\begin{array}{*{20}{c}}
+   {m_n^ + (x)}  \\
+   {m_n^ - (x)}  \\
+\end{array}} \right) = \left( {\begin{array}{*{20}{c}}
+   {c_n^ + }  \\
+   {c_n^ - }  \\
+\end{array}} \right){\psi _n}(x)
+\end{equation}
+が成り立つ。
+モード番号$n$に対する磁化率$\chi_n(x)$を
+\begin{equation}
+\bm{m}(x,t) ={{\chi }(x)\bm{h}(t)} = \sum\limits_n {{\chi _n}(x)\bm{h}(t)} 
+\end{equation}
+で定義し、式(\ref{sindouseibn})、(\ref{trans})、(\ref{keisuu})を用いると
+\begin{equation}
+{\chi _n}(x) = \gamma {M_s}U_n \left( {\begin{array}{*{20}{c}}
+   {\dfrac{1}{{\omega _n^ +  + i{\alpha _n}\omega }}} & 0  \\
+   0 & {\dfrac{1}{{\omega _n^ -  + i{\alpha _n}\omega }}}  \\
+\end{array}} \right){U_n^\dag}\frac{{{\psi _n}(x)\int {{\psi _n}(x)dx} }}{{\int {\left| {{\psi _n}{{(x)}}} \right|^2dx} }}
+\end{equation}
+が得られる。
+
+\subsubsection{マイクロ波吸収}
+スピン波によるマイクロ波吸収$I_n$を調べる。モード番号$n$のスピン波によるマイクロ波吸収量は$\bm{m}_n(x,t)=\chi_n(x)\bm{h}(t)=\chi_n(x)\bm{h}e^{i\omega t}$を用い、
+式(\ref{henkangyoretu})及び(\ref{sincos})より
+\begin{eqnarray}
+ {I_n} &\propto& \Re \left[ {\frac{\omega }{{2\pi }}\mathop \int \nolimits_{ - w/2}^{w/2} \mathop \int \nolimits_0^{2\pi /\omega } \bm{h}(t)\cdot\frac{{d{\bm{m}_n^*}(x,t)}}{{dt}}dtdx} \right]  \nonumber \\ 
+  &=& \Re \left[ {i\omega \mathop \int \nolimits_{ - w/2}^{w/2} \left( {\begin{array}{*{20}{c}}
+   h & 0  \\
+\end{array}} \right){\chi _n}(x)\left( {\begin{array}{*{20}{c}}
+   h  \\
+   0  \\
+\end{array}} \right)dx} \right]  \nonumber \\ 
+  &=&  - \omega {h^2}\Im \left[ {\mathop \int \nolimits_{ - w/2}^{w/2} {{[{\chi _n}(x)]}_{11}}dx} \right] \nonumber  \\ 
+  &=& \omega {h^2}\frac{{{\alpha _n}\gamma {M_s}\omega \left[ {(1 + \alpha _n^2){\omega ^2} + {{(\omega _n^y)}^2}} \right]}}{{{{\left[ {\omega _n^x\omega _n^y - (1 + \alpha _n^2){\omega ^2}} \right]}^2} + \alpha _n^2{\omega ^2}{{(\omega _n^x + \omega _n^y)}^2}}}\frac{{{{\left| {\int {{\psi _n}(x)dx} } \right|}^2}}}{{\int {{{\left| {{\psi _n}(x)} \right|}^2}dx} }} \nonumber \\ 
+  &\equiv &\omega {h^2}{(\chi _n'')_{11}} 
+\end{eqnarray}
+である。ここでモード番号$n$のスピン波に対する磁化率
+\begin{equation}
+ \chi_n=\int \chi_n(x) dx
+\end{equation}
+の実数成分と虚数成分をそれぞれ$\chi_n'$, $\chi_n''$とし、
+\begin{equation}{\chi _n} = {\chi '_n} - i{\chi'' _n}\end{equation}
+と定義した。
+吸収量$I_n$は磁化率の虚数成分$\chi''_n$に比例し、薄膜系における吸収と同一の関係を示す。異なる点はスピン波共鳴では磁化率$\chi_n(x)$が空間的に非一様であり、平均値が$\displaystyle \chi_n = \int \chi_n(x) dx $で与えられる点である。言い換えれば非一様磁化ダイナミクスの効果は非一様な磁化率$\chi_n(x)$に集約される。
+
+
+
+\subsubsection{スピン流}
+Ni$_{81}$Fe$_{19}$/Pt複合細線において、Pt層の膜厚と比較してスピン波の波長が十分長いことから、空間的なスピン流の分布に起因するPt層でのスピン流の干渉は無視できる。
+スピン波共鳴に駆動されるスピンポンピングがPt層に注入する直流成分のスピン流密度$j_s(x)$は位置$x$における緩和トルクの$z$成分に比例し、
+\begin{eqnarray}
+ {j_s}(x) &\propto &\sum\limits_{n,n'} {\frac{\omega }{{2\pi }}} \mathop \int \nolimits_0^{2\pi /\omega } {\left( {{\bm{m}_n} \times \frac{{d{\bm{m}^*_{n'}}(x,t)}}{{dt}}} \right)_z}dt \nonumber\\ 
+ & =& \sum\limits_{n,n'} {i\omega \left[ {c_n^x{{(c_{n'}^y)}^*} - c_n^y{{(c_{n'}^x)}^*}} \right]} {\psi _n}(x){\psi _{n'}}(x) \label{density}
+\end{eqnarray}
+と表せる。ここで$\bm{m}(x,t)=\sum_n \bm{m}_n(x,t)$, $\bm{m}_n(x,t)={}^t\hspace{-1mm}\left( {c_n^ x ,c_n^ y } \right)\psi_n(x)e^{i\omega t}$が成り立つことを用いた。直流成分で残るのは$z$成分のみであり、スピン波の位相は重要ではない。単位長さあたりのPt細線に注入されたスピン流量は$j_s(x)$が空間的に変調する$x$方向に積分した\footnote{全スピン流量はさらに細線長さ方向に積分したものである。長さ方向には$j_s(x)$の空間変化がないためここでは考えない。}
+\begin{equation}
+{J_s} = \mathop\int \nolimits_{ - w/2}^{w/2} {j_s}(x)dx \propto  2\omega \sum\limits_n \Im  \left[ {c_n^x{{(c_{n'}^y)}^*}} \right]\int {{{\left| {{\psi _n}(x)} \right|}^2}dx} 
+\end{equation}
+である。
+ここで
+\begin{eqnarray}
+ c_n^x{\psi _n}(x) &=& {\left[ {{\chi _n}(x)} \right]_{11}}h \\ 
+ c_n^y{\psi _n}(x) &=& {\left[ {{\chi _n}(x)} \right]_{21}}h 
+\end{eqnarray}
+の関係を用いると
+\begin{eqnarray}
+ {J_s} &\propto & 2\omega {h^2}\sum\limits_n \Im  \mathop \int \nolimits_{ - w/2}^{w/2} {\left[ {{\chi _n}(x)} \right]_{11}}\left[ {\chi _n}(x) \right]^*_{21} dx \nonumber \\ 
+ & = &  2\omega {h^2}\sum\limits_n {\frac{{{{(\gamma {M_s})}^2}\omega \omega _n^y}}{{{{\left[ {\omega _n^x\omega _n^y - (1 + \alpha _n^2){\omega ^2}} \right]}^2} + \alpha _n^2{\omega ^2}{{(\omega _n^x + \omega _n^y)}^2}}}} \frac{{{{\left| {\int {{\psi _n}(x)dx} } \right|}^2}}}{{\int {{{\left| {{\psi _n}(x)} \right|}^2}dx} }} \nonumber \\ 
+ & = &  2\omega {h^2}\sum\limits_n {\frac{{(\gamma {M_s}/{\alpha _n})\omega _n^y}}{{(1 + \alpha _n^2){\omega ^2} + {{(\omega _n^y)}^2}}}} {(\chi _n'')_{11}} 
+\end{eqnarray}
+が得られる。従ってモード番号$n$のスピン波共鳴において生成されるスピン流は
+\begin{equation}
+J_s^n\propto  2\omega {h^2}  {\frac{{(\gamma {M_s}/{\alpha _n})\omega _n^y}}{{(1 + \alpha _n^2){\omega ^2} + {{(\omega _n^y)}^2}}}} {(\chi _n'')_{11}} 
+\end{equation}
+となり、一様磁化歳差運動の場合に得られた式(\ref{J_chi})と同様に磁化率の虚数成分$\chi_n''$に比例する。
+$((\gamma {M_s}/{\alpha _n})\omega _n^y)/((1 + \alpha _n^2){\omega ^2} + {{(\omega _n^y)}^2}) $のモード$n$依存性は小さく、$J_s^n$のスペクトル形状への寄与が小さいため、$I_n/I_{n=1}\approx J_s^n/J_s^{n=1}$となり、スピンポンピングによる逆スピンホール起電力スペクトル$V_n$はマイクロ波吸収スペクトル$I_n$と同様のローレンツ関数形及びモード間相対強度を示す。これは図\ref{spinwave_resonance_V}(b)、\ref{spinwave_resonance_V2}(b)、\ref{spinwave_resonance_V3}(b)の起電力スペクトルと表1に示す起電力とマイクロ波強度の相対強度により実証されている。
+以上の結果から、スピン波共鳴に駆動されるスピンポンピングを逆スピンホール効果を用いて検出することで、微小領域のスピン波共鳴の電気的検出が可能となり、本手法を用いることで微小領域のスピンダイナミクスの電気的検出が可能となることを理論・実験の両面から体系的に示した。さらにスピン波スピンポンピングを用いることで、空間的に非一様なスピン流の分布を微小領域において容易に実現することができる。この点において、スピン波スピンポンピングはスピン流物理の究明に本質的役割を果たすことが期待される。
+
+\begin{table}
+ \begin{center}
+\caption{$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線における$n$番目のモードのスピン波共鳴によるマイクロ波吸収強度$I_n'/I_{n=1}'$と起電力$V_n'/V_{n=1}'$の比較。$I_n'$と$V_n'$は共鳴スペクトルの全振幅と定義した。}
+\begin{tabular}{ccccc}
+\hline\hline
+$n$&1&3&5&7\\
+\hline
+$I_n'/I_{n=1}'$&1.00&0.0414&0.0144&0.00743 \\
+$V_n'/V_{n=1}'$&1.00&0.0415&0.0129&0.00786\\
+\hline\hline
+\end{tabular}
+\label{spinwave_V_FMR_compare}
+ \end{center}
+\end{table}
+
+
+
+
+
+
+
+
+\section{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピン波緩和変調}
+\subsection{スピンホール効果を用いたスピン波緩和変調の観測}
+
+\begin{figure}[bp]
+ \begin{center}
+  %\includegraphics[width=85mm]{spinwave_injection_sample.eps}
+ \end{center}
+ \caption{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピン波ダイナミクスへのスピン流注入。
+(a) Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピンホール効果を介したスピン波へのスピン流注入。$\bm{J}_c$は電流、$\bm{J}_s$, $\bm{\sigma}$はそれぞれスピン流の空間方向、スピン流のスピン分極方向を表す。$\bm{M}(x,t)$は空間的に変調したダイナミクスのある磁化であり、$n=3$のスピン波モードを上部に示した。(b) Ni$_{81}$Fe$_{19}$/Pt複合細線の模式図。$\bm{H}$は外部磁場を表す。(c) 細線幅$w=2$ $\mu$m Ni$_{81}$Fe$_{19}$/Pt複合細線の走査型電子顕微鏡像。$\bm{H}$は外部磁場である。(d) マイクロ波吸収スペクトル線幅$W$及びスペクトル強度$S$の定義。(e) Ni$_{81}$Fe$_{19}$/Pt複合細線 ($w=2$ $\mu$m)におけるマイクロ波吸収スペクトル。外部磁場は細線と平行に印加した。$n$はモード番号を表す。}
+ \label{spinwave_injection_sample}
+\end{figure}
+
+第\ref{spintroquemeter}章において、磁化が一様に歳差運動する強磁性薄膜へのスピン流注入を議論した。一様モードの磁化ダイナミクスへのスピン流注入が歳差運動の緩和時間を変調したように、空間的に非一様な磁化ダイナミクス、即ちスピン波ダイナミクスへのスピン流注入においても、同様の緩和変調効果が期待できる。そこでNi$_{81}$Fe$_{19}$/Pt複合細線においてマイクロ波照射によりスピン波共鳴を駆動し、図\ref{spinwave_injection_sample}(a)に示すようにPt層に電流を流すことで、スピンホール効果を介してダイナミクスのあるスピン波へのスピン流注入を行った。
+
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=105mm]{spinwave_relax_n3.eps}
+ \end{center}
+ \caption{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピン波緩和変調。(a) Ni$_{81}$Fe$_{19}$/Pt複合細線及びNi$_{81}$Fe$_{19}$細線における$n=3$モードスピン波共鳴によるマイクロ波吸収スペクトル線幅$W$の非対称成分$W^*(J_c)-W^*(-J_c)$。$W^*(J_c)\equiv W(J_c)/W(0)$である。赤線はNi$_{81}$Fe$_{19}$/Pt複合細線における測定値の線形フィッティング結果、黒線は$W^*(J_c)-W^*(-J_c)=0$である。挿入図はNi$_{81}$Fe$_{19}$/Pt複合細線の模式図。(b) Ni$_{81}$Fe$_{19}$/Pt複合細線及びNi$_{81}$Fe$_{19}$細線における$n=3$モードスピン波共鳴によるマイクロ波吸収スペクトル強度$S$の非対称成分$S^*(J_c)-S^*(-J_c)$。$S^*(J_c)\equiv S(J_c)/S(0)$である。赤線はNi$_{81}$Fe$_{19}$/Pt複合細線における測定値の線形フィッティング結果、黒線は$W^*(J_c)-W^*(-J_c)=0$である。挿入図は$n=3$スピン波共鳴モードの空間分布$m_n(x)$である。}
+ \label{spinwave_relax_n3}
+\end{figure}
+
+
+試料として用いたのは細線幅$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線である。試料の模式図と走査線電子顕微鏡像をそれぞれ図\ref{spinwave_injection_sample}(b)、\ref{spinwave_injection_sample}(c)に示す。Ni$_{81}$Fe$_{19}$層の膜厚は30 nm、Pt層の膜厚は10 nmである。スピン波駆動型スピンポンピングを観測した図\ref{spinwave_sample}(a)の試料と同様に、各細線は膜厚5 nmのAuPd層により接合されている。試料端に導電性ペースト（ドータイト）を用いてポリウレタン導線を配線し、電極と外部磁場が垂直となる条件でPt層に電流を流しながらマイクロ波吸収測定を行った。その際電子スピン共鳴装置の変調磁場による誘導起電力の影響を除くため、導線を十分にねじった。一様磁化歳差運動モードにおける測定と同様に熱効果によるスペクトル変化を排除するため、電流反転に伴うスペクトル変化の非対称成分を調べた。
+
+
+
+
+図\ref{spinwave_sample}(e)に 細線幅$w=2$ $\mu$mのNi$_{81}$Fe$_{19}$/Pt複合細線におけるマイクロ波吸収スペクトルを示す。複数の共鳴マイクロ波吸収は有効双極子境界条件模型におけるスピン波共鳴に起因する信号である。
+
+
+
+Ni$_{81}$Fe$_{19}$/Pt複合細線及びNi$_{81}$Fe$_{19}$細線において測定したマイクロ波吸収スペクトルからスペクトル線幅・強度解析を行った。特に$n=3$モードのスピン波共鳴モードに着目し、マイクロ波吸収スペクトルのスペクトル線幅$W$の電流反転に対する非対称成分$W^*(J_c)-W^* (-J_c)$を調べた結果を図\ref{spinwave_relax_n3}(a)に示す。ここで$W^*(J_c)\equiv W(J_c)/W(0)$である。図\ref{spinwave_relax_n3}(a)はNi$_{81}$Fe$_{19}$/Pt複合細線においてマイクロ波吸収スペクトル線幅$W$が電流$\bm{J}_c$に比例することを示しており、スピン波の緩和時間の電気的変調に成功したことを示す結果である。さらに図\ref{spinwave_relax_n3}(a)に示すようにPt層をなくしたNi$_{81}$Fe$_{19}$細線では電流によるスペクトル線幅変調は観測されなかった。この結果はNi$_{81}$Fe$_{19}$/Pt複合細線において観測された電気的なスピン波緩和変調がNi$_{81}$Fe$_{19}$層に流れる電流ではなく、Pt層を流れる電流に起因することを示しており、Pt層におけるスピンホール効果によってスピン波緩和変調が実現されたことを示す結果である。また図\ref{spinwave_relax_n3}(b)に示すマイクロ波吸収スペクトル強度$S$の電流反転に対する非対称成分$S^*(J_c)-S^*(-J_c)$では、Ni$_{81}$Fe$_{19}$細線には電流依存性が見られないのに対し、Ni$_{81}$Fe$_{19}$/Pt複合細線では図\ref{spinwave_relax_n3}(a)の線幅変調と逆符号の変化を示しており、この結果も電流によるスペクトルの非対称変化がスピン波緩和変調に起因することを強く支持するものである。
+
+\subsection{スピン波緩和変調効果のスピン波共鳴モード依存性}
+
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=105mm]{spinwave_relax_mode.eps}
+ \end{center}
+ \caption{Ni$_{81}$Fe$_{19}$/Pt複合細線におけるスピン波緩和変調のモード番号依存性。(a) Ni$_{81}$Fe$_{19}$/Pt複合細線における$n=1$, 3, 5モードスピン波共鳴によるマイクロ波吸収スペクトル線幅$W$の非対称成分$W^*(J_c)-W^*(-J_c)$。$W^*(J_c)\equiv W(J_c)/W(0)$である。黒線、赤線、青線はそれぞれ$n=1$, 3, 5モードのスピン波共鳴における測定値の線形フィッティング結果、黒線は$W^*(J_c)-W^*(-J_c)=0$である。挿入図はNi$_{81}$Fe$_{19}$/Pt複合細線の模式図。(b) Ni$_{81}$Fe$_{19}$/Pt複合細線における$n=1$, 3, 5モードスピン波共鳴によるマイクロ波吸収スペクトル強度$S$の非対称成分$S^*(J_c)-S^*(-J_c)$。$S^*(J_c)\equiv S(J_c)/S(0)$である。黒線、赤線、青線はそれぞれ$n=1$, 3, 5モードのスピン波共鳴における測定値の線形フィッティング結果、黒線は$S^*(J_c)-S^*(-J_c)=0$である。挿入図はスピン波共鳴モードの空間分布$m_n(x)$である。}
+ \label{spinwave_relax_mode}
+\end{figure}
+
+
+
+スピン波緩和変調を観測したNi$_{81}$Fe$_{19}$/Pt複合細線において、スピン波緩和変調量のスピン波共鳴モード番号依存性を調べた。図\ref{spinwave_relax_mode}(a)に示したのはモード番号$n=1$, 3, 5のスピン波共鳴よるマイクロ波吸収スペクトル線幅$W$の非対称成分$W^*(J_c)-W^* (-J_c)$である。$n=1$モードの変調量は$J_c=20$ mAにおいて$W^*(J_c)-W^* (-J_c)\approx  0.5\times 10^{-3}$程度である。これは図\ref{width_Pt}(a)で、Ni$_{81}$Fe$_{19}$/Pt薄膜における一様モードの緩和変調量が$J_c=20$ mAにおいて$W^*(J_c)-W^* (-J_c)\approx  5\times 10^{-3}$程度であることと整合する。これは大雑把な見積もりとして次のように考えることができる。Ni$_{81}$Fe$_{19}$ (30 nm)/Pt (10 nm)複合細線とNi$_{81}$Fe$_{19}$ (10 nm)/Pt (10 nm)薄膜においてNi$_{81}$Fe$_{19}$とPtの電気伝導度が同程度であることを考えれば、同じ電流量を流した際、Ni$_{81}$Fe$_{19}$/Pt複合細線のPt層に流れる電流量はNi$_{81}$Fe$_{19}$/Pt薄膜のPt層に流れる電流量と比較して$\sim 1/2$程度であり、また緩和変調量が式(\ref{spinmeter})より強磁性層の膜厚の逆数に比例することから、Ni$_{81}$Fe$_{19}$/Pt複合細線における緩和変調量はNi$_{81}$Fe$_{19}$/Pt薄膜における緩和変調量の$\sim 1/3$程度となる。結局、同じ電流量を試料に流した場合、Ni$_{81}$Fe$_{19}$/Pt複合細線における緩和変調量はNi$_{81}$Fe$_{19}$/Pt薄膜における緩和変調量の$\sim 1/6$程度となる。実際にはNi$_{81}$Fe$_{19}$/Pt複合細線においてはAuPd層に流れる電流成分があり、試料の大きさ（細線の長さ：500 $\mu$m、薄膜の幅：400 $\mu$m）の違いもあるため、細線における緩和変調量はさらに小さくなり、$\sim 1/10$程度として観測されたといえる。
+
+このように$n=1$番目のスピン波共鳴モードでは非常に小さな緩和変調量しか得られていないのに対し、$n=3$, 5番目のスピン波共鳴モードでは明確な緩和変調効果が観測されている。モード番号の増大、即ち磁化ダイナミクスの非一様性の増大とともに緩和変調効果が増大することは、磁化歳差運動に対するスピントルクの多重作用を示唆している。一様に注入されたスピン流が空間的に非一様な磁化にスピントルクを与える際、その帰結として図\ref{spatially}(b)のように空間的に非一様な伝導電子のスピン偏極が生じる。これは磁化歳差運動が一様である図\ref{spatially}(b)の状況とは大きく異なる。このような非一様な伝導電子のスピン分布は、図\ref{spatially}(b)のように伝導電子スピンの空間変調方向へ拡散するスピン流を駆動する。この結果、磁化には再度スピントルクが与えられる。従って同量のスピン流が注入された場合でも、磁化が非一様である場合にはスピントルクが多重に作用し、大きな緩和変調効果をもたらす。この結果は高次モードほど緩和変調効果が増大した図\ref{spinwave_relax_mode}(a)及び\ref{spinwave_relax_mode}(b)の結果と整合する。以上の結果は高次モードのスピン波緩和変調効果を利用することで、スピン流の高感度検出が可能となることを示す結果である。
+
+
+
+
+\begin{figure}[tbp]
+ \begin{center}
+  %\includegraphics[width=90mm]{spatially.eps}
+ \end{center}
+ \caption{磁化ダイナミクスへのスピン流注入。(a) 一様磁化歳差運動へのスピン流注入。(b) 非一様磁化歳差運動へのスピン流注入。}
+ \label{spatially}
+\end{figure}
+
+
+
+
+
+
+
+\section{本章のまとめ}
+本章で得られた主要な結果は以下の4点である。
+\begin{enumerate}
+ \item 電子線描画法及びリフトオフ法を用いてNi$_{81}$Fe$_{19}$/Pt複合細線を作成し、有効双極子境界条件におけるスピン波共鳴を観測した。
+ \item Ni$_{81}$Fe$_{19}$/Pt複合細線において、スピン波共鳴に駆動されるスピンポンピングを逆スピンホール効果を用いて検出した。
+ \item スピン波共鳴によるスピン流生成の現象論的模型を構築し、逆スピンホール効果を用いたスピン波共鳴駆動型スピンポンピングの検出により、微小領域のスピン波共鳴の電気的検出が可能であることを示し、これを実証した。
+ \item Ni$_{81}$Fe$_{19}$/Pt複合細線において、スピンホール効果を用いたスピン波緩和変調を実現した。
+ \item スピン波緩和変調のモード番号依存性を精密に調べ、高次のスピン波ダイナミクスがスピン流の高感度検出を可能とすることを見出した。
+\end{enumerate}
+
