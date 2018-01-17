@@ -1,0 +1,435 @@
+\chapter{金属/半導体複合構造における偏光情報−電圧変換：光誘起逆スピンホール効果}
+
+
+光学技術の発展は光記録や光情報通信分野の飛躍的拡充をもたらし、現代情報技術の基幹を成している~\cite{Gupta}。
+近年では光学技術の中でも特に簡便且つ効率的な偏光状態の生成・制御・検出技術の創出が重要な課題となっている~\cite{Lindfors,jeong,Schubert,lai}。
+これは光の偏光状態が単一光子スピンの状態を表し、量子情報通信をはじめとする量子情報技術に本質的役割を果たすことに起因する~\cite{citeulike:541803,Bouwmeester}。
+
+本研究では逆スピンホール効果を用いたスピン流の電気的検出技術を応用し、Pt/GaAs複合構造における偏光情報−電圧変換「光誘起逆スピンホール効果」を実現した。
+円偏光に誘起された起電力の偏光照射角及び偏光楕円率依存性は円偏光励起スピン流による逆スピンホール効果が予言する振る舞いを示した。さらに光伝播解析により、
+光誘起逆スピンホール効果に起因する起電力は照射光円偏光度に比例することを見出し、これを実証した。
+本結果はスピン流を介した偏光情報の直接的な電気的検出を可能にするのみならず、金属/半導体複合構造における光スピン・スピン流・電流の相互作用を実現するものである。
+
+
+\section{Pt/GaAs複合構造における円偏光誘起起電力}
+
+\subsection{円偏光励起によるスピン偏極電子の生成と逆スピンホール効果}
+
+光の偏光情報は光学遷移の選択則により電子スピンと結合する~\cite{Pierce,Meier}。
+図\ref{PISHE}(a)に閃亜鉛鉱型結晶構造を持つ直接遷移型I\hspace{-.1em}I\hspace{-.1em}I$-$V族化合物半導体GaAsのバンド構造を示す。GaAsへの円偏光照射は角運動量保存則を満たすように、$\Delta m_j=\pm 1$の選択則により光の進行方向に分極したスピン偏極伝導電子を生成する~\cite{Pierce,Meier}。電子スピンの情報は本研究により確立した逆スピンホール効果によるスピン流検出技術を用いることで、電気信号に変換することが可能である。これは円偏光に誘起されたスピン偏極電子をスピン流として取り出すことで、逆スピンホール効果を経由した偏光情報から電気信号への変換
+が可能であることを示唆している。即ち逆スピンホール効果は電子スピンのみならず、光スピンの電気信号への変換を可能にする。本章ではこのような光スピンによる逆スピンホール効果「光誘起逆スピンホール効果」の観測を目指した。
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=12cm,keepaspectratio,clip]{ISHE3.eps}
+\caption{Pt/GaAs複合構造における光誘起逆スピンホール効果。(a) GaAsのバンド構造と円偏光によるスピン偏極電子の生成。(b) Pt/GaAs複合構造の模式図。$\theta$は光の照射方向と電極方向のなす試料面内の角度である。円偏光は薄膜面法線方向に対して$\theta_0=65^\circ$の角度で照射した。(c) Pt層における光誘起逆スピンホール効果。$\bm{E}_\text{ISHE}$は光誘起逆スピンホール効果による起電力、$\bm{J}_s$, $\bm{\sigma}$はそれぞれスピン流の空間成分、スピン分極ベクトルを表す。}
+\label{PISHE} 
+\end{center}
+\end{figure}
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=5.5cm,keepaspectratio,clip]{PEM_V.eps}
+\caption{光弾性変調器（PEM）を用いた円偏光変調起電力ロックイン測定。(a) PEMによる位相遅延量$\delta$の時間変化$\delta=\delta_0\sin pt$。$\delta_0=90^\circ$とした。(b) PEMに速相軸から$45^\circ$傾いた直線偏光を入射した場合の電界ベクトルの軌跡。直線偏光−右円偏光−直線偏光−左円偏光−直線偏光と変化する。(c) 円偏光の吸収に起因する光誘起逆スピンホール起電力の時間変化。右円偏光が照射された場合に$V^\text{R}$の起電力、左円偏光が照射された場合には符号が反転した$V^\text{L}$の起電力が生じる。
+}
+\label{PEM_V} 
+\end{center}
+\end{figure}
+
+
+光誘起逆スピンホール効果を用いた偏光情報−電圧変換を実現するため、試料として$n$型GaAs基板(ドナー濃度：$N_D=4.7 \times 10^{18}$ $\text{cm}^{-3}$)上に5 nmのPt層を成膜したPt/GaAs複合構造を作成した。試料の模式図を図\ref{PISHE}(b)に示す。Pt/GaAs複合構造に円偏光を照射すると、図\ref{PISHE}(a)に示すようにGaAs層の伝導帯にスピン偏極した電子が励起される。このスピン偏極電子はPt/GaAs界面を介してPt層にスピン流を誘起する。このスピン流は図\ref{PISHE}(c)のようにPt層の光誘起逆スピンホール効果によりPt層両端に起電力を生む。この起電力を検出することで、照射光の偏光情報を電気信号として検出することが可能となる。光誘起逆スピンホール効果に起因する起電力を検出するため、Pt層の
+両端にワイヤーボンディングにより電極を配線し、光弾性変調器（Photoelastic Modulator: PEM）を用いてPt層両端に生じる起電力の円偏光変調ロックイン測定を行った。PEMはピエゾ素子を結晶に取り付けたもので、高周波電圧の印加により光学遅延量$\delta$を周波数$p$で$\delta=\delta_0\sin pt$のように変調する。$\delta_0=90^\circ$とした場合の光学遅延量$\delta$の時間変化を図\ref{PEM_V}(a)に示した。PEMに速相軸から$45^\circ$傾いた直線偏光を入射した場合、図\ref{PEM_V}(b)に示すように電界ベクトルの軌跡は直線偏光−右円偏光−直線偏光−左円偏光−直線偏光と時間変化する。このため円偏光の吸収に起因する光誘起逆スピンホール起電力は図\ref{PEM_V}(c)のように周波数$p$で振動し、右円偏光が照射された場合に$V^\text{R}$の起電力、左円偏光が照射された場合には逆向きのスピン分極が誘起されるため、符号が反転した$V^\text{L}$の起電力がPt層両端に生じる。従ってPEMの位相変調量$\delta$を参照信号とした起電力ロックイン測定を行うことで、右円偏光・左円偏光照射時の起電力差$V^\text{R}-V^\text{L}$が検出される。このように偏光状態の変調と同周波数で変調する起電力信号を検出するため、試料に照射される右円偏光・左円偏光の間で光強度差が生じないように光学系を調整することで、光電流による起電力~\cite{Pankove}は測定起電力から分離される。
+測定には波長$\lambda =670$ nm ($h\nu=1.85$ eV)、強度$I_i=10$ mW の半導体レーザーを用い、Pt/GaAs複合構造の試料面法線方向から$\theta_0=65^\circ$の角度で円偏光を照射した\footnote{垂直照射$\theta_0=0$では$\bm{E}_\text{ISHE}\propto \bm{J}_s\times \bm{\sigma}=0$となってしまうため、斜め照射した。}。レーザー光径は光が試料全体に照射される程度に集光し、PEMの位相遅延量を$\delta_0=90^\circ$、周波数を$p=50$ kHzとした。さらにPEMの位相変調により生成される右円偏光・左円偏光の間に強度差が生じないよう光学系を調整した。本機構により生じる起電力は照射する光の円偏光度に強く依存するだけでなく、光誘起逆スピンホール効果($\bm{E}_\text{ISHE}\propto \bm{J}_s\times \bm{\sigma}$)に起因する特徴的な光照射角度依存性を示す。このため
+Pt層に生じる起電力$V^\text{R}-V^\text{L}$の円偏光照射角度及び円偏光度依存性を調べた。なお正孔のスピン分極は$\sim 100$ fs程度で緩和し~\cite{Hilton}、電子のスピン緩和時間$\sim$ 35 ps~\cite{PhysRevB.63.235201}と比較して極めて速いため、本系では電子スピンのみが重要となる。全ての測定は室温で行ったものである。なお、本測定においてバイアス電圧は印加しておらず、Pt層に誘起されるスピン流は電荷の流れを伴わない純スピン流である。
+%\footnote{GaAsにおける励起子の束縛エネルギー$\sim  3.6$ meV~\cite{Adachi2}は室温の熱エネルギー$\sim  26$ meVと比較して小さい。}。
+
+
+
+
+
+\subsection{円偏光誘起起電力の光照射角度依存性}
+図\ref{anglesetup}に$V^\text{R}-V^\text{L}$の光照射角度依存性測定系を示す。偏光子を用いてPEMの速相軸に対して$45^\circ$傾いた直線偏光を入射することで円偏光を生成し、集光して試料に照射した。
+
+図\ref{Pangle}にPt/GaAs複合構造において円偏光変調ロックイン測定により検出したPt層両端に生じる右円偏光・左円偏光照射時の起電力差$V^\text{R}-V^\text{L}$の光照射角度$\theta$依存性を示す。$\theta$は光の照射方向と電極方向のなす試料面内の角度であり、$\theta_0$が変わらないように試料を回転することで変化させた。$V^\text{R}-V^\text{L}$は照射角度$\theta$と共に増大し、
+光の照射方向と電極が直交する条件($\theta=90^\circ$)において最大となった。さらに$\theta>90^\circ$以上では$V^\text{R}-V^\text{L}$は減少し、$\theta=180^\circ$を境に符号が反転した。注目すべきは$V^\text{R}-V^\text{L}$の光照射角度依存性が正弦関数で非常によく再現されることである。この振る舞いは光誘起逆スピンホール効果が予言する振る舞いと整合する。光誘起逆スピンホール効果は$\bm{E}_\text{ISHE} \propto \bm{J}_s\times \bm{\sigma}$に従いスピン流$\bm{J}_s$を起電力$\bm{E}_\text{ISHE}$に変換する。円偏光照射により生成される伝導電子のスピン分極方向$\bm{\sigma}$は光の進行方向に平行或いは反平行であるため\cite{Meier}、Pt層に流れるスピン流による光誘起逆スピンホール起電力は$V^\text{R}-V^\text{L}\propto \mid   {\bf J}_{\it s}\times {\bm \sigma}\mid _{x }\propto \sin\theta$に従う。ここで$\mid   {\bf J}_{\it s}\times {\bm \sigma}\mid _{x }$は$ {\bf J}_{\it s}\times {\bm \sigma}$の電極方向（$x$方向）成分である。従って光誘起逆スピンホール効果に起因する$V^\text{R}-V^\text{L}$は光の照射方向と電極が直交する$\theta=90^\circ$で最大となり、光の照射方向と電極が平行となる$\theta=180^\circ$で消失する。さらに$\theta>180^\circ$では$V^\text{R}-V^\text{L}$の符号が反転する。これは観測された$V^\text{R}-V^\text{L}$の振る舞いと一致する。また、Pt層をCuに変えたCu/GaAs複合構造では$V^\text{R}-V^\text{L}$は検出されなかった。これは起電力がPt層のスピン軌道相互作用、すなわち光誘起逆スピンホール効果に起因することを強く支持する結果である。
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=10cm,keepaspectratio,clip]{anglesetup.eps}
+\caption{Pt/GaAs複合構造における円偏光変調ロックイン起電力$V^\text{R}-V^\text{L}$の光照射角度$\theta$依存性測定系。偏光子を用いてPEMの速相軸に対して$45^\circ$傾いた直線偏光を入射することで円偏光を生成し、集光して試料に照射した。}
+\label{anglesetup} 
+\end{center}
+\end{figure}
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=6cm,keepaspectratio,clip]{angle.eps}
+\caption{Pt/GaAs複合構造におけるPt層両端に生じる起電力差$V^\text{R}-V^\text{L}$の光照射角度$\theta$依存性。$\theta$は円偏光の照射方向と電極方向のなす試料面内の角度である。黒丸は測定結果であり、実線は$\sin\theta$に比例する関数によるフィッティング結果である。 }
+\label{Pangle} 
+\end{center}
+\end{figure}
+
+
+\subsection{円偏光誘起起電力の偏光楕円率依存性}\label{daendaern}
+
+$V^\text{R}-V^\text{L}$の円偏光度依存性測定系を図\ref{ellipsetup}に示す。偏光子の偏光軸と$y$軸のなす角$\phi$を操作することでPEMに入射する直線偏光の偏光方向を変え、試料に照射される円偏光の楕円率を変化させることで、円偏光度依存性を調べた。$\phi=0$のとき直線偏光、$\phi=45^\circ$のとき円偏光が試料に照射される。起電力が最大となるように電極に対する試料面内の光照射角度は$\theta=90^\circ$とした。なおレーザー直後の偏光子と$\lambda/4$波長板でレーザー光を円偏光にすることで、$\phi$を変えた場合でも試料に照射される光強度が同一になるよう光学系を調整した。
+
+
+\begin{figure}[h]
+\begin{center}
+%\includegraphics[width=12cm,keepaspectratio,clip]{ellipsetup.eps}
+\caption{Pt/GaAs複合構造における円偏光照射による起電力の偏光楕円率依存性測定系。偏光子の偏光軸と$y$軸のなす角$\phi$の操作によりPEMに入射する直線偏光の偏光方向を変え、試料に照射される偏光の円偏光度を変化させた。$\phi$を変えても光強度に差が生じないようにレーザー直後の偏光子及び$\lambda/4$波長板を用いた。 }
+\label{ellipsetup} 
+\end{center}
+\end{figure}
+
+
+
+図\ref{Pellipticity}(a)に起電力$V^\text{R}-V^\text{L}$の偏光楕円率$A$依存性を示す。$A$は楕円偏光の長軸半径$E_l$と短軸半径$E_s$の比$A\equiv E_s/E_l=\tan\phi$と定義した。光進行方向のスピン角運動量成分は$A=0$（$A=1$）のとき最小（最大）となる。偏光楕円率$A$の増大に従い$V^\text{R}-V^\text{L}$は増大しており、起電力が円偏光のスピン角運動量吸収に起因することを明示している。
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=10.5cm,keepaspectratio,clip]{ellipticity.eps}
+\caption{(a) Pt/GaAs複合構造における右円偏光・左円偏光照射時の起電力差$V^\text{R}-V^\text{L}$の照射光楕円率$A$依存性。$A$は楕円偏光の長軸半径$E_l$と短軸半径$E_s$の比$A\equiv E_s/E_l$と定義した。(b) Pt/GaAs複合構造におけるGaAs層への入射光楕円率$A^\text{GaAs}$の照射光楕円率$A$依存性。(c) Pt/GaAs複合構造におけるGaAs層への入射光強度$I_t^\text{GaAs}$の照射光楕円率$A$依存性。(d) Pt/GaAs複合構造におけるGaAs層への入射光円偏光度$P^\text{GaAs}_\text{circ}$の照射光楕円率$A$依存性。(e) GaAs層に入射する光の偏光度$P^\text{GaAs}_\text{circ}$と単位光強度あたりに生じる右円偏光・左円偏光照射時の起電力差$(V^R-V^L)/I_t^\text{GaAs}$の関係。実線は線形フィッティング結果である。}
+\label{Pellipticity} 
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=8.5cm,keepaspectratio,clip]{fresnel.eps}
+\caption{Pt/GaAs複合構造における光の屈折・反射とGaAs層への透過光。(a) Pt/GaAs複合構造における光の屈折と層番号の定義。図はp偏光の照射を表す。(b) 照射した円偏光の電場ベクトルの軌跡。横軸にs偏光成分、縦軸にp偏光成分を示した。(c) 波線の円偏光をPt/GaAs複合構造に照射した場合のGaAs層への入射光の電場ベクトルの軌跡。短軸及び長軸がs偏光方向及びp偏光方向に揃わないのは屈折率の虚数成分に起因する。}
+\label{fresnel} 
+\end{center}
+\end{figure}
+
+
+
+
+
+
+円偏光を照射した場合でもs偏光、p偏光\footnote{s偏光(TE波): 電場が入射面に垂直に振動する光\\p偏光(TM波): 電場が入射面に平行に振動する光}の透過率の違いによりGaAs層で吸収される光の偏光状態は楕円偏光となる。図\ref{fresnel}に示すようにPt表面及びPt/GaAs界面での反射・屈折を取り入れることで、GaAs層に入射する光の偏光状態を求めることが可能である~\cite{Macleod,Born}。
+Pt層、GaAs層の複素屈折率をそれぞれ$n_1$, $n_2$とし、GaAs層は十分厚く、GaAs層内部で反射波がないものとする。円偏光は位相が$\pi/2$だけ違うs偏光とp偏光の和として表される。
+図\ref{fresnel}の薄膜系に平面波光
+\begin{equation}
+{\mathscr{E}} \exp\{i[\omega t-(2\pi n_0/\lambda)(\sin\theta_0 x+\cos\theta_0 z)]\}\label{erer}
+\end{equation}
+が入射した場合、光の伝播は
+\begin{equation}
+\left( {\begin{array}{*{20}{c}}
+   {{E_a^{s(p)}}/{E_b^{s(p)}}}  \\
+   {{H_a^{s(p)}}/{E_b^{s(p)}}}  \\
+\end{array}} \right) = \left( {\begin{array}{*{20}{c}}
+   B^{s(p)}  \\
+   C^{s(p)}  \\
+\end{array}} \right) = \left( {\begin{array}{*{20}{c}}
+   {\cos \delta } & {(i\sin \delta )/{\eta _1^{s(p)}}}  \\
+   {i{\eta _1^{s(p)}}\sin \delta } & {\cos \delta }  \\
+\end{array}} \right)\left( {\begin{array}{*{20}{c}}
+   1  \\
+   {{\eta _2^{s(p)}}}  \\
+\end{array}} \right)\label{tokusei}
+\end{equation}
+により特徴付けられる~\cite{Macleod}。
+ここで$E_a^{s(p)}$及び$H_a^{s(p)}$は界面$a$におけるs偏光（p偏光）の電場と磁場の接線成分、$E_b^{s(p)}$は界面$b$におけるs偏光（p偏光）の電場の接線成分である。$\eta_r^{s(p)}$は光学アドミタンスであり、電場$\mathscr{H}_r^{s(p)}$及び磁場$\mathscr{E}_r^{s(p)}$の境界に平行な成分$E_r^{s(p)}$, $H_r^{s(p)}$を用いて$\eta_r^{s(p)}=H_r^{s(p)}/E_r^{s(p)}$で定義される\footnote{s偏光: $E_r^s=\mathscr{E}_r^s$, $H_r^s=\mathscr{H}_r^s\cos\theta_r$
+\\p偏光: $E_r^p=\mathscr{E}_r^p\cos\theta_r$, $H_r^p=\mathscr{H}_r^p$}\footnote{$r$層における進行波と反射波それぞれについて成り立つ。}。$r=0$, 1, 2は媒質の番号であり、それぞれ空気、Pt層、GaAs層に対応する。。
+s偏光、p偏光についてそれぞれ
+\begin{equation}
+\eta_r^s=y_r\cos\theta_r=n_r\mathscr{Y}\cos\theta_r \label{ads}
+\end{equation}
+\begin{equation}
+\eta_r^p=\frac{y_r}{\cos\theta_r}=\frac{n_r\mathscr{Y}}{\cos\theta_r}\label{adp}
+\end{equation}
+が成り立つ。
+ここで$y_r\equiv n_r/c\mu_r=n_r\mathscr{Y}$であり、$\mathscr{Y}=(\varepsilon _0/\mu_0)^{1/2}=2.6544\times 10^{-3}$ Sは自由空間における光学アドミタンスである\footnote{ここで$\varepsilon _0$と$\mu_0$はそれぞれ真空中の誘電率と透磁率である。媒質$r$中での透磁率を$\mu_r\simeq \mu_0$とした。また
+\begin{equation}
+Y^{s(p)} \equiv  \frac{{{H_a^{s(p)}}}}{{{E_a^{s(p)}}}} = \frac{C^{s(p)}}{B^{s(p)}} = \frac{{{\eta _2^{s(p)}}\cos \delta  + i{\eta _1^{s(p)}}\sin \delta }}{{\cos \delta  + i({\eta _2^{s(p)}}/{\eta _1^{s(p)}})\sin \delta }}
+\end{equation}
+は薄膜系の入力光学アドミタンスである。}。$n_0$, $n_1$, $n_2$はそれぞれ空気、Pt、GaAsの複素屈折率であり、$\theta_r$は図\ref{fresnel}のように定義した。
+また、
+\begin{equation}
+\delta=\frac{2\pi n_1 d_1 \cos\theta_1}{\lambda}
+\end{equation}
+はPt層での光の伝播に伴う位相因子である。$d_1$はPt層の膜厚、$\lambda$は光の波長である。
+式(\ref{tokusei})の$B^{s(p)}$, $C^{s(p)}$を用いると、透過率$T^{s(p)}\equiv I_t^{s(p)}/I_i^{s(p)}$はs偏光及びp偏光について次のように与えられる~\cite{Macleod}。
+\begin{equation}
+T^{s(p)} = \frac{{4{\eta^{s(p)} _0}\Re [{\eta^{s(p)} _2}]}}{{({\eta^{s(p)} _0}B ^{s(p)}+ C^{s(p)}){{({\eta^{s(p)} _0}B^{s(p)} + C^{s(p)})}^*}}}\label{toukaritu}
+\end{equation}
+$I_i^{s(p)}$と$I_t^{s(p)}$はそれぞれs偏光（p偏光）の入射強度と透過強度であり、$I^{s(p)}=(1/2)\Re[E^{s(p)}{H^{s(p)}}^*]$である\footnote{$\Re[A]$は$A$の実部を表す。}。$^*$は複素共役を表す。
+また透過係数を入射光の電場振幅$\mathscr{E}_i^{s(p)}$と透過光の電場振幅$\mathscr{E}_t^{s(p)}$の比$\tau^{s(p)}\equiv \mathscr{E}_t^{s(p)}/\mathscr{E}_i^{s(p)}$で定義すると、s偏光、p偏光についてそれぞれ
+\begin{equation}
+\tau ^s = \frac{{2{\eta^{s} _0}}}{{{\eta^{s} _0}B^s + C^s}}\label{toukakeisuus}
+\end{equation}
+\begin{equation}
+\tau ^p = \frac{{2{\eta^{p} _0}}}{{{\eta^{p} _0}B^p + C^p}}\frac{\cos\theta_0}{\cos\theta_2}\label{toukakeisuup}
+\end{equation}
+である~\cite{Macleod}。
+式(\ref{toukaritu})、(\ref{toukakeisuus})、(\ref{toukakeisuup})及びスネルの法則
+\begin{equation}
+n_0\sin\theta_0=n_1\sin\theta_1=n_2\sin\theta_2
+\end{equation}
+を用いると、表\ref{paramet}に示すPt/GaAs複合構造におけるパラメータのもとで、s偏光及びp偏光について透過率$T^{s(p)}$、透過係数$\tau^{s(p)}$が表\ref{result}のように得られる。得られた透過率と透過係数から、GaAs層に入射する偏光状態及び光強度が求められる。図\ref{fresnel}(b)に示す円偏光をPt/GaAs複合構造に照射した場合にs偏光成分及びp偏光成分のGaAsへの入射光成分を透過係数$\tau^{s(p)}$を用いて求め、GaAs層に入射する光の電場ベクトルの軌跡を計算した結果を図\ref{fresnel}(c)に示す。
+図\ref{fresnel}(c)は円偏光を照射した場合でもGaAs層に入射する光は楕円偏光となることを示しており、この楕円偏光の楕円率は$A^\text{GaAs}=0.584$である。円偏光ではなく楕円率$A$の楕円偏光をPt/GaAs複合構造に照射した場合も、それぞれの楕円偏光について同様に表\ref{result}の透過係数を用いて入射光電場ベクトルの軌跡を計算することで、GaAs層への入射光楕円率$A^\text{GaAs}$の照射光楕円率$A$依存性が図\ref{Pellipticity}(b)のように得られる\footnote{近似的に$\displaystyle A^\text{GaAs}\simeq \frac{\Re[\tau^s]}{\Re[\tau^p]}A=0.584A$が成り立つ。この近似は$\tau^{s(p)}$の虚部が実部に比べて小さいために、図\ref{fresnel}(c)に示すようにGaAs層へ入射する楕円偏光の短軸・長軸がs偏光方向・p偏光方向からほとんど傾かないことに起因する。\label{foo}}。
+GaAs層へ入射する光強度$I_t^\text{GaAs}$もs偏光成分、p偏光成分の透過係数の違いにより照射光楕円率に強く依存する。
+偏光楕円率$A$の楕円偏光をPt/GaAs複合構造に照射した場合にGaAs層に入射する光強度$I_t^\text{GaAs}$は照射強度$I_i$を用いて
+\begin{equation}
+I_t^\text{GaAs}=\left( T^s\frac{A^2}{1+A^2}+T^p\frac{1}{1+A^2}\right) I_i\label{toukaI}
+\end{equation}
+と表される\footnote{楕円率$A= \mathscr{E}_s/\mathscr{E}_l$である楕円偏光の短軸半径$\mathscr{E}_s$と長軸半径$\mathscr{E}_l$がそれぞれs偏光成分の電場$\mathscr{E}^s$とp偏光成分の電場$\mathscr{E}^p$となるように照射光の光軸を決めると、光強度比は$({\mathscr{E}^{s}})^ 2:({\mathscr{E}^p})^2=A^2:1$である。照射強度を$I_i$とすると$pA^2+p=I_i$が成り立つ必要があり、$p=I_i/(1+A^2)$が得られる。従って照射強度はs偏光成分$I_i^s$、p偏光成分$I_i^p$に分けて$I_i=I_i^s+I_i^p=\left(A^2/(1+A^2)+1/(1+A^2)\right)I_i$と表される。s偏光成分、p偏光成分それぞれに透過係数$T^{s(p)}$をかけることで、式(\ref{toukaI})が得られる。}。
+式(\ref{toukaI})及び表\ref{result}の透過率を用いることで、照射光強度$I_i=10$ mWの場合にGaAs層に入射する光強度$I_t^\text{GaAs}$の照射光楕円率$A$依存性が図\ref{Pellipticity}(c)のように得られる\footnote{照射光を試料全体に照射される程度に集光したため、照射光は全て試料面で反射或いは透過するとした。}\footnote{
+s偏光とp偏光の透過率の違いにより、図\ref{ellipsetup}及び図\ref{Pellipticity}に示した円偏光楕円率依存性測定において照射光の楕円率$A$を変えたとき光強度に差が現れないように光学系を調整した場合でも、GaAs層で吸収される光強度は式(\ref{toukaI})に従って楕円率$A$に依存してしまう。しかしp偏光の透過率がs偏光よりも大きいため、直線偏光($A=0$)照射時の方が円偏光($A=1$)照射時と比較してGaAs層で吸収される光強度は強く、起電力が吸収強度ではなく吸収した光の偏光度に依存することを改めて示す結果である。}。この楕円偏光のGaAs層への入射角はスネルの法則から求められる。式(\ref{erer})と同様に、GaAs層を伝播する平面波は
+\begin{equation}
+{\mathscr{E}} \exp\{i[\omega t-(2\pi n_2/\lambda)(\sin\theta_2 x+\cos\theta_2 z)]\}
+\end{equation}
+と表される。スネルの法則から
+\begin{equation}
+k_x=\frac{2\pi n_2}{\lambda}\sin\theta_2=\frac{2\pi n_2}{\lambda}\frac{n_0}{n_2}\sin\theta_0=\frac{2\pi n_0}{\lambda}\sin\theta_0
+\end{equation}
+\begin{equation}
+k_z=\frac{2\pi n_2}{\lambda}\cos\theta_2=\frac{2\pi n_2}{\lambda}\sqrt{1-\left(\frac{n_0}{n_2}\sin\theta_0\right)^2}
+\end{equation}
+である。$k_z$の虚数項は光の減衰を表す。GaAs層への光の入射角$\theta_2$は
+\begin{equation}
+\tan\theta_2=\frac{k_x}{\Re[k_z]}
+\end{equation}
+で与えられ、表\ref{paramet}のパラメータを用いて$\theta_2=13.9^\circ$となる。またこの楕円偏光のGaAs層への侵入長は
+$t_\text{GaAs}=1/\alpha=\lambda/(4\pi\Im[n2])=340$ nm程度である\footnote{$\Im[A]$は$A$の虚部。}。$\alpha$は吸収係数である。
+
+
+
+\begin{table}[tbp]
+\begin{center}
+\caption{Pt/GaAs複合構造におけるパラメータ。$n_0$, $n_1$, $n_2$はそれぞれ空気、Pt~\cite{Ordal}、GaAs~\cite{Adachi}の複素屈折率、$\theta_0$は円偏光の照射角、$d_1$はPt層の膜厚、$\lambda$は光の波長である。}
+\begin{tabular}{ccccccc} 
+\hline\hline
+$n_0$ & $n_1$ (Pt) & $n_2$ (GaAs) & $\theta_0$ (deg) & $d_1$ (nm) & $\lambda$ (nm)  \\
+\hline
+1.00 & $2.12-4.00i$ & $3.79-0.157i$ & 65 & 5 & 670 \\
+\hline\hline
+\label{paramet}
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+\begin{table}[tbp]
+\begin{center}
+\caption{Pt/GaAs複合構造におけるs偏光とp偏光の透過率$T^{s(p)}$及び透過係数$\tau^{s(p)}$。}
+\begin{tabular}{cccc} 
+\hline\hline
+\multicolumn{2}{c}{s偏光} & \multicolumn{2}{c}{p偏光} \\
+\hline
+$T^s$ & $\tau^s$ & $T^p$ & $\tau^p$ \\
+\hline
+0.249 & $0.168+0.0200i$ & 0.715 & $0.287+0.00589i$ \\
+\hline\hline
+\label{result}
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+
+
+\begin{table}[tbp]
+\begin{center}
+\caption{Pt/GaAs複合構造への円偏光照射によりGaAs層に入射した光状態。$P^\text{GaAs}_\text{circ}$はGaAs層に入射した光の円偏光度、$\theta_2$はGaAs層への光の入射角、$t_\text{GaAs}$はGaAs層における光の侵入長である。 }
+\begin{tabular}{cccc} 
+\hline\hline
+$P^\text{GaAs}_\text{circ}$ & $\theta_2$ (deg) & $t_\text{GaAs}$ (nm) \\
+\hline
+0.871 & 13.9 & 340 \\
+\hline\hline
+\label{resuresu}
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+GaAs層に入射する楕円偏光の偏光楕円率$A^\text{GaAs}$から、GaAs層で吸収される光の円偏光度$P^\text{GaAs}_\text{circ}$と光誘起逆スピンホール起電力$V^\text{R}-V^\text{L}$の関係を調べる。
+$z$軸方向に伝播する楕円偏光の$x$成分、$y$成分を右円偏光($\cos\omega t, -\sin \omega t$)と左円偏光($\cos\omega t, \sin \omega t$)の和
+$p(\cos\omega t, -\sin \omega t)+q(\cos\omega t, \sin \omega t)=((p+q)\cos\omega t,(-p+q)\sin \omega t)$
+で表すと、偏光楕円率は$A=(p-q)/(p+q)$である。この楕円偏光の円偏光度$P_\text{circ}$を右円偏光強度$I^+$、左円偏光強度$I^-$を用いて
+\begin{equation}
+P_\text{circ}\equiv \frac{I^+-I^-}{I^++I^-}
+\end{equation}
+で定義すると、$P_\text{circ}=(p^2-q^2)/(p^2+q^2)$であり、偏光楕円率$A$と
+\begin{equation}
+P_\text{circ}=\frac{2A}{1+A^2}\label{rho}
+\end{equation}
+の関係が得られる。$I^+$と$I^-$はそれぞれ右回りの光子数、左回りの光子数に比例する量であるため、偏光度$P_\text{circ}$は右回りと左回りの光子数差に対応する。従って、円偏光吸収により生成されるスピン偏極電子のスピン分極は、GaAs層で吸収される光の円偏光度$P^\text{GaAs}_\text{circ}$に比例する~\cite{Pierce,Meier}。
+図\ref{Pellipticity}(b)に示したGaAs層への入射光楕円率$A^\text{GaAs}$及び式(\ref{rho})を用いて得られる照射光楕円率$A$とGaAs層への入射光円偏光度$P^\text{GaAs}_\text{circ}$の関係を図\ref{Pellipticity}(d)に示す。
+図\ref{Pellipticity}(a)、\ref{Pellipticity}(c)、\ref{Pellipticity}(d)を用いることで、GaAs層に入射する光の偏光度$P^\text{GaAs}_\text{circ}$と単位光強度あたりに生じる右円偏光・左円偏光照射時の起電力差$(V^R-V^L)/I_t^\text{GaAs}$の関係が図\ref{Pellipticity}(e)のように得られる。
+図\ref{Pellipticity}(e)は$(V^R-V^L)/I_t^\text{GaAs}$と$P^\text{GaAs}_\text{circ}$、即ち伝導電子スピン分極が比例関係にあることを示している。逆スピンホール効果による起電力はスピン流のスピン偏極度に比例するため、図\ref{Pellipticity}(e)は光誘起逆スピンホール起電力の振る舞いと整合する。即ち以上の結果は本系において検出された起電力が光誘起逆スピンホール効果を検出したものであることを示すものである。
+%$A=0.584$を用いると、円偏光を照射した場合にGaAs層に入射する光の偏光度は$P^\text{GaAs}_\text{circ}=0.871$となる。
+
+
+
+
+
+\section{光誘起逆スピンホール効果を用いた偏光情報−電圧変換}
+
+
+光誘起逆スピンホール効果を用いることで直接的な偏光情報−電圧変換が可能となる。
+図\ref{Pellipticity}(e)は右円偏光・左円偏光照射時の起電力差$(V^R-V^L)/I_t^\text{GaAs}$がGaAs層に吸収される光の円偏光度$P^\text{GaAs}_\text{circ}$と比例関係にあることを示す。
+これは光誘起逆スピンホール効果の予言と整合するが、$V^R-V^L$と照射光の円偏光度$P_\text{circ}$の関係は自明でない。以下では簡単のため
+\begin{equation}
+V^R-V^L\equiv  Q {I_{t}^\text{GaAs}}P^\text{GaAs}_\text{circ}\label{henkohirei}
+\end{equation}
+と比例係数$Q$を導入し、$V^R-V^L$が照射光の円偏光度$P_\text{circ}$及び照射光強度$I_i$に比例することを示す。
+
+
+
+
+はじめに照射光強度$I_i$とGaAs層への入射光強度$I_t^\text{GaAs}$の関係を調べる。
+式(\ref{toukaritu})の透過率$T^{s(p)}$は式(\ref{toukakeisuus})、(\ref{toukakeisuup})の透過係数$\tau^{s(p)}$を用いて
+\begin{equation}
+T^s=\frac{4\eta ^{s}_{0}  \Re[\eta ^{s}_{2}]}{(\eta ^{s}_{0}B^s+C^s)(\eta ^{s}_{0}B^s+C^s)^{\ast }}
+=\tau ^s{\tau ^{s}}^{\ast }\frac{\Re[\eta ^{s}_{2}]}{\eta ^{s}_{0}}
+\end{equation}
+\begin{equation}
+T^p=\frac{4\eta ^{p}_{0}  \Re[\eta ^{p}_{2}]}{(\eta ^{p}_{0}B^p+C^p)(\eta ^{p}_{0}B^p+C^p)^{\ast }}
+=\tau ^p{\tau ^p}^{\ast } \frac{\Re[\eta ^{p}_{2}]}{\eta ^{p}_{0}}\cdot \frac{\cos{\theta _2}\cos{\theta _{2}^{\ast }}}{\cos^2{\theta _0}}
+\end{equation}
+と表せる。
+以下では簡単のためにGaAsの複素屈折率$n_2$及び透過係数$\tau^{s(p)}$の虚部は実部と比較して無視できる程度に小さいものとし、$n_2\equiv \Re[n_2]$及び$\tau^{s(p)}\equiv\Re[\tau^{s(p)}]$と再意義する。この近似は表\ref{paramet}及び\ref{result}から妥当な近似である。この近似の元では$\eta_2^{s(p)}$, $\cos\theta_2$も実数となり、透過率$T^{s(p)}$は次のように簡単化される。
+\begin{equation}
+T^s=({\tau ^s})^2 \frac{\eta ^{s}_{2}}{\eta ^{s}_{0}}=({\tau ^s})^2 \frac{n_2\cos\theta_2}{n_0\cos\theta_0}\label{asa2}
+\end{equation}
+\begin{equation}
+T^p=({\tau ^p})^2 \frac{\eta ^{p}_{2}}{\eta ^{p}_{0}}\frac{\cos^2{\theta _2}}{\cos^2{\theta _0}}=({\tau ^p})^2 \frac{n_2\cos\theta_2}{n_0\cos\theta_0}\label{asd2}
+\end{equation}
+ここで式(\ref{ads})、(\ref{adp})を用いた。式(\ref{asa2})及び(\ref{asd2})を用いると、GaAs層への入射光強度である式(\ref{toukaI})は
+\begin{eqnarray}
+I_t^\text{GaAs}&=&\left( T^s\frac{A^2}{1+A^2}+T^p\frac{1}{1+A^2}\right) I_i \nonumber\\
+&=& \left( ({\tau^s})^2\frac{A^2}{1+A^2}+({\tau^p})^2\frac{1}{1+A^2}\right) \frac{n_2\cos\theta_2}{n_0\cos\theta_0}I_i\label{intG}
+\end{eqnarray}
+と表せる。
+
+次に照射光楕円率$A$とGaAs層への入射光円偏光度$P_\text{circ}^\text{GaAs}$との関係を調べ、さらに式(\ref{intG})を用いて$I_i P_\text{circ}$と$I_t^\text{GaAs}P_\text{circ}^\text{GaAs}$の関係を求める。
+$P_\text{circ}^\text{GaAs}$はGaAs層への入射光の偏光楕円率$A^\text{GaAs}$を用いて式(\ref{rho})より
+\begin{equation}
+P^\text{GaAs}_\text{circ}=\frac{2A^\text{GaAs}}{1+({A^\text{GaAs}})^2}
+=\frac{2(\tau^s/\tau^p)A}{1+(\tau^s/\tau^p)^2 A^2}
+=\frac{2\tau^s \tau^p A}{({\tau^p})^{2}+({\tau^s})^{2} A^2}\label{dada}
+\end{equation}
+と書ける。ここで
+\begin{equation}
+A^\text{GaAs}\simeq \frac{\tau^s}{\tau^p}A
+\end{equation}
+を用いた\footnote{この近似の妥当性は脚注\ref{foo}参照。}。$A$は照射光の偏光楕円率である。
+式(\ref{intG})、(\ref{dada})より、
+\begin{eqnarray}
+I_t^\text{GaAs}P_\text{circ}^\text{GaAs}&=&\left( ({\tau^s})^2\frac{A^2}{1+A^2}+({\tau^p})^2\frac{1}{1+A^2}\right) \frac{n_2\cos\theta_2}{n_0\cos\theta_0}I_i \frac{2\tau^s \tau^p A}{({\tau^p})^{2}+({\tau^s})^{2} A^2}\nonumber\\
+&=&\frac{2\tau^s \tau^p n_2\cos\theta_2 A}{n_0 \cos\theta_0(1+A^2)}I_i\nonumber\\
+&=&\frac{\tau^s \tau^p n_2\cos\theta_2 }{n_0 \cos\theta_0}I_i P_\text{circ}
+\end{eqnarray}
+が成り立つ。
+従って式(\ref{henkohirei})より
+\begin{equation}
+V^R-V^L=  Q \frac{\tau^s \tau^p n_2\cos\theta_2 }{n_0 \cos\theta_0}I_i P_\text{circ}\label{kekkaP}
+\end{equation}
+が得られる。式(\ref{kekkaP})は$V^R-V^L$と$P_\text{circ}$が比例関係にあることを示しており、
+$V^R-V^L$の検出により照射光の円偏光度$P_\text{circ}$の直接的な測定が可能であることを示してる。
+
+
+
+
+
+\begin{figure}[t]
+\begin{center}
+%\includegraphics[width=6cm,keepaspectratio,clip]{incident.eps}
+\caption{Pt/GaAs複合構造における右円偏光・左円偏光照射時の起電力差$V^\text{R}-V^\text{L}$の照射光円偏光度$P_\text{circ}$依存性。}
+\label{incident} 
+\end{center}
+\end{figure}
+
+
+図\ref{incident}にPt/GaAs複合構造において測定した照射光円偏光度$P_\text{circ}$と$V^R-V^L$の関係を示した。測定では照射光の楕円率を変化させた場合でも照射光強度$I_i$に差が生じないように光学系が調整されている。図\ref{incident}は式(\ref{kekkaP})が予言するように$V^R-V^L$と$P_\text{circ}$の比例関係を示しており、
+光誘起逆スピンホール効果による偏光情報−電圧変換を実証するものである。このように
+光誘起逆スピンホール効果は従来困難であった偏光情報から電気信号への直接変換を極めて簡単な系で可能とし、汎用性の高い光スピン情報検出器「スピンフォトディテクター」としての機能を実現する。
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Pt/GaAs接合界面におけるショットキー接合とスピン流}
+
+
+
+
+
+
+\begin{figure}[tbp]
+\begin{center}
+%\includegraphics[width=6cm,keepaspectratio,clip]{current_voltage.eps}
+\caption{Pt/GaAs複合構造における電流−電圧特性。$J$は電流密度、$V$はPt/GaAs構造に印加した電圧である。挿入図に順方向バイアス領域の電流−電圧特性を示した。実線は$V>0.5$ Vの領域の線形フィッティング結果である。}
+\label{current_voltage} 
+\end{center}
+\end{figure}
+
+
+金属/半導体界面における主要なスピン流輸送機構は電流−電圧特性から議論できる~\cite{Padovani,Cohen,Sze}。
+図\ref{current_voltage}にPt/GaAs複合構造において測定した電流−電圧特性を示す。図\ref{current_voltage}はショットキー接合における典型的な電流−電圧特性を示しており、本測定で用いたPt/GaAs界面においてショットキー障壁が形成されていることを表している。
+Pt/GaAs界面のショットキー障壁高さは図\ref{current_voltage}挿入図に示す順方向の電流−電圧特性から$\phi_{Bn}=0.58$ Vと見積もられる\footnote{ショットキー接合における電流密度$J$と順方向バイアス$V$の関係は$V>3kT/q$のもとで
+\begin{equation}
+J=J_0\exp\left(\frac{eV}{nkT}\right)\label{IV}
+\end{equation}
+\begin{equation}
+J_0=A^{**}T^2\exp \left(-\frac{e\phi_{Bn}}{kT}\right)\label{IV2}
+\end{equation}
+%\begin{equation}
+%J=A^{**}T^2\exp \left(-\frac{q\phi_{B0}}{kT}\right)\exp\left[\frac{q(\Delta\phi +V)}{kT}\right]
+%\end{equation}
+と表される~\cite{Sze,Cohen}。ここで$e$は電気素量、$n$は理想係数、$A^{**}$は実効リチャードソン定数、$\phi_{Bn}$はショットキー障壁高さである。図\ref{current_voltage}挿入図に示すように順方向の電流−電圧特性を$V=0$に外挿することで$J_0=1.46\times10^{-5}$ Acm$^{-2}$が得られる。式(\ref{IV2})より
+\begin{equation}
+\phi_{Bn}=\frac{kT}{e}\ln\left(\frac{A^{**}T^2}{J_0}\right)
+\end{equation}
+であり、$k=1.38\times10^{-23}$ JK$^{-1}$, $T=300$ K、$e=1.602\times 10^{-19}$ C及び$A^{**}=4.4$ Acm$^{-2}$K$^{-2}$~\cite{Sze}を用いることで、本実験で用いたPt/GaAs複合構造界面におけるショットキー障壁高さ$\phi_{Bn}=0.58$ Vが得られる。
+}。光照射時においては光起電力が順方向バイアスとして働くことで、このショットキー障壁高さは実効的に減少する。$I_i=10$ mWの光照射に対して測定したPt/GaAsの薄膜面法線方向に生じる光起電力は0.33 Vであった。
+
+ショットキー接合界面における電子の輸送機構には次の3つがある。1つは熱励起された電子がショットキー障壁を超えて金属−半導体間を移動するthermionic emission (TE)、2つめは量子力学的なトンネル効果でショットキー障壁を介して金属−半導体間を電子が移動するfield emission (FE)、3つめはTEとFEの中間で、熱的に励起された電子がトンネル効果でショットキー障壁を介して金属−半導体間を移動するthermionic-field emission (TFE)である。どの機構がショットキー接合における主要な電子輸送を担うかは、熱エネルギー$kT$と
+\begin{equation}
+E_{00}\equiv \frac{e\hbar}{2}\sqrt{\frac{N_D}{m^* \varepsilon _s}}
+\end{equation}
+を比較することで調べられる~\cite{Padovani,Cohen,Sze}。ここで$m^*$は電子の有効質量、$\varepsilon _s$はGaAsの誘電率である。$kT\gg E_{00}$であればショットキー障壁を超えるエネルギーを持つ電子が多量に存在するためTEが主要な電子輸送機構となり、$kT\ll E_{00}$、即ち高濃度にドープされた半導体を金属に接合した場合は薄いショットキー障壁が形成されるためFEが主要な機構となる。また$kT\approx E_{00}$であればTEとFEの中間のTFEが主要な電子輸送機構となる。本測定で用いたPt/GaAs複合構造におけるパラメータ$N_D=4.7\times 10^{18}$ cm$^{-2}$, $m^*=0.063 m_0=5.74\times 10^{-32}$ kg、及び$\varepsilon _s=12.9\varepsilon _0=1.14\times 10^{-10}$ F/m~\cite{Sze}を用いることで、$E_{00}/kT\approx 1.7$が得られる。従って本系において接合界面における電子輸送の主要機構はTFEである。即ち逆スピンホール効果により観測された円偏光励起スピン流は、GaAs層において光励起されたスピン偏極電子の熱励起を経由したPt/GaAs界面でのトンネル過程に起因するものである。
+
+
+
+
+\section{本章のまとめ}
+本章で得られた主要な結果は以下の3点である。
+\begin{enumerate}
+ \item Pt/GaAs複合構造において円偏光に誘起される起電力を検出し、光照射角度及び偏光楕円率依存性を理論・実験両面から系統的に調べることで、本起電力が光誘起逆スピンホール効果に起因することを示した。本結果により金属/半導体複合構造における光スピン・スピン流・電流の相互作用を実現した。
+ \item 光伝播解析の方法に基づき光誘起逆スピンホール効果による偏光情報−電圧変換の定式化を行い、本現象が偏光情報から電気信号への直接変換「スピンフォトディテクター」としての機能を実現することを見出した。
+ \item Pt/GaAs界面におけるショットキー障壁を介したスピン流輸送過程において、熱的に励起された電子がトンネル効果でショットキー障壁を介して金属−半導体間を移動するthermionic-field emissionによる寄与が支配的であることを見出した。
+\end{enumerate}

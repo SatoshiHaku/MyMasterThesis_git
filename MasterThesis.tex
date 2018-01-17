@@ -1,0 +1,244 @@
+%\documentclass[12pt,report]{jsbook}	%片面印刷
+\documentclass[12pt]{jsbook}	%両面印刷
+
+%\bibliographystyle{jplain}
+
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{mathrsfs}
+\usepackage{color}
+
+\usepackage{latexsym}
+\usepackage{wrapfig}
+\pagestyle{plain}
+\usepackage{fancybox}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{mediabb}
+
+\numberwithin{equation}{section}
+
+\newcommand{\divergence}{\mathrm{div}\,}  %ダイバージェンス
+\newcommand{\grad}{\mathrm{grad}\,}  %グラディエント
+\newcommand{\rot}{\mathrm{rot}\,}  %ローテーション
+
+\renewcommand{\baselinestretch}{1.1}	%行間の調整
+
+%chapterの文字サイズ、位置の調整-------------------------------
+\makeatletter%% プリアンブルで定義する場合は必須
+
+\def\@makechapterhead#1{\hbox{}%
+  \vskip2\Cvs
+  {\parindent\z@
+  \raggedright% オリジナルの定義(左揃え)
+%   \centering% 中央揃え
+%  \raggedleft% 右揃え
+   \reset@font\huge\bfseries
+   \ifnum \c@secnumdepth >\m@ne
+     \setlength\@tempdima{\linewidth}%
+     \vtop{\hsize\@tempdima%
+         \@chapapp\thechapter\@chappos\\%
+     #1}%
+   \else
+     #1\relax
+   \fi}\nobreak\vskip3\Cvs}
+
+\def\@makeschapterhead#1{\hbox{}%
+  \vskip2\Cvs
+  {\parindent\z@
+  \raggedright% オリジナルの定義(左揃え)
+%   \centering% 中央揃え
+%  \raggedleft% 右揃え
+   \reset@font\huge\bfseries
+   \setlength\@tempdima{\linewidth}%
+   \vtop{\hsize\@tempdima#1}}\vskip3\Cvs}
+
+\makeatother%% プリアンブルで定義する場合は必須
+%------------------------------------------------------------
+
+%\bibliographystyle{jplain}
+
+%-------------------------------------
+%\documentclass[12pt]{jreport}
+
+%\usepackage{graphicx}
+%\usepackage{bm} 
+%\usepackage{amsmath,amsthm,amssymb}
+%\usepackage{epic, eepic}
+
+
+%\pagestyle{empty}
+
+%\setlength{\textwidth}{14.5cm}
+%\setlength{\textheight}{23cm}
+%\setlength{\oddsidemargin}{0.75cm}
+%\setlength{\topmargin}{-6mm}
+%\setlength{\headsep}{35pt}
+
+%\renewcommand{\baselinestretch}{1.07}
+
+%\setlength{\oddsidemargin}{-5mm}
+%\setlength{\topmargin}{-10mm}
+%\setlength{\textheight}{18.3cm}%両面印刷の時必要
+%\def\baselinestretch{1.5}
+%\setlength{\textwidth}{170mm}
+%\setlength{\marginparsep}{-5mm}
+%\setlength{\marginparwidth}{-5mm}
+
+
+%\textwidth=15cm
+%\textheight=240mm
+%\oddsidemargin=3mm
+%\topmargin=-6mm
+%\headheight=8mm
+%\headsep=0mm
+%\footskip=15mm
+%\marginparwidth=0mm
+%\marginparpush=0mm
+%\marginparsep=0mm
+
+%\setcounter{topnumber}{100}
+%\setcounter{bottomnumber}{100}
+%\setcounter{totalnumber}{100}
+%\renewcommand{\topfraction}{1.0}
+%\renewcommand{\bottomfraction}{1.0}
+%\renewcommand{\textfraction}{0.0}
+%\renewcommand{\floatpagefraction}{0.0}
+
+
+%\setcounter{secnumdepth}{2}
+%\setcounter{tocdepth}{2}
+%\renewcommand{\thepart}{\arabic{part}}
+
+%\makeatletter
+%\renewcommand{\thesection}{\thepart.\arabic{section}}
+%\@addtoreset{section}{part}
+%\renewcommand{\theequation}{\thepart.\arabic{equation}}
+%\@addtoreset{figure}{part}
+%\renewcommand{\thefigure}{\thepart.\arabic{figure}}
+%\@addtoreset{equation}{part}
+%\renewcommand{\thetable}{\thepart.\arabic{table}}
+%\@addtoreset{table}{part}
+%\makeatother
+
+%\renewcommand{\figurename}{Fig.~}
+%\renewcommand{\tablename}{Table~}
+
+%\includeonly{part2,part3,part4,part5,reference}
+
+
+
+
+
+
+%平行
+%\def\para{%
+%\setlength{\unitlength}{1pt}%
+%\thinlines %
+%\begin{picture}(12, 12)%
+%\put(0,0){/}
+%\put(2,0){/}
+%\end{picture}%
+%}%
+
+%-------------------------------------
+
+
+
+\begin{document}
+
+
+\begin{titlepage}
+\noindent
+\Large{
+修士論文
+\hspace*{45mm}
+2018（平成30）年度
+}
+\\
+\\
+\Large{
+論文題目
+}
+\\
+\huge{\center{
+磁性体/酸化物及び有機物ヘテロ構造\\
+におけるスピンダイナミクスの研究
+
+	}
+}
+\vspace{3mm}
+\begin{center}\Large 
+Spin Dynamics in Magnetic materials/Oxide \\
+and organic materials heterostructure
+\end{center}
+
+\vspace*{13mm}
+\Large{
+	\center{
+慶應義塾大学
+\\
+理工学研究科
+\\
+	}
+}
+\vspace*{6mm}
+\Large{
+	\center{
+学籍番号\hspace*{5mm} 81612890 \hspace*{10mm}白怜士
+\\
+	}
+}
+\vspace*{3mm}
+\Large{
+	\center{
+指導教員\hspace*{10mm} 安藤和也 \hspace*{2mm}准教授
+\\
+	}
+}
+\vspace*{3mm}
+\Large{
+	\center{
+慶應義塾大学
+\\
+2018年2月
+\\
+	}
+}
+\end{titlepage}
+
+
+\pagenumbering{roman}
+%\pagestyle{empty}
+%\tableofcontents
+\setcounter{tocdepth}{2}\tableofcontents
+\clearpage
+%\pagestyle{plain}
+\pagestyle{headings}%ヘッダー
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+
+\include{Introduction}
+\include{experimental_procedure}
+\include{PdOx_STFMR}
+\include{experiment_ILEtching}
+\include{CointercalatedGraphene}
+%\include{observation_of_ISHE}
+%\include{formulation_of_spin_pumping}
+%\include{spin_torque_meter}
+\include{summary}
+\include{acknowledgment}
+
+
+
+
+
+
+
+\end{document}
