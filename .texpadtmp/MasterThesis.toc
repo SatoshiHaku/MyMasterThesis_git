@@ -12,10 +12,11 @@
 \contentsline {subsection}{\numberline {1.2.2}イオン液体のキャパシタンス}{20}
 \contentsline {subsection}{\numberline {1.2.3}イオン液体による電気化学エッチング}{22}
 \contentsline {section}{\numberline {1.3}グラフェン}{22}
-\contentsline {subsection}{\numberline {1.3.1}二次元電子系としてのグラフェン}{23}
-\contentsline {subsection}{\numberline {1.3.2}グラフェン中のディラック電子}{25}
-\contentsline {section}{\numberline {1.4}本研究の目的}{29}
-\contentsline {section}{\numberline {1.5}本論文の構成}{29}
+\contentsline {subsection}{\numberline {1.3.1}グラフェンの作成方法}{23}
+\contentsline {subsection}{\numberline {1.3.2}二次元電子系としてのグラフェン}{24}
+\contentsline {subsection}{\numberline {1.3.3}グラフェン中のディラック電子}{25}
+\contentsline {section}{\numberline {1.4}本研究の目的}{30}
+\contentsline {section}{\numberline {1.5}本論文の構成}{30}
 \contentsline {chapter}{\numberline {第2章}試料作成，ST-FMR測定及びイオン液体を用いた電気化学エッチング方法}{31}
 \contentsline {section}{\numberline {2.1}試料設計及び作成方法}{31}
 \contentsline {subsection}{\numberline {2.1.1}スパッタリング法を用いた金属薄膜の成膜}{31}
@@ -35,9 +36,15 @@
 \contentsline {subsection}{\numberline {4.2.2}イオン液体による電気化学エッチング -負のゲート電圧-}{50}
 \contentsline {section}{\numberline {4.3}まとめ}{56}
 \contentsline {chapter}{\numberline {第5章}SLG/Al$_{2}$O$_{3}$基板におけるコバルトインターカレーション}{57}
-\contentsline {section}{\numberline {5.1}CVD法によるSLGの作成}{57}
-\contentsline {section}{\numberline {5.2}ラマン分光法によるSLGの評価}{58}
-\contentsline {section}{\numberline {5.3}コバルトインターカレーションの評価}{58}
-\contentsline {subsection}{\numberline {5.3.1}XPS測定}{58}
-\contentsline {subsection}{\numberline {5.3.2}AFM測定による評価}{58}
-\contentsline {chapter}{参考文献}{59}
+\contentsline {section}{\numberline {5.1}CVD法によるSLGの作成及びコバルトのEB蒸着}{57}
+\contentsline {subsection}{\numberline {5.1.1}CVD法によるSLG成長}{57}
+\contentsline {subsection}{\numberline {5.1.2}SLG/Al$_{2}$O$_{3}$におけるコバルト蒸着}{58}
+\contentsline {subsection}{\numberline {5.1.3}Co/SLG/Al$_{2}$O$_{3}$のアニールによるインターカレーション}{59}
+\contentsline {section}{\numberline {5.2}ラマン分光法によるSLGの評価}{59}
+\contentsline {subsection}{\numberline {5.2.1}ラマン分光法について}{59}
+\contentsline {subsection}{\numberline {5.2.2}ラマンスペクトルの測定結果}{61}
+\contentsline {section}{\numberline {5.3}コバルトインターカレーションの評価}{62}
+\contentsline {subsection}{\numberline {5.3.1}XPS測定}{64}
+\contentsline {subsection}{\numberline {5.3.2}ラマン分光測定}{69}
+\contentsline {subsection}{\numberline {5.3.3}AFM測定による評価}{69}
+\contentsline {chapter}{参考文献}{73}
