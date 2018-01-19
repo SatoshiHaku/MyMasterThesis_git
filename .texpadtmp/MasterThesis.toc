@@ -45,6 +45,6 @@
 \contentsline {subsection}{\numberline {5.2.2}ラマンスペクトルの測定結果}{61}
 \contentsline {section}{\numberline {5.3}コバルトインターカレーションの評価}{62}
 \contentsline {subsection}{\numberline {5.3.1}XPS測定}{64}
-\contentsline {subsection}{\numberline {5.3.2}ラマン分光測定}{69}
-\contentsline {subsection}{\numberline {5.3.3}AFM測定による評価}{69}
+\contentsline {subsection}{\numberline {5.3.2}ラマン分光測定}{71}
+\contentsline {subsection}{\numberline {5.3.3}AFM測定による評価}{71}
 \contentsline {chapter}{参考文献}{73}
