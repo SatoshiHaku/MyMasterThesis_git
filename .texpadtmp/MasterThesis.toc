@@ -18,33 +18,36 @@
 \contentsline {subsection}{\numberline {1.3.4}グラフェンのスピン軌道相互作用の増大}{30}
 \contentsline {subsubsection}{本来のグラフェンについて}{30}
 \contentsline {subsubsection}{グラフェンにおけるRashba効果}{31}
-\contentsline {section}{\numberline {1.4}本研究の目的}{32}
-\contentsline {section}{\numberline {1.5}本論文の構成}{32}
-\contentsline {chapter}{\numberline {第2章}試料作成，ST-FMR測定及びイオン液体を用いた電気化学エッチング方法}{33}
-\contentsline {section}{\numberline {2.1}試料設計及び作成方法}{33}
-\contentsline {subsection}{\numberline {2.1.1}スパッタリング法を用いた金属薄膜の成膜}{33}
-\contentsline {subsection}{\numberline {2.1.2}レーザー描画法及びリフトオフ法を用いたST-FMR測定系の作成}{34}
-\contentsline {section}{\numberline {2.2}ST-FMR測定を用いた電流-スピン軌道トルク変換効率の定量}{36}
-\contentsline {subsection}{\numberline {2.2.1}測定系について}{37}
-\contentsline {subsection}{\numberline {2.2.2}スピン軌道トルクの導出}{39}
-\contentsline {subsection}{\numberline {2.2.3}イオン液体を利用した電気化学エッチングの方法}{39}
-\contentsline {chapter}{\numberline {第3章}イオン液体を用いた電気化学エッチングによるST-FMR測定の強磁性体膜厚依存性}{41}
-\contentsline {section}{\numberline {3.1}Ni$_{81}$Fe$_{19}$/Pt二層薄膜のST-FMR測定及びNi$_{81}$Fe$_{19}$膜厚依存性の測定}{41}
-\contentsline {subsection}{\numberline {3.1.1}Ni$_{81}$Fe$_{19}$/Pt二層薄膜のST-FMR測定}{41}
-\contentsline {section}{\numberline {3.2}イオン液体によるNi$_{81}$Fe$_{19}$薄膜のエッチング}{45}
-\contentsline {subsection}{\numberline {3.2.1}イオン液体による電気化学エッチング -正のゲート電圧-}{45}
-\contentsline {subsection}{\numberline {3.2.2}イオン液体による電気化学エッチング -負のゲート電圧-}{50}
-\contentsline {section}{\numberline {3.3}まとめ}{56}
-\contentsline {chapter}{\numberline {第4章}SLG/Al$_{2}$O$_{3}$基板におけるコバルトインターカレーション}{57}
-\contentsline {section}{\numberline {4.1}CVD法によるSLGの作成及びコバルトのEB蒸着}{57}
-\contentsline {subsection}{\numberline {4.1.1}CVD法によるSLG成長}{57}
-\contentsline {subsection}{\numberline {4.1.2}SLG/Al$_{2}$O$_{3}$におけるコバルト蒸着}{58}
-\contentsline {subsection}{\numberline {4.1.3}Co/SLG/Al$_{2}$O$_{3}$のアニールによるインターカレーション}{59}
-\contentsline {section}{\numberline {4.2}ラマン分光法によるSLGの評価}{59}
-\contentsline {subsection}{\numberline {4.2.1}ラマン分光法について}{59}
-\contentsline {subsection}{\numberline {4.2.2}ラマンスペクトルの測定結果}{61}
-\contentsline {section}{\numberline {4.3}コバルトインターカレーションの評価}{62}
-\contentsline {subsection}{\numberline {4.3.1}XPS測定}{64}
-\contentsline {subsection}{\numberline {4.3.2}ラマン分光測定}{71}
-\contentsline {subsection}{\numberline {4.3.3}AFM測定による評価}{71}
-\contentsline {chapter}{参考文献}{73}
+\contentsline {subsubsection}{グラフェンのスピン軌道相互作用の増大方法}{32}
+\contentsline {section}{\numberline {1.4}本研究の目的}{33}
+\contentsline {section}{\numberline {1.5}本論文の構成}{33}
+\contentsline {chapter}{\numberline {第2章}試料作成，ST-FMR測定及びイオン液体を用いた電気化学エッチング方法}{35}
+\contentsline {section}{\numberline {2.1}試料設計及び作成方法}{35}
+\contentsline {subsection}{\numberline {2.1.1}スパッタリング法を用いた金属薄膜の成膜}{35}
+\contentsline {subsection}{\numberline {2.1.2}レーザー描画法及びリフトオフ法を用いたST-FMR測定系の作成}{36}
+\contentsline {section}{\numberline {2.2}ST-FMR測定を用いた電流-スピン軌道トルク変換効率の定量}{38}
+\contentsline {subsection}{\numberline {2.2.1}電流から生じるスピン軌道トルクによる有効磁場の導出}{39}
+\contentsline {subsection}{\numberline {2.2.2}測定系について}{42}
+\contentsline {subsection}{\numberline {2.2.3}イオン液体を利用した電気化学エッチングの方法}{42}
+\contentsline {chapter}{\numberline {第3章}イオン液体を用いた電気化学エッチングによるST-FMR測定の強磁性体膜厚依存性}{45}
+\contentsline {section}{\numberline {3.1}Ni$_{81}$Fe$_{19}$/Pt二層薄膜のST-FMR測定及びNi$_{81}$Fe$_{19}$膜厚依存性の測定}{45}
+\contentsline {subsection}{\numberline {3.1.1}Ni$_{81}$Fe$_{19}$/Pt二層薄膜のST-FMR測定}{45}
+\contentsline {section}{\numberline {3.2}イオン液体によるNi$_{81}$Fe$_{19}$薄膜のエッチング}{49}
+\contentsline {subsection}{\numberline {3.2.1}イオン液体による電気化学エッチング -正のゲート電圧-}{49}
+\contentsline {subsection}{\numberline {3.2.2}イオン液体による電気化学エッチング -負のゲート電圧-}{54}
+\contentsline {section}{\numberline {3.3}まとめ}{60}
+\contentsline {chapter}{\numberline {第4章}SLG/Al$_{2}$O$_{3}$基板におけるコバルトインターカレーション}{61}
+\contentsline {section}{\numberline {4.1}CVD法によるSLGの作成及びコバルトのEB蒸着}{61}
+\contentsline {subsection}{\numberline {4.1.1}CVD法によるSLG成長}{61}
+\contentsline {subsection}{\numberline {4.1.2}SLG/Al$_{2}$O$_{3}$におけるコバルト蒸着}{62}
+\contentsline {subsection}{\numberline {4.1.3}Co/SLG/Al$_{2}$O$_{3}$のアニールによるインターカレーション}{63}
+\contentsline {section}{\numberline {4.2}ラマン分光法によるSLGの評価}{63}
+\contentsline {subsection}{\numberline {4.2.1}ラマン分光法について}{63}
+\contentsline {subsection}{\numberline {4.2.2}ラマンスペクトルの測定結果}{65}
+\contentsline {section}{\numberline {4.3}コバルトインターカレーションの評価}{66}
+\contentsline {subsection}{\numberline {4.3.1}XPS測定}{68}
+\contentsline {subsection}{\numberline {4.3.2}ラマン分光測定}{75}
+\contentsline {subsection}{\numberline {4.3.3}AFM測定による評価}{75}
+\contentsline {chapter}{参考文献}{77}
+\contentsline {chapter}{付録}{81}
+\contentsline {section}{\numberline {補遺A}グラフェンにおける準スピン}{81}

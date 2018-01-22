@@ -94,33 +94,138 @@ ST-FMR測定とは磁化の歳差運動によって強磁性体の抵抗が磁�
  \label{fig:frequencymix}
 \end{figure}
 
-\subsection{測定系について}
+\subsection{電流から生じるスピン軌道トルクによる有効磁場の導出}
+まず常磁性体/強磁性体二層薄膜において電流からスピン軌道トルクが生じる過程を磁化の運動とともに述べる．
 
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=85mm]{hallbar.eps}
- \end{center}
- \caption{本研究の測定系}
- \label{fig:setup}
-\end{figure}
-本研究の測定系は図\ref{fig:setup}のようになっている．試料に交流電流$\Delta I\sin\omega t$を流し，電磁石によって外部磁場を試料の面内方向に与える．このときのホール電圧$V_{XY}$は
+常磁性体/強磁性体二層薄膜に高周波電流$I(t) = I\cos(\omega t)$を流したときの電圧$V(t)$は
 \begin{eqnarray}
-V_{XY} = V_{0}+V_{\omega}\sin\omega t + V_{2\omega}\cos\omega t
-\label{eq:Vxy}
+V(t) = R(t)I\cos(\omega t)
+\label{eq:V(t)}
+\end{eqnarray}
+となる．このとき強磁性体の磁気抵抗について考えると，電流が流れる方向と同一方向の抵抗$R_{xx}$は
+\begin{eqnarray}
+R_{xx} = R_{\perp}-\Delta R\cos^{2}(\theta)
+\label{eq:Rxx}
+\end{eqnarray}
+となる．ただし$\Delta R = R_{\perp}-R_{\parallel}$で，$R_{\perp}$及び$R_{\parallel}$はそれぞれ磁化と電流のなす角$\theta$が垂直か平行のときの抵抗である．
+強磁性共鳴が起きているとき，外部磁場と電流のなす角を$\theta_{\rm c}$とすると磁化と電流のなす角$\theta$は
+\begin{eqnarray}
+\theta(t) = \theta + \theta_{\rm c}\cos(\omega t -\psi)
+\label{eq:theta}
+\end{eqnarray}
+と表せる．$\psi$は交流電流と$\theta$の振動の位相差である．
+式\ref{eq:Rxx}と式\ref{eq:theta}より抵抗の時間依存性$R(t)$が表せて
+\begin{eqnarray}
+R(t) &=&  R_{\perp} - \Delta R\cos^{2}(\theta + \theta_{\rm c}\cos(\omega t-\psi)\\\nonumber
+&=& R_{\perp} - \Delta R\{\cos^{2}\theta + 2\theta_{\rm c}\sin\theta\cos\theta\cos(\omega t-\psi)\}
+\label{eq:Rt}
+\end{eqnarray}
+となる．この式\ref{eq:Rt}を式\ref{eq:V(t)}に用いると電圧$V(t)$が$\theta$のあらわな関数で書けて
+\begin{eqnarray}
+V(t) = R_{\perp}I\cos(\omega t) - \Delta RI\cos^{2}\theta\cos(\omega t) + 2I\Delta R\theta_{\rm c}\sin\theta\cos\theta\cos(\omega t-\psi)\cos(\omega t)\nonumber
+\label{eq:V(t)_2}
+\end{eqnarray}
+となる．第1項と第2項は$cos(\omega t)$により時間平均を取ると値はゼロになる．第3項は
+\begin{eqnarray}
+2I\Delta R\theta_{\rm c}\sin\theta\cos\theta\cos(\omega t-\psi)\cos(\omega t)\\
+=I\Delta R\theta_{\rm c}\sin2\theta\left(\cos^{2}(\omega t)\cos\psi + \cos(\omega t)\sin(\omega t)\sin\psi\right)
+\label{eq:V(t)_3}
+\end{eqnarray}
+となるが，三角関数の倍角の公式$\cos^{2}(\omega t)= (1+\cos2\omega t)/2$を用いると時間に依存しない項$V_{DC}$が残り，
+\begin{eqnarray}
+V_{DC} = \frac{1}{2}\Delta RI\theta_{\rm c}\sin2\theta
+\label{eq:VDC}
 \end{eqnarray}
 となる．
-このホール電圧$V_{XY}$からロックインアンプを用いて高調波Hall電圧$V_{\omega}$と$V_{2\omega}$を測定した．高調波Hall電圧とは流した交流電圧の周波数の整数倍となる周波数で振動するHall電圧のことを指している．
-
-これらの高調波Hall電圧の１次成分$V_{\omega}$と２次成分$V_{2\omega}$からスピン軌道トルクの有効磁場を算出でき，その関係は以下のようになっている\cite{yang2015layer,kim2013layer}．このプレーナーホール効果による電圧が異常ホール効果による電圧に対して微小であるときを想定している．
+一方外部磁場$\bm{H}_{0}$と磁化$\bm{M}$を$x`-y`$座標で見るとそれぞれ
 \begin{eqnarray}
-\Delta H_{T(L)}=-2\frac{\partial V_{2\omega}}{\partial H_{T(L)}}\biggl/\frac{\partial^{2} V_{\omega}}{\partial^{2} H_{T(L)}}
-\label{eq:torque}
+\bm{H}_{0} &=& (H_{0},0,0)\\
+\bm{M} &=& (Ms)_{\rm s},m_{y}e^{i\omega t},m_{z}e^{i\omega t})
+\label{eq:H,M}
 \end{eqnarray}
-ただし$H_{T(L)}$は外部磁場を表している．外部磁場を電流に対して平行にかけると$\Delta H_{T}$が測定でき，垂直にかけると$\Delta H_{L}$が測定できる．$\Delta H_{T}$，$\Delta H_{L}$は磁化にかかる有効磁場で添え字のTやLは電流に対して平行か垂直かを表している．
+と表せる．
+磁化の運動が電流から生じるスピン軌道トルク及びエルステッド磁場によって駆動されることをそれらの有効的な磁場が磁化に印可されていることに置き換えて式\ref{eq:LLGeq}に加えると
+\begin{eqnarray}
+\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}=-\gamma\mu_{0}\bm{M}\times(\bm{H}_{\rm eff} + \bm{h}_{\rm mw})-\frac{\alpha}{M}\bm{M}\times\frac{\mathrm{d}\bm{M}}{\mathrm{d}t}
+\label{eq:LLGeq_torque}
+\end{eqnarray}
+と書き直せる．ここで$\bm{H}_{\rm eff}$は外部磁場と反磁場，異方性磁場を含んだ時間依存しない磁場成分である．$\bm{h}_{\rm mw}$は交流電流から生成されたスピン軌道トルク及びエルステッド磁場による振動する有効磁場成分であり，その成分は
+\begin{eqnarray}
+\bm{h}_{\rm mw} = \left(
+\begin{array}{c}
+h_{x}\cos\theta + h_{y}\sin\theta\\
+h_{x}\sin\theta - h_{y}\cos\theta\\
+h_{z}
+\end{array}
+\right)e^{i\omega t}
+\label{eq:hmw}
+\end{eqnarray}
+である．この式\ref{eq:LLGeq_torque}を解くと
+\begin{eqnarray}
+\frac{i\omega}{\gamma}m_{y} + \left(\frac{i\alpha\omega}{\gamma} + H_{0} + H_{1} \right)m_{z} &=& M_{z}h_{z}\\
+\left(\frac{i\alpha\omega}{\gamma} + H_{0} + H_{2}\right)m_{y} - \frac{i\omega}{\gamma}m_{z} &=& M_{s}(h_{x}\cos\theta + h_{y}\sin\theta)
+\label{eq:LLGeq_torque_solve}
+\end{eqnarray}
+となる．ただし，$\bm{H}_{2}$及び$\bm{H}_{4}$はそれぞれ一軸及び二軸結晶磁気異方性磁場\footnote{結晶磁気異方性とはある特定の結晶方向に磁化しやすい異方性を指す．}を表し，
+\begin{eqnarray}
+H_{1} &=& M_{s} - H_{2\perp} + H_{2\parallel}\cos^{2}(\phi + \frac{\pi}{4} + \frac{1}{4}H_{4\parallel}(3+\cos4\phi))\\\nonumber
+H_{2} &=& H_{4\parallel}\cos4\phi - H_{2\parallel}\sin2\phi
+\nonumber
+\end{eqnarray}
+と表せる．図の形状から$theta_{\rm c}$の最大値は$theta_{\rm c} = \frac{m_{y}}{M_{s}}$であることを用いて，強磁性共鳴が起きているときは式\ref{eq:LLGeq_torque_solve}は
+\begin{eqnarray}
+\frac{i\omega}{\gamma}\theta_{\rm c} +(i\Delta H + H_{0} + H_{1})\frac{m_{z}}{M_{s}} &=& h_{z}\\
+(i\Delta H + H_{0} + H_{2})\theta_{\rm c} - \frac{i\omega}{\gamma}\frac{m_{z}}{M_{s}} &=& h_{x}\sin\theta - h_{y}\cos\theta
+\label{eq:LLGeq_torque_thetac}
+\end{eqnarray}
+とできる．これを$\frac[m_{z}}{M_{s}}$を削除するように整理して$\theta_{\rm c}$について解くと
+\begin{eqnarray}
+\theta_{\rm c} = \frac{(i\Delta H + H_{0} + H_{1})(h_{x}\sin\theta - h_{y}\cos\theta)+\frac{i\omega}{\gamma}h_{z}}{(i\Delta H + H_{0} + H_{1})(i\Delta H + H_{0} + H_{2})-\frac{\omega^{2}}{\gamma^{2}}}
+\label{eq:thetac}
+\end{eqnarray}
+となる．ただし$\Delta H \equiv \frac{\alpha\omega}{\gamma}$を半値半幅(スペクトルの値が1/2の部分の線幅の1/2)と定義した．この式をさらに整理すると
+\begin{eqnarray}
+\theta_{\rm c} = -\frac{ih_{z}\gamma}{\omega}-\frac{[i(H_{0} + H_{1})-\Delta H][\gamma h_{z}(H_{0} + H_{2} + i\Delta H)-i\omega(h_{x}\sin\theta - h_{y}\cos\theta)]}{\omega[-(i\Delta H + H_{0} + H_{1})(i\Delta H + H_{0} + H_{2})]+ \frac{\omega^{2}}{\gamma^{2}}}
+\label{eq:thetac_2}
+\end{eqnarray}
+とできる．実際は周波数$\omega$を固定し，外部磁場$H_{0}$を掃引する．共鳴磁場を$H_{\rm res}$とし
+\begin{eqnarray}
+\delta H = |H{0} - H_{\rm res}|
+\label{eq:deltaH}
+\end{eqnarray}
+と外部磁場と共鳴磁場の差$\delta H$を定義する．この関係と式\ref{eq:VDC}及び式\ref{eq:thetac_2}を用いて$V_{\rm DC}$は
+\begin{eqnarray}
+V_{\rm DC} = -\frac{1}{2}I\Delta R\sin(2\theta)\left\{\frac{i\gamma h_{z}}{\omega} - \frac{1}{\omega(2H_{0} + H_{1} + H_{2})(\delta H + i\Delta H)}\left[\omega(h_{x}\sin\theta - h_{y}\cos\theta)(\delta H + H_{1} + H_{2} + i\Delta H) + \gamma h_{z}(i\delta H(2H_{0} + H_{1} + H_{2}) + i(H_{0} + H_{1})(H_{0} + H_{2})-\Delta H(2H_{0} + H_{1} + H_{2}))\right]\right\}
+\label{eq:VDC2}
+\end{eqnarray}
+と書ける．この$V_{\rm DC}$から実部だけ取り出すと
+\begin{eqnarray}
+\rm{Re}\{V_{\rm DC}\} = V_{\rm sym}\frac{\Delta H^{2}}{(H_{0}-H_{\rm res})^{2} + \Delta H^{2}} + V_{\rm asy}\frac{\Delta H(H_{0}-\Delta H)}{(H_{0}-H_{\rm res})^{2} + \Delta H^{2}}
+\label{eq:Re_VDC}
+\end{eqnarray}
+となる．このとき$V_{\rm sym}$及び$V_{\rm asy}$は角度依存性のある係数で
+\begin{eqnarray}
+V_{\rm sym}(\theta) &=& \frac{I\Delta R}{2}A_{\rm sym}\sin(2\theta)h_{z}\\\nonumber
+V_{\rm asy}(\theta) &=& \frac{I\Delta R}{2}A_{\rm asy}\sin(2\theta)(h_{x}\sin\theta - h_{y}\cos\theta)\nonumber
+\end{eqnarray}
+である．$A_{\rm sym}$及び$A_{\rm asy}$は磁気感受率$\chi_{i}$で書くと$A_{\rm i} = \chi_{\rm i}/M_{\rm s}$であり
+\begin{eqnarray}
+A_{\rm sym} &=& \frac{\gamma(H_{\rm res} + H_{1})(H_{\rm res} + H_{2})}{\omega\Delta H(2H_{\rm res} + H_{1} + H_{2})}\\\nonumber
+A_{\rm asy} &=& \frac{H_{\rm res} + H_{1}}{\Delta H(2H_{\rm res} + H_{1} + H_{2})}\nonumber
+\end{eqnarray}
+となる．
 
-試料が面直磁化容易膜(面直磁化膜)である場合，有効磁場$\Delta H_{T}$はfield-likeトルクを，$\Delta H_{L}$はdamping-likeトルクを起源としているとわかっている\cite{yang2015layer}.そこで，本研究ではこの有効磁場$\Delta H_{T(L)}$の変化をスピン軌道トルクの変化として扱うことにする．
+\subsection{測定系について}
 
-\subsection{スピン軌道トルクの導出}
+以上のようなスピン軌道トルクによる有効磁場を求めるために定常電圧$V_{\rm DC}$を測定したい．そのためにFig.\ref{fig:ST-FMR_system}のような測定系を用いる．強磁性体としてNi$_{81}$Fe$_{19}$，常磁性体としてPtを用いている．交流電流はシグナルジェネレータで発生させBias Teeを通して試料に印可する．Bias Teeは交流電流と直流電流を分ける素子であり，コンデンサが接続されている側は交流電流がコイルが接続されている側は直流電流が通るようになっている．そのため試料から発生した直流成分は交流成分と分離されナノボルトメータで測定できる．試料には３端子プローブを用いて交流電流を入射している．
+\begin{figure}[t]
+ \begin{center}
+  \includegraphics[width=100mm]{images/ST-FMR_system.eps}
+  \end{center}
+   \caption{ST-FMR測定の回路図．}
+ \label{fig:ST-FMR_system}
+\end{figure}
+
 
 
 %以上の計算はプレーナーホール効果による電圧を無視して考えているため電流と磁場の方向によって$\Delta H_{T(L)}$を分離することができている．プレーナーホール電圧による寄与を無視するということは電流に対して平行な磁化の動きに対応する電圧を無視するということを意味する．実際の磁化の動きは図\ref{harmonicFig}のように表せる．垂直磁化膜の磁化は図\ref{harmonicFig}(a)のような平衡状態にある．そこに交流電流を流し外部磁場を印加すると図\ref{harmonicFig}(b)(c)のように磁化が動く．
